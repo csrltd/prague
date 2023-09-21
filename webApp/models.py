@@ -17,9 +17,10 @@ class Category(models.Model):
     
 
 class Job(models.Model):
-    slug = models.SlugField(unique=True)
-    title = models.CharField(max_length=30)
-    description = models.CharField(max_length=300)
+    title = models.CharField(max_length=100)
+    slug = models.SlugField(max_length=255, blank=True, unique=True)
+    description = models.TextField(max_length=200)
+    requirement = models.TextField(blank=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     location = models.CharField(max_length=100)
     company = models.CharField(max_length=100)
@@ -43,10 +44,13 @@ class Job(models.Model):
             self.job_status = 'inactive'
         
         # Automatically create a slug from the title if it's not set
-        if not self.slug:
+        if not instance.slug:
             self.slug = slugify(self.title)
         
         super().save(*args, **kwargs)
+    
+    def get_absolute_url(self):
+        return reverse('slug', args=(str(self.slug)))
 
     def __str__(self):
         return self.title
