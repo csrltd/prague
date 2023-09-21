@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Job Listings</title>
+  </head>
+  <body>
+    <h1>Job Listings</h1>
+    <ul>
+      {% for job in job_list %}
+      <li>
+        <h2>{{ job.title }}</h2>
+        <p>{{ job.description | slice:":200" | safe }}</p>
+        <p>Company: {{ job.companyName }}</p>
+        <p>
+          Location: {{ job.jobLocation.city }}, {{ job.jobLocation.state }}, {{
+          job.jobLocation.zip }}
+        </p>
+        <p>Published Date: {{ job.publishedDate }}</p>
+        <a href="{{ job.applyUrl }}" target="_blank">Apply Now</a>
+      </li>
+      {% empty %}
+      <li>No job listings available.</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
