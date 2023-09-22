@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/main/main.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    {% block pagelinks %}
+    {% endblock %}
+    <title>Prague Hospital</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <img
+        src="../static/img/home-img/Prague-Logo-Light.svg"
+        alt="Prague Logo"
+      />
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Services</li>
+          <li>Patient Info</li>
+        </ul>
+
+        <a href="#">Prague Family Clinic</a>
+      </div>
+    </nav>
+    <section class="hero-container">
+      <div>
+        <div>
+          <h1>A Critical-Access Hospital</h1>
+          <p>
+            Located in Prague, Oklahoma, we proudly serve <br />
+            Lincoln, Pottawatomie, Okfuskee, Seminole, and other <br />
+            surrounding communities
+          </p>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div>
+          <div>
+            <h3>23</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
+          <div>
+            <h3>23</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
+          <div>
+            <h3>23</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
+          <div>
+            <h3>23</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="second-container">
+    {% block content %} {% endblock %}
+
+    {% include "footer.html" %}
+    </section>
+
+    
+    <script src="../static/js/main/main.js"></script>
+    <script src="../static/js/pages/home/home.js"></script>
+  </body>
+</html>

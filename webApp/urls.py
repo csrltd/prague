@@ -4,6 +4,6 @@ from .views.career import jobList
 
 urlpatterns = [
     path('', index, name='home'),
-    path('jobs/', jobList, name='job_list'),
+    path('jobs/', jobList, name='jobs'),
 ]
 
