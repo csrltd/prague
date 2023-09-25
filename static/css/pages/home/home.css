@@ -3,12 +3,6 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  background-image: url("../../../img/home-img/hero-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px 15%;
-  position: relative;
-  z-index: 2;
   padding: 83px;
 }
 .hero-container > div:nth-child(1) {

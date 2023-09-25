@@ -64,7 +64,7 @@ nav div > a {
 
 .hero-container {
   width: 100%;
-  background-image: url("/prague/static/img/home-img/hero-background.jpg");
+  background-image: url("../../img/home-img/hero-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px 15%;
