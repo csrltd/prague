@@ -1,0 +1,135 @@
+.hero-container {
+  height: 65vh;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.hero-container > div {
+  max-width: 600px;
+  color: #ffffff;
+  z-index: 4;
+  margin-bottom: 3rem;
+}
+.hero-container > div h1 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 3px;
+}
+
+.second-container {
+  width: 100%;
+}
+.second-container .first-section {
+  padding-bottom: 100px;
+  display: flex;
+  gap: 70px;
+  position: relative;
+}
+.second-container .first-section img {
+  width: 450px;
+  height: 406px;
+  box-shadow: 20px 20px 4px 0px #292464;
+}
+.second-container .first-section > div {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  justify-content: center;
+}
+.second-container .first-section > div h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  letter-spacing: 0.5px;
+}
+.second-container .first-section svg {
+  position: absolute;
+  top: -30rem;
+  right: -25rem;
+}
+.second-container .second-section {
+  display: flex;
+  width: 100%;
+}
+.second-container .second-section .first {
+  width: 50%;
+  color: #ffffff;
+  padding: 46px 44px 53px 142px;
+  background-color: #292464;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.second-container .second-section .first > h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+}
+.second-container .second-section .first > p {
+  font-size: 24px;
+}
+.second-container .second-section .first .list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.second-container .second-section .first .list > div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.second-container .second-section .first .paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.second-container .second-section .img-container {
+  width: 50%;
+  background-image: url("/prague/static/img/case-management-img/social.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.second-container .third-section {
+  margin-bottom: 100px;
+  display: flex;
+  width: 100%;
+}
+.second-container .third-section .second {
+  width: 50%;
+  color: #ffffff;
+  padding: 46px 142px 53px 44px;
+  background-color: #292464;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.second-container .third-section .second > h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+}
+.second-container .third-section .second > h3 {
+  font-size: 24px;
+}
+.second-container .third-section .second .list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.second-container .third-section .second .list > div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.second-container .third-section .second .paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.second-container .third-section .img-container {
+  width: 50%;
+  background-image: url("/prague/static/img/case-management-img/case-management.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=case_management.css.map */
