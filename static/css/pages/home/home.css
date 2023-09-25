@@ -58,11 +58,11 @@
   width: 100%;
   padding: 1px;
 }
-.second-container > img {
+.second-container > svg {
   position: absolute;
   transform: scale(0.7);
 }
-.second-container > img:nth-child(1) {
+.second-container > svg:nth-child(1) {
   top: -20rem;
   left: -23rem;
 }

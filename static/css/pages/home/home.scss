@@ -71,11 +71,11 @@
     width: 100%;
     padding: 1px;
     
-    &>img{
+    &>svg{
         position: absolute;
         transform: scale(0.7);
     }
-    &>img:nth-child(1){
+    &>svg:nth-child(1){
         top: -20rem;
         left: -23rem;
     }
