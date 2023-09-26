@@ -8,9 +8,14 @@
 html {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 18px;
   height: 100%;
   overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
 }
 
 li {
@@ -34,11 +39,42 @@ nav {
   right: 0;
   z-index: 999;
 }
+nav .hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  transition: 0.3s ease;
+  display: none;
+  position: relative;
+  right: -3rem;
+}
+nav .hamburger span {
+  height: 5px;
+  width: 40px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+nav .close {
+  transition: 0.3s ease;
+  position: relative;
+}
+nav .close span:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+}
+nav .close span:nth-child(2) {
+  opacity: 0;
+  display: none;
+}
+nav .close span:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+}
 nav div {
   display: flex;
   align-items: center;
   gap: 3rem;
-  font-family: 18px;
   color: #ffffff;
 }
 nav div ul {
@@ -72,6 +108,7 @@ nav div > a {
   background-position: 0px 15%;
   position: relative;
   z-index: 2;
+  padding-top: 100px;
 }
 .hero-container::before {
   content: "";
@@ -126,9 +163,10 @@ nav div > a {
   height: 250px;
   background-image: url("/prague/static/img/home-img/services-1.jpg");
   border-radius: 12px;
+  background-repeat: no-repeat;
   z-index: 2;
   position: relative;
-  background-size: contain;
+  background-size: cover;
   color: #ffffff;
   padding: 1rem;
   display: flex;
@@ -221,7 +259,7 @@ nav div > a {
   gap: 10px;
 }
 .contact .contact-form form input, .contact .contact-form form textarea {
-  padding: 23.556px 178.5px 25.444px 13px;
+  padding: 25px;
   border-radius: 6px;
   border: 1px solid #292464;
   background: rgba(255, 255, 255, 0.68);
@@ -321,6 +359,7 @@ footer .sub-container .first-section {
   justify-content: space-between;
   align-items: flex-start;
   font-family: "Roboto Condensed", sans-serif;
+  gap: 2rem;
 }
 footer .sub-container .first-section .first {
   display: flex;
@@ -365,4 +404,72 @@ footer .sub-container .second-section {
 }
 footer .sub-container .second-section span {
   font-size: 24px;
+}
+
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 16px;
+  }
+  nav {
+    font-size: 16px;
+    padding-left: 70px;
+  }
+  nav div {
+    gap: 2rem;
+  }
+  nav div ul {
+    gap: 1.3rem;
+  }
+  .container {
+    margin-inline: 100px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  nav {
+    font-size: 14px;
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 920px) {
+  nav div {
+    background-color: #292464;
+    position: absolute;
+    top: -60rem;
+    flex-direction: column;
+    align-items: flex-start;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    gap: 0;
+    padding-left: 2rem;
+    font-size: 24px;
+  }
+  nav div ul {
+    z-index: 999;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  nav div ul a {
+    padding: 1rem;
+    width: 100%;
+    transition: 0.3s ease;
+  }
+  nav div ul a:hover {
+    color: rgb(237, 82, 89);
+  }
+  nav div a {
+    padding: 1rem;
+    border: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  nav div a:hover {
+    color: rgb(237, 82, 89);
+  }
+  nav .hamburger {
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */

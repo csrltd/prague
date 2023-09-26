@@ -1,4 +1,6 @@
 const navbar = document.querySelector('#nav');
+const linksContainer = document.querySelector('#links-container');
+const hamburger = document.querySelector('#hamburger');
 window.onscroll = () => {
     if (window.scrollY > 100) {
         navbar.classList.add('nav-active');
@@ -6,3 +8,12 @@ window.onscroll = () => {
         navbar.classList.remove('nav-active');
     }
 };
+
+hamburger.addEventListener("click", () => {
+    if(hamburger.classList.contains('close')){
+    hamburger.classList.remove('close');
+    } else{
+        hamburger.classList.add("close");
+        linksContainer.style
+    }
+})
