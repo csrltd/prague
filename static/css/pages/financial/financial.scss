@@ -1,0 +1,143 @@
+@import "../../main/variables";
+.hero-container{
+    height: 65vh;
+    color: $white-color;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &>div{
+        max-width: 600px;
+        color: $white-color;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        z-index: 4;
+
+        h1{
+            font-size: 48px;
+            font-weight: 700;
+            font-family:  $font-family-Playfair;
+            letter-spacing: 3px;
+        }
+
+        p{
+            font-weight: 500;
+        }
+
+        div{
+            display: flex;
+            gap: 28px;
+
+            a{
+                padding: 12px 30px;
+                border: 1px solid $white-color;
+                width: fit-content;
+                border-radius: 12px;
+            }
+
+            a:nth-child(1){
+                background-color: $white-color;
+                color: $black-color;
+            }
+        }
+    }
+}
+
+.second-container{
+    width: 100%;
+    position: relative;
+    padding-bottom: 100px;
+    .container{
+        .first-section{
+            display: flex;
+            gap: 130px;
+
+            &>div{
+                padding-top: 56px;
+                max-width: 600px;
+            }
+
+            img{
+                width: 550px;
+                height: 401px;
+            }
+        }
+
+        .second-section{
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+
+            .first{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            
+            
+            &>p{
+                max-width: 421px;
+                font-weight: bold;
+            }
+
+            &>div{
+                h3{
+                    font-family: $font-family-Playfair;
+                    font-weight: bold;
+
+                }
+
+                    p{
+                        a{
+                            color: #292464;
+                            font-weight: 700;
+                            text-decoration: underline;
+                        }
+                    }
+            }
+        }
+
+        .second{
+            background-color: $primary-color;
+            padding: 24px 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+            text-align: center;
+
+            h1{
+                color: $white-color;
+                font-family: $font-family-Playfair;
+                font-size: 48px;
+            }
+
+            p{
+                color: $white-color;
+            }
+
+            a{
+                padding: 15px 48px;
+                border: 1px solid $white-color;
+                width: fit-content;
+                border-radius: 12px;
+                background: rgba(185, 31, 39, 0.50);
+
+            }
+
+        }
+            
+        }
+    }
+
+    svg{
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        right: -5rem;
+        top: -6rem;
+        width: 500px;
+        height: 700px;
+        opacity: .5;
+    }
+}

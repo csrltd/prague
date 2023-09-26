@@ -1,0 +1,58 @@
+@import "../../main/variables";
+.hero-container{
+    height: 65vh;
+    color: $white-color;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &>div{
+        max-width: 600px;
+        color: $white-color;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        z-index: 4;
+
+        h1{
+            font-size: 48px;
+            font-weight: 700;
+            font-family:  $font-family-Playfair;
+            letter-spacing: 3px;
+        }
+
+        p{
+            font-weight: 500;
+        }
+    }
+}
+
+.second-container{
+    width: 100%;
+
+    .contact{
+        flex-direction: column;
+
+        .title{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+
+            h1{
+                font-size: 45px;
+                font-family: $font-family-Playfair;
+            }
+
+            p{
+                font-weight: 500;
+            }
+        }
+
+        &>.second{
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+        }
+    }
+}
