@@ -85,7 +85,7 @@
 }
 .second-container .second-section .img-container {
   width: 50%;
-  background-image: url("/prague/static/img/case-management-img/social.jpg");
+  background-image: url("../../../img/case-management-img/social.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -128,7 +128,7 @@
 }
 .second-container .third-section .img-container {
   width: 50%;
-  background-image: url("/prague/static/img/case-management-img/case-management.jpg");
+  background-image: url("../../../img/case-management-img/case-management.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

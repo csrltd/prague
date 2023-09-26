@@ -69,7 +69,7 @@
   gap: 10px;
 }
 .second-container .first-section .second-wrapper {
-  background-image: url(/prague/static/img/rehabilitation/rehabilitation-background.jpg);
+  background-image: url("../../../img/rehabilitation/rehabilitation-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -114,7 +114,7 @@
   font-size: 45px;
 }
 .second-container .second-section .second {
-  background-image: url(/prague/static/img/rehabilitation/massage.jpg);
+  background-image: url("../../../img/rehabilitation/massage.jpg");
   width: 30%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -163,7 +163,7 @@
 }
 .second-container .third-section .img-container {
   width: 40%;
-  background-image: url("/prague/static/img/rehabilitation/massage-2.jpg");
+  background-image: url("../../../img/rehabilitation/massage-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -205,7 +205,7 @@
 }
 .second-container .fourth-section .img-container {
   width: 40%;
-  background-image: url("/prague/static/img/rehabilitation/massage-3.jpg");
+  background-image: url("../../../img/rehabilitation/massage-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -228,7 +228,7 @@
 }
 .second-container .last-section .first-wrapper .img-container {
   width: 50%;
-  background-image: url(/prague/static/img/price-img/nurse.jpg);
+  background-image: url("../../../img/price-img/nurse.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
