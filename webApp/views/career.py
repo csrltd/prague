@@ -18,6 +18,6 @@ def jobList(request):
     # print(job_list)
     context = {"job_list": job_list}
     
-    return render(request, 'career.html', context)
+    return render(request, 'career/career.html', context)
 
 

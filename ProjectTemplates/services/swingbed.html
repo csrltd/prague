@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block pagelinks %}
+<link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'css/pages/swingbed/swingbed.css' %}"
+  />
+{% endblock %}
+
+{% block heroDescription %}
+    <div class="container">
+        <h1>Swing Bed</h1>
+    </div>
+{% endblock heroDescription %}
+
+{% block content %}
+
+<section class="second-container">
+      <div class="first-section container">
+        <img src="../../static/img/swingbed-img/swingbed.jpg" alt="swingbed">
+        <div>
+            <h1>Swing Bed Program</h1>
+            <p>After surgery or hospitalization, some patients require additional care and transfer into a nursing home or rehabilitation facility to help improve their physical functioning. At Prague Regional Memorial Hospital, we can “swing” you from the hospital into our Swing Bed Program, which includes skilled nursing, physical rehabilitation and other services based on your treatment plan. Even if you were hospitalized elsewhere, you can transfer to the Swing Bed Program at Prague Regional Memorial Hospital, bringing you closer to your family.</p>
+        </div>
+      </div>
+      <div class="second-section container">
+        <h1>Who Qualifies for Swing Bed</h1>
+        <div>
+            <p>Patients who would benefit from Prague Regional Memorial Hospital’s Swing Bed Program are those who have already been in the hospital for at least 3 days but require additional nursing care and/or rehabilitation services on a daily basis. Stays usually last from one to three weeks.</p>
+            <p>Even if you were hospitalized elsewhere, you can transfer to the Swing Bed Program at Prague Regional Memorial Hospital, bringing you closer to your family.</p>
+        </div>
+      </div>
+      <div class="third-section container">
+        <div class="first">
+            <p>Examples of patients that would be appropriate for our program are:</p>
+        </div>
+        <div class="second">
+            <div> <p>those needing care after orthopedic surgery, such as joint replacement or fractures</p> </div>
+            <div> <p>patients needing to continue or complete IV therapy</p> </div>
+            <div> <p>patients recovering from an accident, injury or illness</p> </div>
+            <div> <p>patients recovering from an accident, injury or illness</p> </div>
+            <div> <p>post-surgical patients</p> </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}
