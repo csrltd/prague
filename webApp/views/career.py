@@ -15,7 +15,7 @@ def getJobs(request):
 
 def jobList(request):
     job_list = getJobs(request)
-    print(job_list)
+    # print(job_list)
     context = {"job_list": job_list}
     
     return render(request, 'career.html', context)

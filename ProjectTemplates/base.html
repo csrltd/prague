@@ -39,44 +39,16 @@
         <a href="#">Prague Family Clinic</a>
       </div>
     </nav>
-    <section class="hero-container">
-      <div>
-        <div>
-          <h1>A Critical-Access Hospital</h1>
-          <p>
-            Located in Prague, Oklahoma, we proudly serve <br />
-            Lincoln, Pottawatomie, Okfuskee, Seminole, and other <br />
-            surrounding communities
-          </p>
-          <a href="#">Contact Us</a>
-        </div>
 
-        <div>
-          <div>
-            <h3>23</h3>
-            <p>Lorem ipsum dolor</p>
-          </div>
-          <div>
-            <h3>23</h3>
-            <p>Lorem ipsum dolor</p>
-          </div>
-          <div>
-            <h3>23</h3>
-            <p>Lorem ipsum dolor</p>
-          </div>
-          <div>
-            <h3>23</h3>
-            <p>Lorem ipsum dolor</p>
-          </div>
-        </div>
-      </div>
+    <section class="hero-container">
+      {% block heroDescription %}
+      {% endblock heroDescription %}
     </section>
-    <section class="second-container">
+    
     {% block content %} {% endblock %}
 
-    {% include "footer.html" %}
-    </section>
 
+    {% include "footer.html" %}
     
     <script src="../static/js/main/main.js"></script>
     <script src="../static/js/pages/home/home.js"></script>

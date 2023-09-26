@@ -5,12 +5,127 @@
 <link
       rel="stylesheet"
       type="text/css"
-      href="{% static 'css/pages/home/home.css' %}"
+      href="{% static 'css/pages/employment/employment.css' %}"
     />
 {% endblock %}
 
+{% block heroDescription %}
+  <div class="container">
+    <h1>Careers Portal</h1>
+    <p>Welcome to our Careers Portal! If you do not see an open position that matches your qualifications at this time please create a candidate profile by selecting "Create Account" on the right-hand side to be considered for future openings.</p>
+  </div>
+{% endblock heroDescription %}
+
 {% block content %}
-<h1>Job Listings</h1>
+  <section class="job-container">
+    <div class="container">
+        <div class="sign-in-container">
+            <a href="#">Sign in</a>
+        </div>
+        <div class="job-listing-section">
+            <div class="sidebar">
+                <h1>Filter</h1>
+                <div class="availability">
+                        <h4>Availability</h4>
+                        <div class="freelance">
+                            <input type="checkbox" id="freelance" name="freelance">
+                            <label for="freelance">Freelance/Contract</label>
+                        </div>
+                        <div class="fulltime">
+                            <input type="checkbox" id="fulltime" name="fulltime">
+                            <label for="fulltime">Full Time</label>
+                        </div>
+                </div>
+                <div class="like-job">
+                
+                        <h4>Jobs you might like</h4>
+                        <div class="recent">
+                            <input type="checkbox" id="recent" name="recent_jobs">
+                            <label for="recent">Most Recent</label>
+                        </div>
+                        <div class="saved">
+                            <input type="checkbox" id="saved" name="saved_jobs">
+                            <label for="saved">Saved Jobs</label>
+                        </div>
+                  
+                </div>
+                <div class="specialties">
+                        <h4>Specialties</h4>
+                        <div class="lab">
+                            <input type="checkbox" id="lab" name="lab_tech">
+                            <label for="lab">LAB TECH (22694)</label>
+                        </div>
+                        <div class="cook">
+                            <input type="checkbox" id="cook" name="cook">
+                            <label for="cook">COOK (22338)</label>
+                        </div>
+                        <div class="physical-therapy">
+                            <input type="checkbox" id="physical-therapy" name="physical_therapy">
+                            <label for="physical-therapy">Physical Therapy Assistant</label>
+                        </div>
+                </div>
+            </div>
+        <div class="right-section">
+            <div class="search-container">
+                <form action="#" method="get">
+                    <input type="text" placeholder="Search by Title or any job’s keyword">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
+            <div class="job-listing">
+              {% for job in job_list %}
+                <div class="jobs">
+                    <div class="first">
+                        <h1>{{ job.title }} ({{job.jobCode}})</h1>
+                        <h2>{{ job.companyName }} - {{ job.jobLocation.city }}, {{ job.jobLocation.state }}, {{job.jobLocation.zip }}</h2>
+                        <p>
+                          <!-- {{ job.description | slice:":250" | safe }} -->
+                           {{ job.description|truncatechars_html:250 | safe | striptags}}
+                        </p>
+                    </div>
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+                {% endfor %}
+
+                <!-- <div class="jobs">
+                    <div class="first">
+                        <h1>Physical Therapy Assistant (PTA) (15223)</h1>
+                        <h2>Prague Regional Memorial Hospital - Prague, OK, 74864</h2>
+                        <p>Position Summary The Physical Therapist Assistant is responsible for administering physical therapy treatment interventions guided by a plan </p>
+                    </div>
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+
+                <div class="jobs">
+                    <div class="first">
+                        <h1>Physical Therapy Assistant (PTA) (15223)</h1>
+                        <h2>Prague Regional Memorial Hospital - Prague, OK, 74864</h2>
+                        <p>Position Summary The Physical Therapist Assistant is responsible for administering physical therapy treatment interventions guided by a plan </p>
+                    </div>
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+
+                <div class="jobs">
+                    <div class="first">
+                        <h1>Physical Therapy Assistant (PTA) (15223)</h1>
+                        <h2>Prague Regional Memorial Hospital - Prague, OK, 74864</h2>
+                        <p>Position Summary The Physical Therapist Assistant is responsible for administering physical therapy treatment interventions guided by a plan </p>
+                    </div>
+                    <i class="fa-regular fa-bookmark"></i>
+                </div> -->
+
+            </div>
+        </div>
+            
+        </div>
+    </div>
+  </section>
+
+
+{% endblock content %}
+
+<!-- <h1>Job Listings</h1>
 <ul>
   {% for job in job_list %}
   <li>
@@ -27,6 +142,4 @@
   {% empty %}
   <li>No job listings available.</li>
   {% endfor %}
-</ul>
-
-{% endblock content %}
+</ul> -->
