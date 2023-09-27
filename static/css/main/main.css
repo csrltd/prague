@@ -43,17 +43,21 @@ nav .hamburger {
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 7px;
   transition: 0.3s ease;
   display: none;
   position: relative;
   right: -3rem;
+  height: 40px;
+  width: 40px;
 }
 nav .hamburger span {
   height: 5px;
   width: 40px;
   background-color: #ffffff;
   border-radius: 2px;
+  transition: 0.3s ease;
 }
 nav .close {
   transition: 0.3s ease;
@@ -91,7 +95,7 @@ nav div > a {
 .hero-container #nav {
   width: 100%;
   position: fixed;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease;
   z-index: 999;
 }
 
@@ -201,7 +205,7 @@ nav div > a {
 }
 .our-services .services .service:hover > div {
   height: auto;
-  bottom: 3rem;
+  bottom: 1rem;
 }
 .our-services .services .service:hover p {
   visibility: visible;
@@ -307,15 +311,16 @@ nav div > a {
   flex-direction: row;
   gap: 3rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .testimonials .testimonial .card {
   position: relative;
   width: 100%;
   max-width: 400px;
   background-color: rgba(147, 147, 147, 0.2);
-  padding: 32px;
+  padding: 40px;
   border-radius: 12px;
-  height: 250px;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -423,18 +428,47 @@ footer .sub-container .second-section span {
   .container {
     margin-inline: 100px;
   }
+  .testimonials {
+    padding-inline: 80px;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .testimonials {
+    padding-inline: 60px;
+  }
+  .testimonials .testimonial {
+    width: 100%;
+  }
+  .testimonials .testimonial .card {
+    max-width: 80%;
+  }
+  .testimonials .testimonial .card img {
+    left: calc(50% - 40.5px);
+  }
 }
 @media screen and (max-width: 1100px) {
   nav {
     font-size: 14px;
     padding-left: 50px;
   }
+  .our-services .service-title {
+    width: 80%;
+  }
+  .our-services .services {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .contact .first-section {
+    width: 100%;
+  }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 925px) {
   nav div {
     background-color: #292464;
     position: absolute;
-    top: -60rem;
+    top: -200rem;
     flex-direction: column;
     align-items: flex-start;
     left: 0;
@@ -444,9 +478,11 @@ footer .sub-container .second-section span {
     gap: 0;
     padding-left: 2rem;
     font-size: 24px;
+    transition: 0.4s ease;
+    padding-top: 6rem;
   }
   nav div ul {
-    z-index: 999;
+    z-index: 998;
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
@@ -465,11 +501,54 @@ footer .sub-container .second-section span {
     border: 0;
     width: 100%;
     z-index: 999;
+    transition: 0.3s ease;
   }
   nav div a:hover {
     color: rgb(237, 82, 89);
   }
   nav .hamburger {
     display: flex;
+  }
+  .container {
+    margin-inline: 70px;
+  }
+  footer {
+    padding: 68px 50px 67px 50px;
+    font-size: 18px;
+  }
+  footer .sub-container .first-section {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  nav .hamburger {
+    right: -5rem;
+  }
+  .container {
+    margin-inline: 50px;
+    margin-top: 50px;
+  }
+  .our-services .service-title {
+    width: 80%;
+  }
+  .our-services .services {
+    grid-template-columns: 1fr;
+  }
+  .testimonials {
+    padding: 40px;
+  }
+  .testimonials .testimonial .card {
+    max-width: 100%;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .contact .first-section {
+    width: 100%;
+    padding: 60px 30px;
+    gap: 30px;
+  }
+  .contact .first-section .top h1 {
+    font-size: 35px;
   }
 }/*# sourceMappingURL=main.css.map */
