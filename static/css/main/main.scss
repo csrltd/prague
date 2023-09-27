@@ -631,3 +631,17 @@ footer{
         }
     }
 }
+
+@media screen and (max-width: 450px){
+    nav{
+        padding-inline: 20px;
+        padding-right: $padding-1;
+        &>img{
+            transform: scale(.8);
+        }
+
+        .hamburger{
+            right: -6rem;
+        }
+    }
+}

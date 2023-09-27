@@ -551,4 +551,16 @@ footer .sub-container .second-section span {
   .contact .first-section .top h1 {
     font-size: 35px;
   }
+}
+@media screen and (max-width: 450px) {
+  nav {
+    padding-inline: 20px;
+    padding-right: 153px;
+  }
+  nav > img {
+    transform: scale(0.8);
+  }
+  nav .hamburger {
+    right: -6rem;
+  }
 }/*# sourceMappingURL=main.css.map */
