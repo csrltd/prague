@@ -90,12 +90,25 @@ nav{
         ul{
             display: flex;
             gap: 2rem;
+
+            a{
+                transition: .3s ease-in-out;
+                &:hover{
+                    color: rgb(237, 82, 89);
+                }
+            }
         }
         &>a{
             border: 1px solid $white-color;
             border-radius: 12px;
             display: inline-block;
             padding: 12px 25px;
+            transition: .3s ease-in-out;
+
+            &:hover{
+                background-color: $white-color;
+                color: rgb(237, 82, 89);
+            }
         }
     }
 
@@ -565,7 +578,8 @@ footer{
                 z-index: 999;
                 transition: .3s ease;
                 &:hover{
-                    color: rgb(237, 82, 89);;
+                    background-color: transparent;
+                    color: rgb(237, 82, 89);
                 }
             }
             

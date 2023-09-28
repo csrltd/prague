@@ -33,7 +33,7 @@
     }
     .first-section{
         display: flex;
-        gap: 77px;
+        gap: 60px;
 
         img{
             width: 608px;
@@ -45,7 +45,7 @@
             width: 50%;
             display: flex;
             flex-direction: column;
-            gap: 48px;
+            gap: 30px;
             justify-content: center;
             h1{
                 font-family: $font-family-Playfair;
@@ -104,4 +104,49 @@
         }
     }
 
+}
+
+@media screen and (max-width: 925px){
+    .second-container{
+        .first-section{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+    
+            img{
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+    
+            &>div{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                justify-content: center;
+                h1{
+                    font-family: $font-family-Playfair;
+                    font-size: 45px;
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .third-section{
+            flex-direction: column;
+            .first{
+                width: 100%;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px){
+    .container{
+        margin-inline: 30px;
+    }
 }

@@ -40,7 +40,7 @@
             width: 55%;
             display: flex;
             flex-direction: column;
-            gap: 48px;
+            gap: 30px;
             justify-content: center;
             h1{
                 font-family: $font-family-Playfair;
@@ -62,7 +62,7 @@
         .first{
             width: 50%;
             color: $white-color;
-            padding: 46px 44px 53px 142px;
+            padding: 46px 44px 53px 100px;
             background-color: $primary-color;
             display: flex;
             flex-direction: column;
@@ -111,7 +111,7 @@
         .second{
             width: 50%;
             color: $white-color;
-            padding: 46px 142px 53px 44px;
+            padding: 46px 100px 53px 44px;
             background-color: $primary-color;
             display: flex;
             flex-direction: column;
@@ -150,6 +150,68 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+        }
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .second-container{
+        .first-section{
+            flex-direction: column;
+            &>div{
+                width: 100%;
+            }
+        }
+
+        .second-section{
+            flex-direction: column-reverse;
+            .first{
+                width: 100%;
+                padding: 46px 44px 53px 53px;
+            }
+            .img-container{
+                width: 100%;
+                height: 350px;
+            }
+        }
+
+        .third-section{
+            flex-direction: column;
+            .second{
+                width: 100%;
+                padding: 46px 53px 53px 44px;
+            }
+            .img-container{
+                width: 100%;
+                height: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .hero-container{    
+        &>div{    
+            h1{
+                font-size: 36px;
+            }
+    
+        }
+    }
+
+    .second-container{
+        .second-section{
+            flex-direction: column-reverse;
+            .first{
+                width: 100%;
+            }
+        }
+
+        .third-section{
+            .img-container{
+                width: 100%;
+                height: 350px;
+            }
         }
     }
 }

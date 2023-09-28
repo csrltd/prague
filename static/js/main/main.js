@@ -2,7 +2,7 @@ const navbar = document.querySelector('#nav');
 const linksContainer = document.querySelector('#links-container');
 const hamburger = document.querySelector('#hamburger');
 window.onscroll = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 50) {
         navbar.classList.add('nav-active');
     } else {
         navbar.classList.remove('nav-active');
