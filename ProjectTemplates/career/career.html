@@ -26,28 +26,31 @@
             <div class="sidebar">
                 <h1>Filter</h1>
                 <div class="availability">
-                        <h4>Availability</h4>
-                        <div class="freelance">
-                            <input type="checkbox" id="freelance" name="freelance">
-                            <label for="freelance">Freelance/Contract</label>
-                        </div>
-                        <div class="fulltime">
-                            <input type="checkbox" id="fulltime" name="fulltime">
-                            <label for="fulltime">Full Time</label>
-                        </div>
+                    <h4>Availability</h4>
+                    <div class="freelance">
+                        <input type="checkbox" id="freelance" name="Contract" class="filter-checkbox">
+                        <label for="freelance">Freelance/Contract</label>
+                    </div>
+                    <div class="fulltime">
+                        <input type="checkbox" id="fulltime" name="fulltime" class="filter-checkbox" value="fulltime">
+                        <label for="fulltime">Full Time</label>
+                    </div>
+                    <div class="fulltime">
+                        <input type="checkbox" id="parttime" name="parttime" class="filter-checkbox" value="parttime">
+                        <label for="parttime">Part Time</label>
+                    </div>
                 </div>
+
                 <div class="like-job">
-                
-                        <h4>Jobs you might like</h4>
-                        <div class="recent">
-                            <input type="checkbox" id="recent" name="recent_jobs">
-                            <label for="recent">Most Recent</label>
-                        </div>
-                        <div class="saved">
-                            <input type="checkbox" id="saved" name="saved_jobs">
-                            <label for="saved">Saved Jobs</label>
-                        </div>
-                  
+                    <h4>Jobs you might like</h4>
+                    <div class="recent">
+                        <input type="checkbox" id="recent" name="recent_jobs">
+                        <label for="recent">Most Recent</label>
+                    </div>
+                    <div class="saved">
+                        <input type="checkbox" id="saved" name="saved_jobs">
+                        <label for="saved">Saved Jobs</label>
+                    </div>
                 </div>
                 <div class="specialties">
                         <h4>Specialties</h4>
@@ -64,11 +67,12 @@
                             <label for="physical-therapy">Physical Therapy Assistant</label>
                         </div>
                 </div>
+                <script src="../../static/js/pages/career/filter.js"></script>
             </div>
         <div class="right-section">
             <div class="search-container">
                 <form action="#" method="get">
-                    <input type="text" placeholder="Search by Title or any job’s keyword">
+                    <input type="text" id="search-input" placeholder="Search by Title or any job’s keyword">
                     <button type="submit">Search</button>
                 </form>
             </div>
@@ -88,34 +92,23 @@
                 </div>
                 {% endfor %}
 
-                <!-- <div class="jobs">
-                    <div class="first">
-                        <h1>Physical Therapy Assistant (PTA) (15223)</h1>
-                        <h2>Prague Regional Memorial Hospital - Prague, OK, 74864</h2>
-                        <p>Position Summary The Physical Therapist Assistant is responsible for administering physical therapy treatment interventions guided by a plan </p>
-                    </div>
-                    <i class="fa-regular fa-bookmark"></i>
-                </div>
-
-                <div class="jobs">
-                    <div class="first">
-                        <h1>Physical Therapy Assistant (PTA) (15223)</h1>
-                        <h2>Prague Regional Memorial Hospital - Prague, OK, 74864</h2>
-                        <p>Position Summary The Physical Therapist Assistant is responsible for administering physical therapy treatment interventions guided by a plan </p>
-                    </div>
-                    <i class="fa-regular fa-bookmark"></i>
-                </div>
-
-                <div class="jobs">
-                    <div class="first">
-                        <h1>Physical Therapy Assistant (PTA) (15223)</h1>
-                        <h2>Prague Regional Memorial Hospital - Prague, OK, 74864</h2>
-                        <p>Position Summary The Physical Therapist Assistant is responsible for administering physical therapy treatment interventions guided by a plan </p>
-                    </div>
-                    <i class="fa-regular fa-bookmark"></i>
-                </div> -->
-
             </div>
+            <script>
+                const jobListData = [
+                    {% for job in job_list %}
+                        {
+                            "title": "{{ job.title }}",
+                            "companyName": "{{ job.companyName }}",
+                            "city": "{{ job.jobLocation.city }}",
+                            "state": "{{ job.jobLocation.state }}",
+                            "zip": "{{ job.jobLocation.zip }}",
+                            "description": "{{ job.description|truncatechars_html:250|safe|striptags }}"
+                        },
+                    {% endfor %}
+                ];
+            </script>
+
+            <script src="../../static/js/pages/career/career.js"></script>
         </div>
             
         </div>
@@ -125,21 +118,5 @@
 
 {% endblock content %}
 
-<!-- <h1>Job Listings</h1>
-<ul>
-  {% for job in job_list %}
-  <li>
-    <h2>{{ job.title }}</h2>
-    <p>{{ job.description | slice:":200" | safe }}</p>
-    <p>Company: {{ job.companyName }}</p>
-    <p>
-      Location: {{ job.jobLocation.city }}, {{ job.jobLocation.state }}, {{
-      job.jobLocation.zip }}
-    </p>
-    <p>Published Date: {{ job.publishedDate }}</p>
-    <a href="{{ job.applyUrl }}" target="_blank">Apply Now</a>
-  </li>
-  {% empty %}
-  <li>No job listings available.</li>
-  {% endfor %}
-</ul> -->
+
+
