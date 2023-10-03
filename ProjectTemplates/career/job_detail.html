@@ -1,0 +1,6 @@
+
+<h1>{{ job_detail.title }} ({{job_detail.jobCode}})</h1>
+<h2>{{ job_detail.companyName }} - {{ job_detail.jobLocation.city }}, {{ job_detail.jobLocation.state }}, {{job_detail.jobLocation.zip }}</h2>
+<p>{{ job_detail.description | safe }}</p>
+<p>{{job_detail.requirements | safe}}</p>
+<a href="{{job_detail.applyUrl}}">Apply Here</a>

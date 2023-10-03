@@ -129,32 +129,32 @@
   height: 814px;
   gap: 24px;
 }
-.job-container > div .job-listing-section .right-section .job-listing a .jobs {
+.job-container > div .job-listing-section .right-section .job-listing .jobs {
   padding: 24px 19px;
   background-color: rgba(147, 147, 147, 0.1);
   border-radius: 10px;
   display: flex;
 }
-.job-container > div .job-listing-section .right-section .job-listing a .jobs .first {
+.job-container > div .job-listing-section .right-section .job-listing .jobs .first {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.job-container > div .job-listing-section .right-section .job-listing a .jobs .first h1 {
+.job-container > div .job-listing-section .right-section .job-listing .jobs .first h1 {
   font-family: "Playfair Display", serif;
   color: #292464;
 }
-.job-container > div .job-listing-section .right-section .job-listing a .jobs .first h2 {
+.job-container > div .job-listing-section .right-section .job-listing .jobs .first h2 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
   color: #292464;
   letter-spacing: 1px;
 }
-.job-container > div .job-listing-section .right-section .job-listing a .jobs .first p {
+.job-container > div .job-listing-section .right-section .job-listing .jobs .first p {
   font-weight: 500;
   font-size: 19px;
 }
-.job-container > div .job-listing-section .right-section .job-listing a .jobs i {
+.job-container > div .job-listing-section .right-section .job-listing .jobs i {
   font-size: 24px;
 }
 

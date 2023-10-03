@@ -10,10 +10,10 @@ window.onscroll = () => {
 };
 
 hamburger.addEventListener("click", () => {
-    if(hamburger.classList.contains('close')){
-    hamburger.classList.remove('close');
-    linksContainer.style.top = -200+"rem";
-    } else{
+    if (hamburger.classList.contains('close')) {
+        hamburger.classList.remove('close');
+        linksContainer.style.top = -200 + "rem";
+    } else {
         hamburger.classList.add("close");
         linksContainer.style.top = 0;
     }

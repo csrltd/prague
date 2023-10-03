@@ -28,7 +28,7 @@
                 <div class="availability">
                     <h4>Availability</h4>
                     <div class="freelance">
-                        <input type="checkbox" id="freelance" name="Contract" class="filter-checkbox">
+                        <input type="checkbox" id="freelance" name="Contract" class="filter-checkbox" value="contract">
                         <label for="freelance">Freelance/Contract</label>
                     </div>
                     <div class="fulltime">
@@ -40,6 +40,7 @@
                         <label for="parttime">Part Time</label>
                     </div>
                 </div>
+
 
                 <div class="like-job">
                     <h4>Jobs you might like</h4>
@@ -79,17 +80,19 @@
 
             <div class="job-listing">
               {% for job in job_list %}
-                <div class="jobs">
-                    <div class="first">
-                        <h1>{{ job.title }} ({{job.jobCode}})</h1>
-                        <h2>{{ job.companyName }} - {{ job.jobLocation.city }}, {{ job.jobLocation.state }}, {{job.jobLocation.zip }}</h2>
-                        <p>
-                          <!-- {{ job.description | slice:":250" | safe }} -->
-                           {{ job.description|truncatechars_html:250 | safe | striptags}}
-                        </p>
+                <!-- <a href="#"> -->
+                    <div class="jobs">
+                        <div class="first">
+                            <h1><a href="{% url 'home' %}">{{ job.title }} ({{job.jobCode}})</a></h1>
+                            <h2>{{ job.companyName }} - {{ job.jobLocation.city }}, {{ job.jobLocation.state }}, {{job.jobLocation.zip }}</h2>
+                            <p>
+                            <!-- {{ job.description | slice:":250" | safe }} -->
+                            {{ job.description|truncatechars_html:250 | safe | striptags}}
+                            </p>
+                        </div>
+                        <i class="fa-regular fa-bookmark"></i>
                     </div>
-                    <i class="fa-regular fa-bookmark"></i>
-                </div>
+                <!-- </a> -->
                 {% endfor %}
 
             </div>
@@ -105,9 +108,9 @@
                             "description": "{{ job.description|truncatechars_html:250|safe|striptags }}"
                         },
                     {% endfor %}
-                ];
+                ]
             </script>
-
+            <script src="../../static/js/pages/career/filter.js"></script>
             <script src="../../static/js/pages/career/career.js"></script>
         </div>
             
