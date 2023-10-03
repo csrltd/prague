@@ -29,7 +29,7 @@
 }
 .second-container .first-section {
   display: flex;
-  gap: 77px;
+  gap: 60px;
 }
 .second-container .first-section img {
   width: 608px;
@@ -41,7 +41,7 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 30px;
   justify-content: center;
 }
 .second-container .first-section > div h1 {
@@ -91,4 +91,44 @@
   padding: 27px 44px 27px 34px;
   border-radius: 6px;
   background-color: rgba(41, 36, 100, 0.1);
+}
+
+@media screen and (max-width: 925px) {
+  .second-container .first-section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .second-container .first-section img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .second-container .first-section > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+  }
+  .second-container .first-section > div h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    color: #292464;
+  }
+  .second-container .third-section {
+    flex-direction: column;
+  }
+  .second-container .third-section .first {
+    width: 100%;
+  }
+  .second-container .third-section .first p {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .container {
+    margin-inline: 30px;
+  }
 }/*# sourceMappingURL=swingbed.css.map */

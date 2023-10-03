@@ -1,11 +1,12 @@
 @import "../../main/variables";
 
 .hero-container{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     padding: $padding-1 - 70px;
+    padding-top: $padding-1;
     
     &>div:nth-child(1){
         width: 80%;
@@ -69,11 +70,23 @@
     
     &>svg{
         position: absolute;
-        transform: scale(0.7);
+        z-index: -1;
     }
     &>svg:nth-child(1){
-        top: -20rem;
+        top: -10rem;
+        left: -15rem;
+    }
+    &>svg:nth-child(2){
+        top: 35rem;
+        right: -10rem;
+    }
+    &>svg:nth-child(3){
+        top: 122rem;
         left: -23rem;
+    }
+    &>svg:nth-child(4){
+        top: 250rem;
+        right: -10rem;
     }
 
   .choose-us {
@@ -215,15 +228,15 @@
         gap: 24px;
         flex-direction: row;
 
-        & > img {
-          object-fit: cover;
-          width: 189px;
-          height: 217px;
-          object-fit: cover;
+                &>img{
+                    object-fit: cover;
+                    width: 33.3%;
+                    height: 217px;
+                    object-fit: cover;
+                }
+            }
         }
-      }
     }
-  }
 
 
   .trusted-partner {
@@ -243,12 +256,16 @@
         color: $primary-color;
       }
 
-      .partners {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 20px;
-      }
-    }
+            .partners{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
+                place-items: center;
+                gap: 20px;
+                img{
+                    mix-blend-mode: multiply;
+                }
+            }
+        }
 
     .second-section {
       background-color: $primary-color;
@@ -320,3 +337,7 @@
   }
 
 }
+
+
+
+

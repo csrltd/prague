@@ -27,7 +27,7 @@
     .first-section{
         .first-wrapper{
             position: relative;
-            height: 600px;
+            min-height: 600px;
             .first{
                 display: flex;
                 flex-direction: column;
@@ -86,7 +86,7 @@
             background-size: cover;
             color: $white-color;
             min-height: 430px;
-            padding: 270px 193px 49px 128px;
+            padding: 290px 193px 49px 128px;
             display: flex;
             align-items: flex-end;
             z-index: 2;
@@ -101,7 +101,7 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
-                background-color: rgba( $primary-color, 0.4);
+                background-color: rgba( $primary-color, 0.6);
                 z-index: -1;
             }
 
@@ -135,7 +135,6 @@
             width: 30%;
             background-repeat: no-repeat;
             background-size: cover;
-            flex-shrink: 0;
         }
 
         .third{
@@ -267,7 +266,7 @@
         }
 
         .overlay-container{
-            background: rgba(255, 255, 255, 0.70);
+            background: rgba(255, 255, 255, 0.80);
             box-shadow: 0px 10px 22px 0px rgba(0, 0, 0, 0.47);
             padding: 44px 44px 30px 51px;
             max-width: 1000px;
@@ -306,4 +305,270 @@
     }
 }
     
+}
+
+@media screen and (max-width: 1500px){
+    .second-container{
+        .second-section{
+
+            flex-direction: column;
+            padding-bottom: 100px;
+            .first,.third{
+                width: 100%;
+            }
+    
+            .second{
+              display: none;
+            }
+    
+            .third{
+                gap: 24px;
+    
+                h2{
+                    font-family: 24px;
+                }
+    
+                &>div{
+                    display: flex;
+                    flex-direction: column;
+                    div{
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                    }
+                }
+            }
+    
+        }
+    }
+   
+}
+
+@media screen and (max-width: 1050px){
+    .second-container{
+        .first-section{
+            .first-wrapper{
+                min-height: 600px;
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+                padding-bottom: 3rem;
+                .first{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 48px;
+                    h1{
+                        font-family: $font-family-Playfair;        
+                        font-size: 45px;
+                    }
+    
+                    &>div{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                }
+    
+                .second{
+                    position: static;
+                    padding: 40px;
+
+                }
+                
+            }
+    
+            .second-wrapper{
+                background-image: url(/prague/static/img/rehabilitation/rehabilitation-background.jpg);
+                min-height: 300px;
+                padding: 50px 70px 49px 50px;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 925px){
+    .second-container{
+        .third-section{
+            flex-direction: column;
+            .second{
+                width: 100%;
+                padding: 30px 50px;
+                background-color: rgba(41, 36, 100, 0.10);
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+    
+                &>h2{
+                    font-family: $font-family-Playfair;
+                    font-size: 24px;
+                }
+                .list{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                   
+    
+                    &>div{
+                        display: flex;
+                        gap: 12px;
+                        align-items: center;
+                    }
+                }
+            }
+            .img-container{
+                width: 100%;
+                height: 300px;
+                background-image: url("/prague/static/img/rehabilitation/massage-2.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        .fourth-section{
+            margin-bottom: 100px;
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            .first{
+                width: 100%;
+                padding: 46px 44px 53px 50px;
+                background-color: rgba(41, 36, 100, 0.30);
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+    
+                &>h1{
+                    font-family: $font-family-Playfair;
+                    font-size: 45px;
+                }
+    
+                &>h3{
+                    font-size: 24px;
+                }
+    
+                .list{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+    
+                    &>div{
+                        display: flex;
+                        gap: 12px;
+                        align-items: center;
+                    }
+                }
+    
+                .paragraphs{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+                }
+            }
+            .img-container{
+                width: 100%;
+                height: 300px;
+                background-image: url("/prague/static/img/rehabilitation/massage-3.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width: 550px){
+    .hero-container{    
+        &>div{    
+            h1{
+                font-size: 36px;
+            }
+    
+        }
+    }
+    
+        .second-container{
+            .container{
+                margin-inline: 30px;
+            }
+            .first-section{
+                .first-wrapper{
+                    .second{
+                        padding: 20px;
+                        &>div{
+                            flex-direction: column;
+                        }
+                    }
+                }
+
+                .second-wrapper{
+                    padding: 30px;
+                }
+            }
+
+        .third-section{
+            flex-direction: column;
+            .second{
+                padding: 30px;
+            }
+         
+        }
+        .fourth-section{
+            .first{
+                padding: 30px;
+            }
+        }
+
+        .last-section{    
+            .first-wrapper{
+                display: flex;
+                min-height: 634px;
+                width: 100%;
+           
+            .first{
+                width: 100%;
+                min-height: 634px;
+                background-color: $primary-color;
+            }
+            .img-container{
+                display: none;
+            }
+    
+            .overlay-container{
+                background: rgba(255, 255, 255, 0.80);
+                box-shadow: 0px 10px 22px 0px rgba(0, 0, 0, 0.47);
+                padding: 30px;
+                width: 100%;
+                display: flex;
+                align-self: center;
+                position: static;
+                gap: 24px;
+    
+                h1{
+                    font-size: 40px;
+                }
+    
+                
+            }
+        }
+    
+        &>h2{
+            font-family: $font-family-Playfair;
+            font-size: 24px;
+        }
+    
+        .list{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+    
+            div{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+}
 }
