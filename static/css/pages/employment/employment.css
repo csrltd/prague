@@ -28,6 +28,85 @@
   width: 100%;
   padding-bottom: 100px;
 }
+.job-container .modal {
+  background-color: #292464;
+  height: 500px;
+  width: 70vw;
+  z-index: 3;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 20px;
+  display: none;
+}
+.job-container .modal i {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 50px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #292464;
+}
+.job-container .modal #apply {
+  position: absolute;
+  border: 2px solid #ffffff;
+  padding: 0.5rem 2rem;
+  bottom: 1rem;
+  right: 1rem;
+  transition: 0.3s ease;
+}
+.job-container .modal #apply:hover {
+  background-color: #ffffff;
+  color: #292464;
+  border-color: #292464;
+}
+.job-container .modal .modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 24px 70px 24px;
+  gap: 1rem;
+  width: 100%;
+  color: #ffffff;
+  overflow-y: scroll;
+  height: 350px;
+  top: 4rem;
+}
+.job-container .modal .modal-content h1 {
+  font-size: 30px;
+}
+.job-container .modal .modal-content h2 {
+  font-size: 18px;
+}
+.job-container .modal .modal-content h3 {
+  font-size: 14px;
+}
+.job-container .modal .modal-content img {
+  width: 100px;
+  height: 90px;
+  position: absolute;
+  border-radius: 20px;
+  bottom: -3rem;
+  left: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.job-container .modal-overlay {
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  cursor: pointer;
+  display: none;
+}
 .job-container > div {
   display: flex;
   flex-direction: column;
@@ -128,12 +207,22 @@
   overflow-y: scroll;
   height: 814px;
   gap: 24px;
+  color: #000000;
 }
 .job-container > div .job-listing-section .right-section .job-listing .jobs {
   padding: 24px 19px;
   background-color: rgba(147, 147, 147, 0.1);
   border-radius: 10px;
   display: flex;
+  position: relative;
+}
+.job-container > div .job-listing-section .right-section .job-listing .jobs > a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
 }
 .job-container > div .job-listing-section .right-section .job-listing .jobs .first {
   display: flex;
@@ -153,6 +242,7 @@
 .job-container > div .job-listing-section .right-section .job-listing .jobs .first p {
   font-weight: 500;
   font-size: 19px;
+  color: #000000;
 }
 .job-container > div .job-listing-section .right-section .job-listing .jobs i {
   font-size: 24px;

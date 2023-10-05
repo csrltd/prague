@@ -31,6 +31,96 @@
 .job-container{
     width: 100%;
     padding-bottom: 100px;
+    .modal {
+        background-color: $primary-color;
+        height: 500px;
+        width: 70vw;
+        z-index: 3;
+        position: fixed;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        border-radius: 20px;
+        display: none;
+
+        i {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 50px;
+            cursor: pointer;
+            color: $white-color;
+            background-color: $primary-color;
+          }
+
+        #apply{
+            position: absolute;
+            border: 2px solid $white-color;
+            padding: .5rem 2rem;
+            bottom: 1rem;
+            right: 1rem;
+            transition: .3s ease;
+
+            &:hover{
+                background-color: $white-color;
+                color: $primary-color;
+                border-color: $primary-color;
+            }
+        }
+      
+        .modal-content {
+          position: relative;
+          display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        padding: 10px 24px 70px 24px;
+        gap: 1rem;
+        width: 100%;
+        color: $white-color;
+        overflow-y: scroll;
+        height: 350px;
+        top: 4rem;
+      
+          h1 {
+            font-size: 30px;
+          }
+      
+          h2 {
+            font-size: 18px;
+          }
+
+          h3{
+            font-size: 14px;
+          }
+
+          
+      
+          img {
+            width: 100px;
+            height: 90px;
+            position: absolute;
+            border-radius: 20px;
+            bottom: -3rem;
+            left: 10rem;
+            object-fit: cover;
+          }
+        }
+      }
+      
+      .modal-overlay {
+        content: '';
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        z-index: 2;
+        height: 100vh;
+        width: 100vw;
+        cursor: pointer;
+        display: none;
+      }
 
     &>div{
         display: flex;
@@ -136,13 +226,24 @@
                     overflow-y: scroll;
                     height: 814px;
                     gap: 24px;
-                    // a{
-                    //     color: $black-color;
+                    color: $black-color;
+
                         .jobs{
                             padding: 24px 19px;
                             background-color: rgba($color: $grey-color, $alpha: 0.1);
                             border-radius: 10px;
                             display: flex;
+                            position: relative;
+
+                            >a{
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                left: 0;
+                                bottom: 0;
+                                background-color: transparent;
+                            }
+
                             .first{
                                 display: flex;
                                 flex-direction: column;
@@ -161,6 +262,7 @@
                                 p{
                                     font-weight: 500;
                                     font-size: 19px;
+                                    color: $black-color;
                                 }
                             }
     
@@ -174,7 +276,7 @@
             }
         }
     }
-}
+
 
 @media screen and (max-width: 925px){
     .job-container{
