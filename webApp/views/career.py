@@ -10,7 +10,7 @@ def getJobs(request):
         data = response.json()
         # print(data['jobs'])
         job_items = data.get('jobs', [])
-        print(job_items)
+        # print(job_items)
         return job_items
     else:
         return []
@@ -49,31 +49,41 @@ def getJobDetail(request, id):
 
 
 def filter_jobs(request):
-    selected_filters = request.GET.getlist('filters[]')
-
-    # Define the API endpoint URL where you are fetching job data
+    # if request.method == 'POST':
+        # selected_filter = request.POST.getlist('jobTypes')
+    selected_filter = 'parttime'
+    print(selected_filter)
+    
+    
     api_url = "https://recruiting.paylocity.com/recruiting/v2/api/feed/jobs/c3d7ea2b-cf6b-479a-a7f5-79ef063bb61f"
 
     try:
-        # Make a GET request to the API with selected filters
-        response = requests.get(api_url, params={'filters': selected_filters})
-
-        # Check if the request was successful
+        
+        response = requests.get(api_url)
+        
         if response.status_code == 200:
-            filtered_jobs = response.json().get('jobs', [])
-            # Process the filtered job data as needed
+            
+            all_jobs = response.json().get('jobs', [])
+            
+            
+            # filtered_jobs = [job for job in all_jobs if job.get('jobTypes') in selected_filter]
+            # print(filtered_jobs)
 
+            filtered_jobs = [job for job in all_jobs if job.get('jobTypes') == selected_filter]
+            
+            
             serialized_jobs = [{'title': job['title'], 'description': job['description']} for job in filtered_jobs]
-
+            print(serialized_jobs)
+            
             return JsonResponse({'jobs': serialized_jobs})
 
         else:
-            # Handle API request error here, e.g., return an error JSON response
             return JsonResponse({'error': 'API request failed'}, status=500)
 
     except requests.exceptions.RequestException as e:
-        # Handle request exception, e.g., return an error JSON response
         return JsonResponse({'error': str(e)}, status=500)
+
+
 
 
 

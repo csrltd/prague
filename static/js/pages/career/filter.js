@@ -70,18 +70,17 @@
 $('.filter-checkbox').on('change', function () {
     // Get selected filters
     const selectedFilters = $('.filter-checkbox:checked').map(function () {
-        return this.name;
+        return $(this).val();
     }).get();
     console.log(selectedFilters)
 
     $.ajax({
         url: '/filter-jobs/',
         method: 'GET',
-        data: { filters: selectedFilters },
+        data: { jobTypes: selectedFilters },
         success: function (data) {
             const jobListingContainer = $('.job-listing');
             jobListingContainer.empty();
-
 
             // Check if the 'jobs' property exists in data
             if (data.hasOwnProperty('jobs') && Array.isArray(data.jobs)) {

@@ -27,18 +27,34 @@
                 <h1>Filter</h1>
                 <div class="availability">
                     <h4>Availability</h4>
-                    <div class="freelance">
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="freelance">
+                            <input type="checkbox" id="freelance" name="jobTypes" class="filter-checkbox" value="contract">
+                            <label for="freelance">Freelance/Contract</label>
+                        </div>
+                        <div class="fulltime">
+                            <input type="checkbox" id="fulltime" name="jobTypes" class="filter-checkbox" value="fulltime">
+                            <label for="fulltime">Full Time</label>
+                        </div>
+                        <div class="fulltime">
+                            <input type="checkbox" id="parttime" name="parttime" class="filter-checkbox" value="parttime">
+                            <label for="parttime">Part Time</label>
+                        </div>
+                    </form>
+
+                    <!-- <form class="freelance" method="get">
                         <input type="checkbox" id="freelance" name="Contract" class="filter-checkbox" value="contract">
                         <label for="freelance">Freelance/Contract</label>
-                    </div>
-                    <div class="fulltime">
-                        <input type="checkbox" id="fulltime" name="fulltime" class="filter-checkbox" value="fulltime">
+                    </form>
+                    <form method="get" class="fulltime">
+                        <input type="checkbox" id="fulltime" name="jobTypes" class="filter-checkbox" value="fulltime">
                         <label for="fulltime">Full Time</label>
-                    </div>
-                    <div class="fulltime">
-                        <input type="checkbox" id="parttime" name="parttime" class="filter-checkbox" value="parttime">
+                    </form>
+                    <form method="get" class="fulltime">
+                        <input type="checkbox" id="parttime" name="jobTypes" class="filter-checkbox" value="parttime">
                         <label for="parttime">Part Time</label>
-                    </div>
+                    </form> -->
                 </div>
 
 
