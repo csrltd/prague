@@ -15,7 +15,7 @@ const closeModal = () => {
 }
 cardWrapper.addEventListener('click', (e) => {
     e.preventDefault();
-    if (e.target.tagName === "A") {
+    if (e.target.classList.contains('jobs-overlay')) {
         modal.style.display = 'block';
         modalOverlay.style.display = 'block';
 
