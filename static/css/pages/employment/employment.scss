@@ -35,9 +35,9 @@
         background-color: $primary-color;
         height: 500px;
         width: 70vw;
-        z-index: 3;
+        z-index: 1100;
         position: fixed;
-        top: 50%;
+        top: 60%;
         right: 50%;
         transform: translate(50%, -50%);
         border-radius: 20px;
@@ -80,6 +80,20 @@
         overflow-y: scroll;
         height: 350px;
         top: 4rem;
+
+        &::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+       &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba($grey-color,1); 
+            border-radius: 10px;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba($grey-color, 1); 
+        }
       
           h1 {
             font-size: 30px;
@@ -115,7 +129,7 @@
         left: 0;
         background-color: rgba(0, 0, 0, 0.5);
         position: fixed;
-        z-index: 2;
+        z-index: 1000;
         height: 100vh;
         width: 100vw;
         cursor: pointer;
@@ -228,6 +242,20 @@
                     gap: 24px;
                     color: $black-color;
 
+                    &::-webkit-scrollbar {
+                        width: 12px;
+                    }
+                    
+                   &::-webkit-scrollbar-track {
+                        -webkit-box-shadow: inset 0 0 6px rgba($primary-color, 1); 
+                        border-radius: 10px;
+                    }
+                    
+                    &::-webkit-scrollbar-thumb {
+                        border-radius: 10px;
+                        -webkit-box-shadow: inset 0 0 6px rgba($primary-color, 1); 
+                    }
+
                         .jobs{
                             padding: 24px 19px;
                             background-color: rgba($color: $grey-color, $alpha: 0.1);
@@ -235,13 +263,14 @@
                             display: flex;
                             position: relative;
 
-                            >a{
+                            >.jobs-overlay{
                                 position: absolute;
                                 top: 0;
                                 right: 0;
                                 left: 0;
                                 bottom: 0;
                                 background-color: transparent;
+                                cursor: pointer;
                             }
 
                             .first{
@@ -293,6 +322,9 @@
         margin-inline: 30px;
     }
     .job-container{
+        .modal {
+            width: 90vw;
+        }
         &>div{
             .job-listing-section{
                 .right-section{
