@@ -66,6 +66,7 @@
 // });
 
 
+
 // Handle checkbox change event
 $('.filter-checkbox').on('change', function () {
     // Get selected filters
@@ -84,26 +85,22 @@ $('.filter-checkbox').on('change', function () {
 
             // Check if the 'jobs' property exists in data
             if (data.hasOwnProperty('jobs') && Array.isArray(data.jobs)) {
-                // `data.jobs` is an array, so you can use `forEach` on it
                 data.jobs.forEach(function (job) {
+                    console.log(job)
                     const jobDiv = $('<div>').addClass('jobs');
                     jobDiv.html(`
                     <div class="first">
                         <h1>${job.title}</h1>
                         <h2>${job.companyName} - ${job.city}, ${job.state}, ${job.zip}</h2>
-                        <p>${job.description}</p>
+                        <p>${job.description.replace(/<[^>]*>?/gm, '').substring(0, 250)}${job.description.length > 250 ? '...' : ''}</p>
                     </div>
                     <i class="fa-regular fa-bookmark"></i>
                 `);
                     jobListingContainer.append(jobDiv);
                 });
             } else {
-                // Handle the case where 'jobs' property is not an array
                 console.error('Data does not contain an array of jobs:', data);
-                // You might want to display an error message or handle this case differently
             }
-
-
         },
         error: function (error) {
             console.error('Error:', error);
