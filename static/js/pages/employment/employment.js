@@ -14,7 +14,7 @@ const closeModal = () => {
     modalOverlay.style.display = 'none';
 }
 cardWrapper.addEventListener('click', (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     if (e.target.tagName === "A") {
         modal.style.display = 'block';
         modalOverlay.style.display = 'block';
