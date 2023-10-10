@@ -1,6 +1,7 @@
 import requests
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
+from datetime import datetime, timedelta
 
 
 def getJobs(request):
@@ -48,39 +49,12 @@ def getJobDetail(request, id):
         return HttpResponse(str(e), content_type="text/plain", status=500)
 
 
-# def filter_jobs(request):
-#     # if request.method == 'POST':
-#         # selected_filter = request.POST.getlist('jobTypes')
-#     selected_filter = 'parttime'
-#     print(selected_filter)
-    
-    
-#     api_url = "https://recruiting.paylocity.com/recruiting/v2/api/feed/jobs/c3d7ea2b-cf6b-479a-a7f5-79ef063bb61f"
 
-#     try:
-#         response = requests.get(api_url)
-#         if response.status_code == 200:
-            
-#             all_jobs = response.json().get('jobs', [])
-            
-#             filtered_jobs = [job for job in all_jobs if job.get('jobTypes') == selected_filter]
-            
-#             serialized_jobs = [{'title': job['title'], 'description': job['description'], 'companyName': job['companyName'], 'zip': job['jobLocation']['zip'], 'city': job['jobLocation']['city'], 'state': job['jobLocation']['state']} for job in filtered_jobs]
-#             # print(serialized_jobs)
-            
-#             return JsonResponse({'jobs': serialized_jobs})
-#         else:
-#             return JsonResponse({'error': 'API request failed'}, status=500)
-
-#     except requests.exceptions.RequestException as e:
-#         return JsonResponse({'error': str(e)}, status=500)
-
-def filter_jobs(request):
+def filter_jobTypes(request):
     if request.method == 'GET':
         
         selected_filter = request.GET.getlist('jobTypes[]')
         print(selected_filter)
-        # selected_filter = 'parttime'
         
         api_url = "https://recruiting.paylocity.com/recruiting/v2/api/feed/jobs/c3d7ea2b-cf6b-479a-a7f5-79ef063bb61f"
 
@@ -104,6 +78,54 @@ def filter_jobs(request):
 
         except requests.exceptions.RequestException as e:
             return JsonResponse({'error': str(e)}, status=500)
+
+
+
+
+def filter_recent_and_past_jobs(request):
+    if request.method == 'GET':
+        # Get the values of the recent_jobs and saved_jobs checkboxes
+        recent_jobs = request.GET.get('recent_jobs')
+        saved_jobs = request.GET.get('saved_jobs')
+        print(recent_jobs)
+
+        api_url = "https://recruiting.paylocity.com/recruiting/v2/api/feed/jobs/c3d7ea2b-cf6b-479a-a7f5-79ef063bb61f"
+
+        try:
+            response = requests.get(api_url)
+            if response.status_code == 200:
+                all_jobs = response.json().get('jobs', [])
+
+                if recent_jobs:
+                    threshold_date = datetime.now() - timedelta(days=7)
+                    filtered_jobs = [job for job in all_jobs if datetime.fromisoformat(job["publishedDate"].split('.')[0]) >= threshold_date ]
+                    # print(filtered_jobs)
+                elif saved_jobs:
+                    threshold_date = datetime.now() - timedelta(days=7)
+                    filtered_jobs = [job for job in all_jobs if datetime.fromisoformat(job["publishedDate"].split('.')[0]) < threshold_date]
+                    # print(filtered_jobs)
+                else:
+                    
+                    filtered_jobs = all_jobs
+
+                serialized_jobs = [
+                    {
+                        'title': job['title'],
+                        'description': job['description'],
+                        'companyName': job['companyName'],
+                        'zip': job['jobLocation']['zip'],
+                        'city': job['jobLocation']['city'],
+                        'state': job['jobLocation']['state']
+                    } for job in filtered_jobs]
+
+                return JsonResponse({'jobs': serialized_jobs})
+            else:
+                return JsonResponse({'error': 'API request failed'}, status=500)
+
+        except requests.exceptions.RequestException as e:
+            return JsonResponse({'error': str(e)}, status=500)
+
+
 
 
 

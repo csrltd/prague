@@ -60,16 +60,20 @@
 
                 <div class="like-job">
                     <h4>Jobs you might like</h4>
-                    <div class="recent">
-                        <input type="checkbox" id="recent" name="recent_jobs">
-                        <label for="recent">Most Recent</label>
-                    </div>
-                    <div class="saved">
-                        <input type="checkbox" id="saved" name="saved_jobs">
-                        <label for="saved">Saved Jobs</label>
-                    </div>
+
+                    <form method="get" action="{% url 'filter_recent' %}">
+                        {% csrf_token %}
+                        <div class="recent">
+                            <input type="checkbox" id="recent" name="recent_jobs">
+                            <label for="recent">Most Recent</label>
+                        </div>
+                        <div class="saved">
+                            <input type="checkbox" id="saved" name="saved_jobs">
+                            <label for="saved">Past Jobs</label>
+                        </div>
+                    </form>
                 </div>
-                <div class="specialties">
+                <!-- <div class="specialties">
                         <h4>Specialties</h4>
                         <div class="lab">
                             <input type="checkbox" id="lab" name="lab_tech">
@@ -83,7 +87,7 @@
                             <input type="checkbox" id="physical-therapy" name="physical_therapy">
                             <label for="physical-therapy">Physical Therapy Assistant</label>
                         </div>
-                </div>
+                </div> -->
                 <script src="../../static/js/pages/career/filter.js"></script>
             </div>
         <div class="right-section">
@@ -126,6 +130,7 @@
                 ]
             </script>
             <script src="../../static/js/pages/career/filter.js"></script>
+            <script src="../../static/js/pages/career/filter_recent.js"></script>
             <script src="../../static/js/pages/career/career.js"></script>
             <script src="../../static/js/pages/career/employment.js"></script>
         </div>
