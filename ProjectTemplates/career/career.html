@@ -18,7 +18,7 @@
 
 {% block content %}
   <section class="job-container">
-    <div class="modal-overlay"></div>
+    <div class="modal-overlay" id="modal-overlay"></div>
     <div class="modal">
         <i class="fa-solid fa-xmark" id="close-modal"></i>
         <div class="modal-content">
@@ -29,7 +29,7 @@
             <p id="job_requirements">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic cupiditate eveniet animi blanditiis possimus laboriosam facilis nam quos magni voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. At in vitae placeat, distinctio voluptatum perspiciatis dolore nisi facere ab molestiae ex excepturi vel qui velit natus id! Nostrum, quis at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi quam reprehenderit nobis illo. Vitae excepturi, explicabo fugit incidunt tempore magnam, ut aliquam nam id itaque debitis cum ipsam perferendis harum ipsa deserunt beatae? Quae enim mollitia officia unde doloribus incidunt nam soluta? Impedit alias temporibus harum eaque molestias cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cum fuga assumenda dignissimos quam maiores reiciendis ea modi velit tempore officiis voluptas, ut possimus facere nisi voluptatibus dolorum adipisci. Numquam voluptatem eius, ducimus nesciunt, suscipit eaque nemo quaerat similique iste natus perferendis quisquam, facere non. Id cupiditate unde tenetur? Ea sint quisquam laboriosam suscipit doloribus quibusdam ipsam. Voluptatibus cum itaque quas accusantium vero accusamus molestias. Dignissimos eaque eveniet ea quasi! Optio, exercitationem? Eos amet fugit vitae distinctio error repellendus? Cum amet expedita obcaecati laudantium assumenda pariatur, voluptatum saepe aspernatur aliquam iste quidem natus inventore labore voluptates. Mollitia rem sed voluptatum?</p>
 
         </div>
-        <a href="#" id="apply">Apply Now</a>
+        <a href="#" id="apply" target="_blank">Apply Now</a>
     </div>
     <div class="container">
         <div class="sign-in-container">
@@ -64,11 +64,11 @@
                     <form method="get" action="{% url 'filter_recent' %}">
                         {% csrf_token %}
                         <div class="recent">
-                            <input type="checkbox" id="recent" name="recent_jobs">
+                            <input type="checkbox" id="recent" name="recent_jobs" value="true">
                             <label for="recent">Most Recent</label>
                         </div>
                         <div class="saved">
-                            <input type="checkbox" id="saved" name="saved_jobs">
+                            <input type="checkbox" id="saved" name="saved_jobs" value="true">
                             <label for="saved">Past Jobs</label>
                         </div>
                     </form>
@@ -100,11 +100,11 @@
 
             <div class="job-listing">
             {% for job in job_list %}
-                <div class="jobs" data-job-id="{{ job.jobId }}">
+                <div class="jobs" >
                     <div class="jobs-overlay"></div>
-                    <div class="first">
+                    <div class="first" data-job-id="{{job.jobId}}">
                         <h1>{{ job.title }} ({{ job.jobCode }})</h1>
-                        <h2>{{ job.companyName }} - {{ job.jobLocation.city }}, {{ job.jobLocation.state }}, {{ job.jobLocation.zip }}</h2>
+                        <h2>{{ job.companyName }} - {{ job.jobLocation.city }}, {{ job.jobLocation.state }}, {{ job.jobLocation.zip }} {{job.jobId}}</h2>
                         <p>
                             {{ job.description|truncatechars_html:250 | safe | striptags }}
                         </p>
@@ -119,6 +119,7 @@
                 const jobListData = [
                     {% for job in job_list %}
                         {
+                            "jobId": "{{ job.jobId }}",
                             "title": "{{ job.title }}",
                             "companyName": "{{ job.companyName }}",
                             "city": "{{ job.jobLocation.city }}",
