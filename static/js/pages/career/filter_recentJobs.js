@@ -26,7 +26,7 @@ $(document).ready(function () {
                                 <div class="first">
                                     <h1>${job.title}</h1>
                                     <h2>${job.companyName} - ${job.city}, ${job.state}, ${job.zip}</h2>
-                                    <p>${job.description.replace(/<[^>]*>?/gm, '').substring(0, 250)}</p>
+                                    <p>${job.description.replace(/<[^>]*>?/gm, '').substring(0, 250)}${job.description.length > 250 ? '...' : ''}</p>
                                 </div>
                                 <i class="fa-regular fa-bookmark"></i>
                             `);

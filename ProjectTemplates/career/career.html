@@ -73,29 +73,16 @@
                         </div>
                     </form>
                 </div>
-                <!-- <div class="specialties">
-                        <h4>Specialties</h4>
-                        <div class="lab">
-                            <input type="checkbox" id="lab" name="lab_tech">
-                            <label for="lab">LAB TECH (22694)</label>
-                        </div>
-                        <div class="cook">
-                            <input type="checkbox" id="cook" name="cook">
-                            <label for="cook">COOK (22338)</label>
-                        </div>
-                        <div class="physical-therapy">
-                            <input type="checkbox" id="physical-therapy" name="physical_therapy">
-                            <label for="physical-therapy">Physical Therapy Assistant</label>
-                        </div>
-                </div> -->
                 <script src="../../static/js/pages/career/filter.js"></script>
             </div>
         <div class="right-section">
             <div class="search-container">
-                <form action="#" method="get">
-                    <input type="text" id="search-input" placeholder="Search by Title or any job’s keyword">
-                    <button type="submit">Search</button>
+                <form method="get">
+                    {% csrf_token %}
+                    <input type="text" id="search-input" name="search_text" placeholder="Search by Title or any job’s keyword">
+                    <!-- <button type="submit">Search</button> -->
                 </form>
+                
             </div>
 
             <div class="job-listing">
@@ -112,6 +99,8 @@
                     <i class="fa-regular fa-bookmark"></i>
                 </div>
             {% endfor %}
+            
+
             </div>
 
             <script>
@@ -119,7 +108,7 @@
                 const jobListData = [
                     {% for job in job_list %}
                         {
-                            "jobId": "{{ job.jobId }}",
+                            
                             "title": "{{ job.title }}",
                             "companyName": "{{ job.companyName }}",
                             "city": "{{ job.jobLocation.city }}",
@@ -130,8 +119,8 @@
                     {% endfor %}
                 ]
             </script>
-            <script src="../../static/js/pages/career/filter.js"></script>
-            <script src="../../static/js/pages/career/filter_recent.js"></script>
+            <script src="../../static/js/pages/career/filterJobTypes.js"></script>
+            <script src="../../static/js/pages/career/filter_recentJobs.js"></script>
             <script src="../../static/js/pages/career/career.js"></script>
             <script src="../../static/js/pages/career/employment.js"></script>
         </div>
