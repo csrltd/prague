@@ -56,7 +56,7 @@ def getJobDetail(request, id):
             job_list = data.get('jobs', [])
 
             job_detail = next((job for job in job_list if job['jobId'] == int(id)), None)
-            print(job_detail)
+            # print(job_detail)
 
             if job_detail:
                 return JsonResponse(job_detail)
@@ -73,7 +73,7 @@ def getJobDetail(request, id):
 def filter_jobTypes(request):
     if request.method == 'GET':
         selected_filter = request.GET.getlist('jobTypes[]')
-        print(selected_filter)
+        # print(selected_filter)
         
         api_url = "https://recruiting.paylocity.com/recruiting/v2/api/feed/jobs/c3d7ea2b-cf6b-479a-a7f5-79ef063bb61f"
 
@@ -112,17 +112,18 @@ def filter_recent_and_past_jobs(request):
                 all_jobs = response.json().get('jobs', [])
 
                 if recent_jobs:
-                    threshold_date = datetime.now() - timedelta(days=7)
+                    threshold_date = datetime.now() - timedelta(days=30)
                     filtered_jobs = [
                         job for job in all_jobs
-                        if datetime.fromisoformat(job["publishedDate"].split('.')[0]) >= threshold_date
+                        if datetime.fromisoformat(job["publishedDate"].split('.')[0].replace('Z', '')) >= threshold_date
                     ]
                 elif saved_jobs:
-                    threshold_date = datetime.now() - timedelta(days=7)
+                    threshold_date = datetime.now() - timedelta(days=30)
                     filtered_jobs = [
                         job for job in all_jobs
-                        if datetime.fromisoformat(job["publishedDate"].split('.')[0]) <= threshold_date
+                        if datetime.fromisoformat(job["publishedDate"].split('.')[0].replace('Z', '')) <= threshold_date
                     ]
+
                 else:
                     filtered_jobs = all_jobs
 

@@ -73,7 +73,6 @@
                         </div>
                     </form>
                 </div>
-                <script src="../../static/js/pages/career/filter.js"></script>
             </div>
         <div class="right-section">
             <div class="search-container">
@@ -87,9 +86,9 @@
 
             <div class="job-listing">
             {% for job in job_list %}
-                <div class="jobs" >
+                <div class="jobs" data-job-id="{{job.jobId}}">
                     <div class="jobs-overlay"></div>
-                    <div class="first" data-job-id="{{job.jobId}}">
+                    <div class="first" >
                         <h1>{{ job.title }} ({{ job.jobCode }})</h1>
                         <h2>{{ job.companyName }} - {{ job.jobLocation.city }}, {{ job.jobLocation.state }}, {{ job.jobLocation.zip }} {{job.jobId}}</h2>
                         <p>
