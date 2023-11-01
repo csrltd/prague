@@ -54,4 +54,16 @@ class Job(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class ContactMessage(models.Model):
+    fisrt_name = models.CharField(max_length=255, blank=False)
+    last_name = models.CharField(max_length=255, blank=False)
+    phone = models.CharField(max_length=10, blank=False)
+    email = models.EmailField(max_length=255)
+    message = models.TextField(max_length=1000)
+   
+
+    def __str__(self):
+        return self.first_name 
        
