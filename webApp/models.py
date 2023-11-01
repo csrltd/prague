@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.text import slugify
 
+
 # Create your models here.
 class Type(models.Model):
     job_type = models.CharField(max_length=30, null=True, blank=True)
@@ -57,7 +58,7 @@ class Job(models.Model):
 
 
 class ContactMessage(models.Model):
-    fisrt_name = models.CharField(max_length=255, blank=False)
+    first_name = models.CharField(max_length=255, blank=False)
     last_name = models.CharField(max_length=255, blank=False)
     phone = models.CharField(max_length=10, blank=False)
     email = models.EmailField(max_length=255)

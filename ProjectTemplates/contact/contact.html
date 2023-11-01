@@ -38,15 +38,16 @@
                     </div>   
                 </div>
                 <div class="contact-form">
-                    <form action="#" method="get">
+                    <form action="#" method="post">
+                        {% csrf_token %}
                         <div class="names">
-                            {% csrf_token %}
                             {{form.first_name}}
                             {{form.last_name}}
+                            
                         </div>
-                            {{form.email}}
-                            {{from.phone}}
-                            {{from.message}}
+                        {{form.email}}
+                        {{form.phone}}
+                        {{form.message}}
                         <input type="submit" value="Send Message">
                     </form>
                 </div>

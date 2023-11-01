@@ -14,7 +14,7 @@ def contact(request):
             phone = form.cleaned_data['phone']
             email= form.cleaned_data['email']
             message= form.cleaned_data['message']
-            subject = subject
+            subject = "Message from Prague"
             message = f'Name: {first_name}\nLast_Name: {last_name}\nPhone : {phone}\nEmail: {email}\nMessage: {message}'
             from_email = email
             recipient_list = ['csr.chmc@gmail.com']
