@@ -1,5 +1,5 @@
 @import "../../main/variables";
-.hero-container{
+.hero-container1{
     height: 65vh;
     color: $white-color;
     display: flex;
@@ -36,6 +36,7 @@
         align-items: center;
         
         .first{
+            width: 60%;
             display: flex;
             flex-direction: column;
             gap: 35px;
@@ -64,7 +65,7 @@
 
         img{
             border-radius: 20px;
-            height: 561px;
+            height: 587px;
             width: 35%;
             object-fit: cover;
         }

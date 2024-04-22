@@ -1,11 +1,11 @@
-.hero-container {
+.hero-container1 {
   height: 65vh;
   color: #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.hero-container > div {
+.hero-container1 > div {
   max-width: 500px;
   color: #ffffff;
   display: flex;
@@ -13,13 +13,13 @@
   gap: 1.5rem;
   z-index: 4;
 }
-.hero-container > div h1 {
+.hero-container1 > div h1 {
   font-size: 48px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
   letter-spacing: 3px;
 }
-.hero-container > div p {
+.hero-container1 > div p {
   font-weight: 500;
 }
 
@@ -32,6 +32,7 @@
   align-items: center;
 }
 .second-container .about-us .first {
+  width: 60%;
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -57,7 +58,7 @@
 }
 .second-container .about-us img {
   border-radius: 20px;
-  height: 561px;
+  height: 587px;
   width: 35%;
   -o-object-fit: cover;
      object-fit: cover;
