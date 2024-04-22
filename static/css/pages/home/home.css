@@ -1,9 +1,9 @@
 .hero-container {
   min-height: 100vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: column;
-  padding: 83px;
+  padding: 63px;
   padding-top: 153px;
 }
 .hero-container > div:nth-child(1) {
@@ -115,7 +115,7 @@
 }
 .second-container .fight-corona {
   display: flex;
-  gap: 7rem;
+  gap: 1rem;
   align-items: center;
 }
 .second-container .fight-corona > div {
@@ -124,7 +124,7 @@
   gap: 2.5rem;
 }
 .second-container .fight-corona > div > div:nth-child(1) {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -141,7 +141,7 @@
   color: #292464;
 }
 .second-container .fight-corona > div > div:nth-child(2) {
-  width: 100%;
+  width: 80%;
   display: grid;
   grid-template-columns: auto auto;
   gap: 3rem;
@@ -162,7 +162,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
-  width: 47%;
+  width: 100%;
   height: 572px;
 }
 .second-container .we-believe {
@@ -172,7 +172,7 @@
   margin-bottom: 100px;
 }
 .second-container .we-believe > img {
-  width: 1100px;
+  width: 172%;
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -201,14 +201,71 @@
 .second-container .we-believe .believe-section-two .image-gallery {
   display: flex;
   gap: 24px;
-  flex-direction: row;
 }
-.second-container .we-believe .believe-section-two .image-gallery > img {
+.second-container .policies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+.second-container .policies p {
+  font-size: 14px;
+}
+.second-container .policies .left {
+  width: 360px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 25px;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #292464;
+}
+.second-container .policies .left h2 {
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  font-size: 26px;
+}
+.second-container .policies .left .logo-img {
+  width: 161px;
+  height: 161px;
+}
+.second-container .policies .left .logo-img img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 33.3%;
-  height: 217px;
-  object-fit: cover;
+}
+.second-container .policies .policy {
+  width: 360px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 32px;
+  gap: 1rem;
+  background-color: #F4F4F4;
+}
+.second-container .policies .policy h3 {
+  color: #000000;
+  display: block;
+  text-align: center;
+}
+.second-container .policies .policy a {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 11px 26px;
+  background-color: #EABCBF;
+  color: #000000;
+  font-size: 14px;
+}
+.second-container .policies .policy .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 .second-container .trusted-partner {
   display: flex;
@@ -226,14 +283,14 @@
   font-family: "Playfair Display", serif;
   color: #292464;
 }
+.second-container .trusted-partner .first-section h4 {
+  font-size: 24px;
+  color: #000000;
+}
 .second-container .trusted-partner .first-section .partners {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
-  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(min(15rem, 50%), 1fr));
   gap: 20px;
-}
-.second-container .trusted-partner .first-section .partners img {
-  mix-blend-mode: multiply;
 }
 .second-container .trusted-partner .second-section {
   background-color: #292464;
@@ -257,40 +314,4 @@
   width: -moz-fit-content;
   width: fit-content;
   align-self: center;
-}
-.second-container .policies {
-  display: flex;
-  gap: 54px;
-  padding-bottom: 100px;
-}
-.second-container .policies .first-section {
-  display: flex;
-  flex-direction: column;
-  gap: 54px;
-  font-size: 24px;
-  width: 100%;
-}
-.second-container .policies .first-section h2 {
-  color: #292464;
-  font-family: "Playfair Display", serif;
-  font-size: 32px;
-}
-.second-container .policies .first-section h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 24px;
-}
-.second-container .policies .first-section a {
-  color: #000000;
-}
-.second-container .policies .first-section .top, .second-container .policies .first-section .bottom {
-  font-size: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-.second-container .policies > img {
-  width: 1100px;
-  height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }/*# sourceMappingURL=home.css.map */

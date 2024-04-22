@@ -117,7 +117,7 @@ nav div > a:hover {
 
 .hero-container {
   width: 100%;
-  background-image: url("/prague/static/img/home-img/hero-background.jpg");
+  background-image: url("/static/img/home-img/hero-background2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px 15%;
@@ -134,7 +134,7 @@ nav div > a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(41, 36, 100, 0.5);
+  background-color: rgba(41, 36, 100, 0.7);
   z-index: -1;
 }
 
@@ -158,6 +158,7 @@ nav div > a:hover {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  color: #292464;
 }
 .our-services .service-title h2 {
   font-family: "Playfair Display", serif;
@@ -176,7 +177,7 @@ nav div > a:hover {
   width: 100%;
   max-width: 500px;
   height: 250px;
-  background-image: url("/prague/static/img/home-img/services-1.jpg");
+  background-image: url("/static/img/home-img/services-1.jpg");
   border-radius: 12px;
   background-repeat: no-repeat;
   z-index: 2;
@@ -221,6 +222,57 @@ nav div > a:hover {
 .our-services .services .service:hover p {
   visibility: visible;
   opacity: 1;
+}
+
+.strong-mind {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.strong-mind h4 {
+  color: #292464;
+}
+.strong-mind .strong-mind-up {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.strong-mind .strong-mind-up .strong-mind-title {
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #292464;
+}
+.strong-mind .strong-mind-up .strong-mind-title h2 {
+  font-family: "Playfair Display", serif;
+  color: #292464;
+  font-size: 32px;
+}
+.strong-mind .strong-mind-up .strong-mind-right {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.strong-mind .strong-mind-down {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.strong-mind .strong-mind-down .strong-mind-left {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.strong-mind .strong-mind-down .strong-mind-right {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .contact {
@@ -273,7 +325,8 @@ nav div > a:hover {
   flex-direction: column;
   gap: 10px;
 }
-.contact .contact-form form input, .contact .contact-form form textarea {
+.contact .contact-form form input,
+.contact .contact-form form textarea {
   padding: 25px;
   border-radius: 6px;
   border: 1px solid #292464;
@@ -395,16 +448,22 @@ footer .sub-container .first-section .first h2 {
   font-size: 32px;
   letter-spacing: 5px;
 }
-footer .sub-container .first-section .second ul, footer .sub-container .first-section .third ul, footer .sub-container .first-section .fourth ul {
+footer .sub-container .first-section .second ul,
+footer .sub-container .first-section .third ul,
+footer .sub-container .first-section .fourth ul {
   display: flex;
   flex-direction: column;
   gap: 18px;
   letter-spacing: 1.5px;
 }
-footer .sub-container .first-section .second ul h3, footer .sub-container .first-section .third ul h3, footer .sub-container .first-section .fourth ul h3 {
+footer .sub-container .first-section .second ul h3,
+footer .sub-container .first-section .third ul h3,
+footer .sub-container .first-section .fourth ul h3 {
   font-size: 24px;
 }
-footer .sub-container .first-section .second ul li, footer .sub-container .first-section .third ul li, footer .sub-container .first-section .fourth ul li {
+footer .sub-container .first-section .second ul li,
+footer .sub-container .first-section .third ul li,
+footer .sub-container .first-section .fourth ul li {
   font-weight: lighter;
 }
 footer .sub-container hr {
@@ -472,6 +531,20 @@ footer .sub-container .second-section span {
     flex-direction: column;
   }
   .contact .first-section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 995px) {
+  .strong-mind .strong-mind-up .strong-mind-title {
+    width: 100%;
+  }
+  .strong-mind .strong-mind-up .strong-mind-right {
+    width: 100%;
+  }
+  .strong-mind .strong-mind-down .strong-mind-left {
+    width: 100%;
+  }
+  .strong-mind .strong-mind-down .strong-mind-right {
     width: 100%;
   }
 }
