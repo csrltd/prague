@@ -1,0 +1,152 @@
+@import "../../main/variables";
+.hero-container{
+    height: 65vh;
+    color: $white-color;
+    display: flex;
+    align-items: center;
+
+    &>div{
+        max-width: 600px;
+        color: $white-color;
+        z-index: 4;
+        margin-bottom: 3rem;
+
+        h1{
+            font-size: 48px;
+            font-weight: 700;
+            font-family:  $font-family-Playfair;
+            letter-spacing: 3px;
+        }
+
+    }
+}
+
+.second-container{
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    .container{
+        margin-top: 0;
+    }
+    .first-section{
+        display: flex;
+        gap: 60px;
+
+        img{
+            width: 608px;
+            height: 570px;
+            object-fit: cover;
+        }
+
+        &>div{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            h1{
+                font-family: $font-family-Playfair;
+                font-size: 45px;
+                color: $primary-color;
+            }
+        }
+    }
+
+    .second-section{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        
+        h1{
+            font-family: $font-family-Playfair;
+            font-size: 45px;
+            color: $primary-color;
+        }
+
+        &>div{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+
+    .third-section{
+        justify-content: space-between;
+        gap: 50px;
+        display: flex;
+        .first{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            p{
+                margin-bottom: 5rem;
+                font-family: $font-family-Playfair;
+                font-size: 45px;
+                font-weight: bold;
+            }
+        }
+
+        .second{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-bottom: 100px;
+
+            div{
+                min-height: 80px;
+                padding: 27px 44px 27px 34px;
+                border-radius: 6px;
+                background-color: rgba(41, 36, 100, 0.10);
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 925px){
+    .second-container{
+        .first-section{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+    
+            img{
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+    
+            &>div{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                justify-content: center;
+                h1{
+                    font-family: $font-family-Playfair;
+                    font-size: 45px;
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .third-section{
+            flex-direction: column;
+            .first{
+                width: 100%;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px){
+    .container{
+        margin-inline: 30px;
+    }
+}

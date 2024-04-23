@@ -1,0 +1,71 @@
+.hero-container {
+  height: 65vh;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-container > div {
+  max-width: 600px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 4;
+}
+.hero-container > div h1 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 3px;
+}
+.hero-container > div p {
+  font-weight: 500;
+}
+
+.second-container {
+  width: 100%;
+}
+.second-container .contact {
+  flex-direction: column;
+}
+.second-container .contact .title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.second-container .contact .title h1 {
+  font-size: 45px;
+  font-family: "Playfair Display", serif;
+}
+.second-container .contact .title p {
+  font-weight: 500;
+}
+.second-container .contact > .second {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+@media screen and (max-width: 1100px) {
+  .second-container .contact > .second {
+    flex-direction: column;
+  }
+  .second-container .contact > .second .first-section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .second-container .contact > .second {
+    flex-direction: column;
+  }
+  .second-container .contact > .second .first-section {
+    width: 100%;
+    padding: 60px 30px;
+    gap: 30px;
+  }
+  .second-container .contact > .second .first-section .top h1 {
+    font-size: 35px;
+  }
+}/*# sourceMappingURL=contact.css.map */
