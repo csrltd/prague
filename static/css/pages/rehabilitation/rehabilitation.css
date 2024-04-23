@@ -1,16 +1,16 @@
-.hero-container {
+.hero-container1 {
   height: 65vh;
   color: #ffffff;
   display: flex;
   align-items: center;
 }
-.hero-container > div {
+.hero-container1 > div {
   max-width: 600px;
   color: #ffffff;
   z-index: 4;
   margin-bottom: 3rem;
 }
-.hero-container > div h1 {
+.hero-container1 > div h1 {
   font-size: 48px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
@@ -69,7 +69,7 @@
   gap: 10px;
 }
 .second-container .first-section .second-wrapper {
-  background-image: url(/prague/static/img/rehabilitation/rehabilitation-background.jpg);
+  background-image: url(/static/img/rehabilitation/rehabilitation-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -114,7 +114,7 @@
   font-size: 45px;
 }
 .second-container .second-section .second {
-  background-image: url(/prague/static/img/rehabilitation/massage.jpg);
+  background-image: url(/static/img/rehabilitation/massage.jpg);
   width: 30%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,7 +162,7 @@
 }
 .second-container .third-section .img-container {
   width: 40%;
-  background-image: url("/prague/static/img/rehabilitation/massage-2.jpg");
+  background-image: url("/static/img/rehabilitation/massage-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -204,7 +204,7 @@
 }
 .second-container .fourth-section .img-container {
   width: 40%;
-  background-image: url("/prague/static/img/rehabilitation/massage-3.jpg");
+  background-image: url("/static/img/rehabilitation/massage-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -227,7 +227,7 @@
 }
 .second-container .last-section .first-wrapper .img-container {
   width: 50%;
-  background-image: url(/prague/static/img/price-img/nurse.jpg);
+  background-image: url(/static/img/price-img/nurse.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -317,7 +317,7 @@
     padding: 40px;
   }
   .second-container .first-section .second-wrapper {
-    background-image: url(/prague/static/img/rehabilitation/rehabilitation-background.jpg);
+    background-image: url(/static/img/rehabilitation/rehabilitation-background.jpg);
     min-height: 300px;
     padding: 50px 70px 49px 50px;
     align-items: center;
@@ -352,7 +352,7 @@
   .second-container .third-section .img-container {
     width: 100%;
     height: 300px;
-    background-image: url("/prague/static/img/rehabilitation/massage-2.jpg");
+    background-image: url("/static/img/rehabilitation/massage-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -396,7 +396,7 @@
   .second-container .fourth-section .img-container {
     width: 100%;
     height: 300px;
-    background-image: url("/prague/static/img/rehabilitation/massage-3.jpg");
+    background-image: url("/static/img/rehabilitation/massage-3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

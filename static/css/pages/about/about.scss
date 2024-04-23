@@ -1,13 +1,13 @@
 @import "../../main/variables";
 .hero-container1{
-    height: 65vh;
+    height: 85vh;
     color: $white-color;
     display: flex;
     justify-content: center;
     flex-direction: column;
 
     &>div{
-        max-width: 500px;
+        max-width: 900px;
         color: $white-color;
         display: flex;
         flex-direction: column;

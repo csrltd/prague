@@ -846,4 +846,21 @@ footer {
             right: -6rem;
         }
     }
+
+    .hero-container1 {
+        height: fit-content;
+
+        &>div {
+            h1 {
+                font-size: 44px;
+            }
+        }
+
+        .buttons{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    }
 }
+

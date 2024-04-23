@@ -1,12 +1,12 @@
 .hero-container1 {
-  height: 65vh;
+  height: 85vh;
   color: #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .hero-container1 > div {
-  max-width: 500px;
+  max-width: 900px;
   color: #ffffff;
   display: flex;
   flex-direction: column;

@@ -693,4 +693,15 @@ footer .sub-container .second-section span {
   nav .hamburger {
     right: -6rem;
   }
+  .hero-container1 {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .hero-container1 > div h1 {
+    font-size: 44px;
+  }
+  .hero-container1 .buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=main.css.map */

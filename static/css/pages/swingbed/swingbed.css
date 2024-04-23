@@ -1,16 +1,16 @@
-.hero-container {
+.hero-container1 {
   height: 65vh;
   color: #ffffff;
   display: flex;
   align-items: center;
 }
-.hero-container > div {
+.hero-container1 > div {
   max-width: 600px;
   color: #ffffff;
   z-index: 4;
   margin-bottom: 3rem;
 }
-.hero-container > div h1 {
+.hero-container1 > div h1 {
   font-size: 48px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
