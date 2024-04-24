@@ -497,7 +497,7 @@ nav {
         .card {
             position: relative;
             width: 100%;
-            max-width: 400px;
+            max-width: 360px;
             background-color: rgba($color: $grey-color, $alpha: 0.2);
             padding: 40px;
             border-radius: 12px;
@@ -639,6 +639,13 @@ footer {
 
     .testimonials {
         padding-inline: 80px;
+
+        .testimonial{
+            .card{
+                max-width: 300px;
+            }
+        }
+        
     }
 }
 

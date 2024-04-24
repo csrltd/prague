@@ -124,43 +124,4 @@
   width: 500px;
   height: 700px;
   opacity: 0.5;
-}
-
-@media screen and (max-width: 925px) {
-  .second-container .container .first-section {
-    gap: 70px;
-  }
-  .second-container .container {
-    margin-inline: 40px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .second-container .container .first-section {
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 2rem;
-  }
-  .second-container .container .first-section > div {
-    padding-bottom: 20px;
-  }
-  .second-container .container .first-section img {
-    width: 100%;
-    height: 300px;
-  }
-  .second-container .container .second-section .second h1 {
-    font-size: 35px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .hero-container1 {
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .hero-container1 > div h1 {
-    font-size: 44px;
-  }
-  .hero-container1 .buttons {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}/*# sourceMappingURL=financial.css.map */
+}/*# sourceMappingURL=wondcare.css.map */

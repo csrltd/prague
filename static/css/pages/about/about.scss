@@ -7,7 +7,7 @@
     flex-direction: column;
 
     &>div{
-        max-width: 900px;
+        max-width: 600px;
         color: $white-color;
         display: flex;
         flex-direction: column;
@@ -248,6 +248,22 @@
 @media screen and (max-width: 1250px){
     .second-container{
 
+        .missions-visions{
+            display: flex;
+            // flex-wrap: wrap;
+            // justify-content: center;
+            // gap: 40px;
+            .mission-images{
+                width: 50%;
+                justify-content: center;
+                gap: 30px;
+            }
+    
+            .mission-vision-text{
+                width: 40%;
+            }
+        }
+
         .Our-teams{
             .team-title{
                 width: 80%;
@@ -292,6 +308,20 @@
                 gap: 15px;            
             }
         }
+
+        .missions-visions{
+            .mission-images{
+                width: 100%;
+                justify-content: center;
+            }
+
+            .mission-vision-text{
+                width: 80%;
+
+            }
+        }
+
+       
     }
 }
 
@@ -310,17 +340,7 @@
             }
         }
 
-        .missions-visions{
-            .mission-images{
-                width: 100%;
-                justify-content: center;
-            }
-
-            .mission-vision-text{
-                width: 80%;
-
-            }
-        }
+      
 
        
 
@@ -385,6 +405,13 @@
 @media screen and (max-width: 550px){
     .second-container{
 
+        .approach{
+            flex-direction: column-reverse;
+            .first{
+                padding: 130px 60px 100px 60px;
+            } 
+        }
+
         .missions-visions{
             .mission-images{
                 flex-wrap: wrap;
@@ -397,13 +424,6 @@
                     }
                 }
             }
-        }
-
-        .approach{
-            flex-direction: column-reverse;
-            .first{
-                padding: 130px 60px 100px 60px;
-            } 
         }
     }
 }
