@@ -166,6 +166,28 @@ nav div > a:hover {
   padding-left: 2rem;
 }
 
+.border-padding-top {
+  border-top: 8px solid #292464;
+  border-radius: 10px;
+}
+
+.border-padding-bottom {
+  border-bottom: 8px solid #292464;
+  border-radius: 10px;
+}
+
+.team-title {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.team-title h2 {
+  font-family: "Playfair Display", serif;
+  color: #292464;
+  font-size: 32px;
+}
+
 .container {
   margin-inline: 156px;
   margin-top: 100px;
@@ -670,5 +692,16 @@ footer .sub-container .second-section span {
   }
   nav .hamburger {
     right: -6rem;
+  }
+  .hero-container1 {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .hero-container1 > div h1 {
+    font-size: 44px;
+  }
+  .hero-container1 .buttons {
+    display: flex;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=main.css.map */

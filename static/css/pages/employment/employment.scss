@@ -1,7 +1,7 @@
 @import "../../main/variables";
-.hero-container{
+.hero-container1{
     padding-bottom: 2rem;
-    min-height: 65vh;
+    min-height: 85vh;
     color: $white-color;
     display: flex;
     justify-content: center;
@@ -173,6 +173,22 @@
                 &>h1{
                     font-size: 32px;
                     font-family: $font-family-Playfair;
+                }
+
+                .location{
+                    .search-location{
+                        border: 1px solid rgba($grey-color, 1);
+                        padding: 5px 5px 5px 10px;
+                        border-radius: 10px;
+                        background-color: rgba($grey-color, 0);
+                        select{
+                            border: none;
+                            font-size: 16px;
+                            color: rgba($grey-color, 1);
+                            background-color: rgba($grey-color, 0);
+                            padding: 0px 10px ;
+                        }
+                    }
                 }
                 &>div{
                     display: flex;

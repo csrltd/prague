@@ -1,12 +1,12 @@
 .hero-container1 {
-  height: 65vh;
+  height: 85vh;
   color: #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .hero-container1 > div {
-  max-width: 500px;
+  max-width: 900px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -102,6 +102,71 @@
   letter-spacing: 0.5px;
   color: #292464;
 }
+.second-container .missions-visions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.second-container .missions-visions .mission-images {
+  width: 48%;
+  display: flex;
+  gap: 30px;
+}
+.second-container .missions-visions .mission-images .misvis-img .vismis-img {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 250px;
+  height: 450px;
+}
+.second-container .missions-visions .mission-images .misvis-img .vismis-img img {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.second-container .missions-visions .mission-vision-text {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.second-container .missions-visions .mission-vision-text .text {
+  display: block;
+  gap: 20px;
+}
+.second-container .missions-visions .mission-vision-text h2 {
+  color: #292464;
+}
+.second-container .Our-teams {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.second-container .Our-teams .team-profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rem;
+}
+.second-container .Our-teams .team-profile h6 {
+  color: #939393;
+}
+.second-container .Our-teams .team-profile .profile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.second-container .Our-teams .team-profile .profile .profile-img {
+  width: 100%;
+}
+.second-container .Our-teams .team-profile .profile .profile-img img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
 .second-container .approach {
   width: 100%;
   display: flex;
@@ -149,6 +214,13 @@
 }
 
 @media screen and (max-width: 1250px) {
+  .second-container .Our-teams .team-title {
+    width: 80%;
+  }
+  .second-container .Our-teams .team-profile {
+    justify-content: center;
+    gap: 1rem;
+  }
   .second-container .approach .first {
     padding: 130px 150px 130px 100px;
   }
@@ -180,11 +252,19 @@
     flex-direction: column-reverse;
   }
   .second-container .about-us .first {
+    width: 100%;
     padding: 30px 50px;
   }
   .second-container .about-us > img {
     width: 100%;
     height: 200px;
+  }
+  .second-container .missions-visions .mission-images {
+    width: 100%;
+    justify-content: center;
+  }
+  .second-container .missions-visions .mission-vision-text {
+    width: 80%;
   }
   .second-container .hospital-values .value-title h2 {
     font-size: 30px;
@@ -216,7 +296,31 @@
     left: calc(50% - 225px);
   }
 }
+@media screen and (max-width: 740px) {
+  .Our-teams .team-profile .profile {
+    width: 100%;
+  }
+  .Our-teams .team-profile .profile .profile-img {
+    width: 100%;
+  }
+  .Our-teams .team-profile .profile .profile-img img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 @media screen and (max-width: 550px) {
+  .second-container .missions-visions .mission-images {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .second-container .missions-visions .mission-images .misvis-img {
+    width: 100%;
+  }
+  .second-container .missions-visions .mission-images .misvis-img .vismis-img {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
   .second-container .approach {
     flex-direction: column-reverse;
   }

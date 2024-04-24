@@ -1,13 +1,13 @@
 @import "../../main/variables";
 .hero-container1{
-    height: 65vh;
+    height: 85vh;
     color: $white-color;
     display: flex;
     justify-content: center;
     flex-direction: column;
 
     &>div{
-        max-width: 500px;
+        max-width: 900px;
         color: $white-color;
         display: flex;
         flex-direction: column;
@@ -115,6 +115,84 @@
         }
     }
 
+    .missions-visions{
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: center;
+        gap: 40px;
+        .mission-images{
+            width: 48%;
+            display: flex;
+            // flex-wrap: wrap;
+            gap: 30px;
+            .misvis-img{
+                .vismis-img{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    width: 250px;
+                    height: 450px;
+                    
+                    img{
+                        width: 100%;
+                        height: 80%;
+                        object-fit: cover;
+                        border-radius: 20px;
+                    }
+
+                  
+                }
+            }
+        }
+
+        .mission-vision-text{
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            .text{
+                display: block;
+                gap: 20px;
+            }
+            h2{
+                color: $primary-color;
+            }
+        }
+    }
+
+    .Our-teams {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .team-profile{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8rem;
+            h6{
+                color: $grey-color;
+            }
+            .profile{
+                display:flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .profile-img{
+                    width: 100%;
+                  
+                    img{
+                        width: 100%;
+                        height: 300px;
+                        object-fit: cover;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+   
+
     .approach{
         width: 100%;
         display: flex;
@@ -169,6 +247,17 @@
 
 @media screen and (max-width: 1250px){
     .second-container{
+
+        .Our-teams{
+            .team-title{
+                width: 80%;
+            }
+            .team-profile{
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
+
         .approach{
             .first{
                 padding: 130px 150px 130px 100px;
@@ -205,11 +294,13 @@
         }
     }
 }
+
 @media screen and (max-width: 925px) {
     .second-container{
         .about-us{      
             flex-direction: column-reverse;  
             .first{
+                width: 100%;
                 padding: 30px 50px;            
             }
 
@@ -218,6 +309,20 @@
                 height: 200px;
             }
         }
+
+        .missions-visions{
+            .mission-images{
+                width: 100%;
+                justify-content: center;
+            }
+
+            .mission-vision-text{
+                width: 80%;
+
+            }
+        }
+
+       
 
         .hospital-values{
             .value-title{
@@ -258,8 +363,42 @@
     }
 }
 
+@media screen and (max-width: 740px) {
+    .Our-teams{
+        .team-profile{
+            .profile{width: 100%;
+                .profile-img{
+                    width: 100%;
+
+                    img{
+                        width: 100%;
+                       
+                        object-fit: cover;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 550px){
     .second-container{
+
+        .missions-visions{
+            .mission-images{
+                flex-wrap: wrap;
+                width: 100%;
+                .misvis-img{
+                    width: 100%;
+                    .vismis-img{
+                        width: 100%;
+                        flex-direction: column-reverse;
+                    }
+                }
+            }
+        }
+
         .approach{
             flex-direction: column-reverse;
             .first{
