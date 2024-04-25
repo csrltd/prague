@@ -1,5 +1,6 @@
 @import "../../main/variables";
-.hero-container1{
+
+.hero-container1 {
     height: 85vh;
     color: $white-color;
     display: flex;
@@ -7,7 +8,7 @@
     flex-direction: column;
     padding-bottom: 50px;
 
-    &>div{
+    &>div {
         max-width: 600px;
         color: $white-color;
         display: flex;
@@ -15,29 +16,29 @@
         gap: 1.5rem;
         z-index: 4;
 
-        h1{
+        h1 {
             font-size: 48px;
             font-weight: 700;
-            font-family:  $font-family-Playfair;
+            font-family: $font-family-Playfair;
             letter-spacing: 3px;
         }
 
-        p{
+        p {
             font-weight: 500;
         }
 
-        div{
+        div {
             display: flex;
             gap: 28px;
 
-            a{
+            a {
                 padding: 12px 30px;
                 border: 1px solid $white-color;
                 width: fit-content;
                 border-radius: 12px;
             }
 
-            a:nth-child(1){
+            a:nth-child(1) {
                 background-color: $white-color;
                 color: $black-color;
             }
@@ -45,68 +46,199 @@
     }
 }
 
-.second-container{
+.second-container {
     width: 100%;
     position: relative;
-    padding-bottom: 100px;
-    .container{
+    margin-top: 0;
+
+    h1 {
+        color: $primary-color;
+    }
+
+    i {
+        color: $primary-color;
+    }
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    .first-section {
         display: flex;
-        flex-direction: column;
-        gap: 4rem;
-        .first-section{
-            display: flex;
-            align-items: center;
-            gap: 100px;
-            p{
-                font-size: $font-size;
-            }
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
 
-            &>div{
-                max-width: 600px;
-                padding-bottom: 50px;
-            }
+        p {
+            font-size: $font-size;
+        }
 
-            img{
-                width: 50%;
-                height: 401px;
+        &>div {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .woundcare-img {
+            width: 100%;
+            height: 275px;
+
+            img {
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
             }
         }
 
-        .second-section{
-            display: flex;
-            flex-direction: column;
-            gap: 100px;
 
-            .first{
+    }
+
+    .treatments {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        h1 {
+            max-width: 600px;
+            font-size: 20px;
+        }
+
+        .lists-traitments {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 24px;
+
+            .list {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+            }
+        }
+    }
+
+    .consultancy-section {
+        display: flex;
+        margin-top: 0;
+        // height: fit-content;
+
+        svg {
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+            left: -11rem;
+            top: 53rem;
+            width: 510px;
+            height: 510px;
+            opacity: .5;
+        }
+
+        .consultancy {
+            width: 100%;
             display: flex;
-            flex-direction: column;
-            gap: 15px;
-            
-            
-            &>p{
-                max-width: 421px;
-                font-weight: bold;
+            // flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+
+            .woundcare-images {
+                min-width:330px;
+                height: 300px;
+                display: flex;
+                // flex-wrap: wrap;
+                gap: 24px;
+
+                img {
+                    // min-width:269px;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
             }
 
-            &>div{
-                h3{
-                    font-family: $font-family-Playfair;
-                    font-weight: bold;
+            .consultancy-text {
+                width: 40%;
+                font-size: 16px;
+            }
+        }
+    }
 
-                }
 
-                    p{
-                        a{
-                            color: #292464;
-                            font-weight: 700;
-                            text-decoration: underline;
-                        }
-                    }
+
+
+
+    .Lab-section {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .text-lab {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+
+            p {
+                width: 50%;
             }
         }
 
-        .second{
+        .our-labotary-services {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .Lab-services {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 24px;
+
+                .list {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+
+    .second-section {
+        margin-top: 0;
+        // display: flex;
+        // flex-direction: column;
+        // gap: 100px;
+
+        // .first {
+        //     display: flex;
+        //     flex-direction: column;
+        //     gap: 15px;
+
+
+        //     &>p {
+        //         max-width: 421px;
+        //         font-weight: bold;
+        //     }
+
+        //     &>div {
+        //         h3 {
+        //             font-family: $font-family-Playfair;
+        //             font-weight: bold;
+
+        //         }
+
+        //         p {
+        //             a {
+        //                 color: #292464;
+        //                 font-weight: 700;
+        //                 text-decoration: underline;
+        //             }
+        //         }
+        //     }
+        // }
+
+        .second {
             background-color: $primary-color;
             padding: 24px;
             display: flex;
@@ -114,18 +246,19 @@
             gap: 24px;
             align-items: center;
             text-align: center;
+            margin-bottom: 100px;
 
-            h1{
+            h1 {
                 color: $white-color;
                 font-family: $font-family-Playfair;
                 font-size: 48px;
             }
 
-            p{
+            p {
                 color: $white-color;
             }
 
-            a{
+            a {
                 padding: 15px 48px;
                 border: 1px solid $white-color;
                 width: fit-content;
@@ -135,11 +268,101 @@
             }
 
         }
-            
+
+    }
+
+    .title {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 0;
+
+        h1 {
+            font-size: 32px;
+            font-family: $font-family-Playfair;
+        }
+
+        p {
+            font-weight: 500;
         }
     }
 
-    svg{
+
+    .diagnostics {
+        p {
+            font-size: 16px;
+        }
+
+        .first-diagnostic {
+            display: flex;
+            width: 100%;
+
+            .first {
+                width: 50%;
+                color: $white-color;
+                padding: 46px 44px 53px 100px;
+                background-color: $primary-color;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 24px;
+
+                .paragraphs {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+                }
+            }
+
+            .img-container {
+                width: 50%;
+                height: 512px;
+                background-image: url("/static/img/woundcare-img/woundcaore-img1.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .second-diagnostic {
+            display: flex;
+            width: 100%;
+
+            .second {
+                width: 50%;
+                color: $white-color;
+                padding: 46px 100px 53px 44px;
+                background-color: $primary-color;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                &>h3 {
+                    font-size: 24px;
+                }
+
+                .paragraphs {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+
+                }
+            }
+
+            .img-container {
+                width: 50%;
+                height: 540px;
+                background-image: url("/static/img/woundcare-img/woundcare-img2.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+
+
+    svg {
         position: absolute;
         bottom: 0;
         z-index: -1;
@@ -149,4 +372,119 @@
         height: 700px;
         opacity: .5;
     }
+}
+
+
+@media screen and (max-width:1109px) {
+    .consultancy-section {
+
+        .consultancy {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+}
+
+@media screen and (max-width:1050px) {
+    .consultancy-section {
+
+        .consultancy {
+            width: 100%;
+            flex-direction: column;
+        }
+
+       
+    }
+
+}
+
+@media screen and (max-width:805px) {
+    .second-container{
+        .diagnostics{
+            width: 100%;
+            .first-diagnostic{
+                flex-direction: column;
+                .first{
+                    width: 100%;
+                    padding: 50px;
+                }
+
+                .img-container{
+                    width: 100%;
+                }
+            } 
+    
+            .second-diagnostic{
+                flex-direction: column-reverse;
+
+                .second{
+                    width: 100%;
+                }
+
+                .img-container{
+                    width: 100%;
+                }
+            }
+        } 
+    }
+  
+}
+
+@media screen and (max-width:750px) {
+    .first-section{
+        flex-direction: column;
+    }
+.second-container{
+    .treatments{
+        .lists-traitments {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .consultancy-section {
+
+        .consultancy {
+            .woundcare-images{
+                flex-direction: column;
+                width: 100%;
+                height: 400px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+       
+    }
+
+    .Lab-section{
+        .text-lab{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            p{
+                width: 100%;
+            }
+        } 
+
+        .our-labotary-services{
+            .Lab-services{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+    
+
+   
+    
+}
+
+@media screen and (max-width:560px) {
+    .hero-container1{
+        height: auto;
+    } 
 }
