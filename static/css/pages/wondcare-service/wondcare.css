@@ -257,10 +257,14 @@
   flex-direction: column;
   gap: 18px;
 }
+.second-container .diagnostics .second-diagnostic .second .paragraphs p {
+  font-size: 100%;
+}
 .second-container .diagnostics .second-diagnostic .img-container {
   width: 50%;
-  height: 540px;
   background-image: url("/static/img/woundcare-img/woundcare-img2.png");
+  -o-object-fit: cover;
+     object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -310,6 +314,7 @@
   }
   .second-container .diagnostics .second-diagnostic .img-container {
     width: 100%;
+    height: 540px;
   }
 }
 @media screen and (max-width: 750px) {
