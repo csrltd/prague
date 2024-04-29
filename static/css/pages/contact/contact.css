@@ -1,11 +1,12 @@
-.hero-container {
-  height: 65vh;
+.hero-container1 {
+  height: 85vh;
   color: #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 50px;
 }
-.hero-container > div {
+.hero-container1 > div {
   max-width: 600px;
   color: #ffffff;
   display: flex;
@@ -13,13 +14,13 @@
   gap: 1.5rem;
   z-index: 4;
 }
-.hero-container > div h1 {
+.hero-container1 > div h1 {
   font-size: 48px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
   letter-spacing: 3px;
 }
-.hero-container > div p {
+.hero-container1 > div p {
   font-weight: 500;
 }
 
@@ -67,5 +68,13 @@
   }
   .second-container .contact > .second .first-section .top h1 {
     font-size: 35px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero-container1 {
+    height: 100vh;
+  }
+  .hero-container1 > div h1 {
+    font-size: 44px;
   }
 }/*# sourceMappingURL=contact.css.map */

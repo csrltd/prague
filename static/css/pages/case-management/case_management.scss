@@ -1,6 +1,6 @@
 @import "../../main/variables";
-.hero-container{
-    height: 65vh;
+.hero-container1{
+    height: 85vh;
     color: $white-color;
     display: flex;
     align-items: center;
@@ -30,11 +30,19 @@
         gap: 70px;
         position: relative;
 
-        img{
+        .image-hands{
             width: 450px;
             height: 406px;
             box-shadow: 20px 20px 4px 0px #292464;
+           
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
+
+      
 
         &>div{
             width: 55%;
@@ -97,7 +105,7 @@
         }
         .img-container{
             width: 50%;
-            background-image: url("../../../img/case-management-img/social.jpg");
+            background-image: url("/static/img/case-management-img/social.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -146,7 +154,7 @@
         }
         .img-container{
             width: 50%;
-            background-image: url("../../../img/case-management-img/case-management.jpg");
+            background-image: url("/static/img/case-management-img/case-management.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -157,7 +165,18 @@
 @media screen and (max-width: 925px) {
     .second-container{
         .first-section{
-            flex-direction: column;
+            // flex-direction: column;
+            flex-wrap: wrap;
+
+            .image-hands{
+                width: 100%;
+                height: fit-content;
+                box-shadow: 20px 20px 4px 0px #292464;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
             &>div{
                 width: 100%;
             }
@@ -190,7 +209,7 @@
 }
 
 @media screen and (max-width: 600px){
-    .hero-container{    
+    .hero-container1{    
         &>div{    
             h1{
                 font-size: 36px;

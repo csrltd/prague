@@ -3,9 +3,9 @@
 .hero-container{
     min-height: 100vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
-    padding: $padding-1 - 70px;
+    padding: $padding-1 - 90px;
     padding-top: $padding-1;
     
     &>div:nth-child(1){
@@ -127,22 +127,22 @@
     }
   }
 
-  .fight-corona {
-    display: flex;
-    gap: 7rem;
-    align-items: center;
+    .fight-corona{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
 
     & > div {
       display: flex;
       flex-direction: column;
       gap: 2.5rem;
 
-      & > div:nth-child(1) {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        position: relative;
+            &>div:nth-child(1){
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                position: relative;
 
         h4 {
           font-family: $font-family-Roboto;
@@ -150,42 +150,46 @@
           color: $primary-color;
         }
 
-        h2 {
-          font-size: 32px;
-          font-family: $font-family-Playfair;
-          color: $primary-color;
-        }
-      }
-      & > div:nth-child(2) {
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 3rem;
-        padding: 2rem;
-        place-content: center;
-        color: $white-color;
-        background-color: $primary-color;
-        border-radius: 12px;
+                h2{
+                    font-size: 32px;
+                    font-family: $font-family-Playfair;
+                    color: $primary-color;
+                }
+            }
+            &>div:nth-child(2){
+                width: 80%;
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 3rem;
+                padding: 2rem;
+                place-content: center;
+                color: $white-color;
+                background-color: $primary-color;
+                border-radius: 12px;
+                
+                &>div{
+                    i{
+                        font-size: 28px;
+                        color: $white-color;
+                    }
+                    p{
+                        font-size: 22px;
 
-        & > div {
-          i {
-            font-size: 28px;
-            color: $white-color;
-          }
-          p {
-            font-size: 22px;
-          }
+                    }
+                }
+                
+            }
         }
-      }
-    }
 
-    img {
-      object-fit: cover;
-      border-radius: 10px;
-      width: 47%;
-      height: 572px;
+        img{
+            object-fit: cover;
+            border-radius: 10px;
+            width: 100%;
+            height: 572px;
+        }
+
+
     }
-  }
 
 
   .we-believe {
@@ -194,12 +198,13 @@
     align-items: center;
     margin-bottom: 100px;
 
-    & > img {
-      width: 1100px;
-      height: 500px;
-      object-fit: cover;
-      border-radius: 12px;
-    }
+        &>img{
+            width: 172%;
+            // width: 1100px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
 
     .believe-section-two {
       display: flex;
@@ -217,53 +222,154 @@
           color: $primary-color;
         }
 
-        h2 {
-          font-size: 32px;
-          font-family: $font-family-Playfair;
-          color: $primary-color;
+            h2{
+                font-size: 32px;
+                font-family: $font-family-Playfair;
+                color: $primary-color;
+            }
         }
-      }
-      .image-gallery {
-        display: flex;
-        gap: 24px;
-        flex-direction: row;
+            .image-gallery{
+                display: flex;
+                gap: 24px;
+                // flex-direction: row;
 
-                &>img{
-                    object-fit: cover;
-                    width: 33.3%;
-                    height: 217px;
-                    object-fit: cover;
-                }
+                // &>img{
+                //     object-fit: cover;
+                //     width: 33.3%;
+                //     height: 217px;
+                //     object-fit: cover;
+                // }
             }
         }
     }
 
+    .policies{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+        p{
+            font-size: 14px;
+        }
 
-  .trusted-partner {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding-bottom: 100px;
+        .left{
+            width: 360px;
+            height: 440px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px 25px;
+            justify-content: center;
+            gap: 1rem;
+            background-color: $primary-color;
+            h2{
+                color: $white-color;
+                display: block;
+                text-align: center;
+                font-size: 26px;
+            }
+
+            .logo-img{
+                width: 161px;
+                height: 161px;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .policy{
+            width: 360px;
+            height: 440px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+            padding: 80px 32px;
+            gap: 1rem;
+            background-color: #F4F4F4;
+            h3{
+                color: $black-color;
+                display: block;
+                text-align: center;
+            }
+
+            a{
+                width: fit-content;
+                height: fit-content;
+                padding: 11px 26px;
+                background-color: #EABCBF;
+                color: $black-color;
+                font-size: 14px;
+            }
+            
+            .buttons{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+            }
+        }
+
+        // .first-section{
+        //     display: flex;
+        //     flex-direction: column;
+        //     gap: 54px;
+        //     font-size: 24px;
+        //     width: 100%;
+
+        //     h2{
+        //         color: $primary-color;
+        //         font-family: $font-family-Playfair;
+        //         font-size: 32px;
+        //     }
+
+        //     h3{
+        //         font-family: $font-family-Playfair;
+        //         font-size: 24px;
+        //     }
+
+        //     a{
+        //         color: $black-color;
+        //     }
+        //     .top, .bottom{
+        //         font-size: 24px;
+        //         display: flex;
+        //         flex-direction: column;
+        //         gap: 14px;
+        //     }
+            
+        // }
+    }
+
+
+    .trusted-partner{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        padding-bottom: 100px;
 
     .first-section {
       display: flex;
       flex-direction: column;
       gap: 24px;
 
-      h2 {
-        font-size: 32px;
-        font-family: $font-family-Playfair;
-        color: $primary-color;
-      }
+            h2{
+                font-size: 32px;
+                font-family: $font-family-Playfair;
+                color: $primary-color;
+            }
+
+            h4{
+                font-size: 24px;
+                color: $black-color;
+            }
 
             .partners{
                 display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
-                place-items: center;
+                grid-template-columns: repeat(auto-fill, minmax(min(15rem, 50%), 1fr));
+                // place-items: center;
                 gap: 20px;
-                img{
-                    mix-blend-mode: multiply;
-                }
             }
         }
 
@@ -294,47 +400,7 @@
     }
   }
 
-  .policies {
-    display: flex;
-    gap: 54px;
-    padding-bottom: 100px;
-
-    .first-section {
-      display: flex;
-      flex-direction: column;
-      gap: 54px;
-      font-size: 24px;
-      width: 100%;
-
-      h2 {
-        color: $primary-color;
-        font-family: $font-family-Playfair;
-        font-size: 32px;
-      }
-
-      h3 {
-        font-family: $font-family-Playfair;
-        font-size: 24px;
-      }
-
-      a {
-        color: $black-color;
-      }
-      .top,
-      .bottom {
-        font-size: 24px;
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-      }
-    }
-
-    & > img {
-      width: 1100px;
-      height: 500px;
-      object-fit: cover;
-    }
-  }
+  
 
 }
 

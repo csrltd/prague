@@ -1,12 +1,12 @@
-.hero-container {
+.hero-container1 {
   padding-bottom: 2rem;
-  min-height: 65vh;
+  min-height: 85vh;
   color: #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.hero-container > div {
+.hero-container1 > div {
   max-width: 728px;
   color: #ffffff;
   display: flex;
@@ -14,13 +14,13 @@
   gap: 1.5rem;
   z-index: 4;
 }
-.hero-container > div h1 {
+.hero-container1 > div h1 {
   font-size: 48px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
   letter-spacing: 3px;
 }
-.hero-container > div p {
+.hero-container1 > div p {
   font-weight: 500;
 }
 
@@ -157,6 +157,19 @@
 .job-container > div .job-listing-section .sidebar > h1 {
   font-size: 32px;
   font-family: "Playfair Display", serif;
+}
+.job-container > div .job-listing-section .sidebar .location .search-location {
+  border: 1px solid #939393;
+  padding: 5px 5px 5px 10px;
+  border-radius: 10px;
+  background-color: rgba(147, 147, 147, 0);
+}
+.job-container > div .job-listing-section .sidebar .location .search-location select {
+  border: none;
+  font-size: 16px;
+  color: #939393;
+  background-color: rgba(147, 147, 147, 0);
+  padding: 0px 10px;
 }
 .job-container > div .job-listing-section .sidebar > div {
   display: flex;

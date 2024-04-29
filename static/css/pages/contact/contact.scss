@@ -1,12 +1,14 @@
 @import "../../main/variables";
-.hero-container{
-    height: 65vh;
+
+.hero-container1 {
+    height: 85vh;
     color: $white-color;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 50px;
 
-    &>div{
+    &>div {
         max-width: 600px;
         color: $white-color;
         display: flex;
@@ -14,42 +16,42 @@
         gap: 1.5rem;
         z-index: 4;
 
-        h1{
+        h1 {
             font-size: 48px;
             font-weight: 700;
-            font-family:  $font-family-Playfair;
+            font-family: $font-family-Playfair;
             letter-spacing: 3px;
         }
 
-        p{
+        p {
             font-weight: 500;
         }
     }
 }
 
-.second-container{
+.second-container {
     width: 100%;
 
-    .contact{
+    .contact {
         flex-direction: column;
 
-        .title{
+        .title {
             text-align: center;
             display: flex;
             flex-direction: column;
             gap: 28px;
 
-            h1{
+            h1 {
                 font-size: 45px;
                 font-family: $font-family-Playfair;
             }
 
-            p{
+            p {
                 font-weight: 500;
             }
         }
 
-        &>.second{
+        &>.second {
             display: flex;
             flex-direction: row;
             gap: 100px;
@@ -57,36 +59,52 @@
     }
 }
 
-@media screen and (max-width: 1100px){
-    .second-container{
-        .contact{
-            &>.second{
-                flex-direction: column;   
-            .first-section{
-                width: 100%;
-            }
-        }
-    }
-}
-}
+@media screen and (max-width: 1100px) {
+    .second-container {
+        .contact {
+            &>.second {
+                flex-direction: column;
 
-@media screen and (max-width: 700px){
-    .second-container{
-        .contact{
-            &>.second{
-                flex-direction: column;   
-            .first-section{
-                width: 100%;
-
-                padding: 60px 30px;
-            gap: 30px;
-            .top{
-                h1{
-                    font-size: 35px;
+                .first-section {
+                    width: 100%;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .second-container {
+        .contact {
+            &>.second {
+                flex-direction: column;
+
+                .first-section {
+                    width: 100%;
+
+                    padding: 60px 30px;
+                    gap: 30px;
+
+                    .top {
+                        h1 {
+                            font-size: 35px;
+                        }
+                    }
+                }
             }
         }
     }
+}
+
+@media screen and (max-width: 450px) {
+    .hero-container1 {
+        height: 100vh;
+
+        &>div {
+            h1 {
+                font-size: 44px;
+            }
+        }
+
     }
 }

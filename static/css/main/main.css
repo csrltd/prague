@@ -75,30 +75,59 @@ nav .close span:nth-child(3) {
   transform: rotate(-45deg);
   position: absolute;
 }
-nav div {
+nav > div {
   display: flex;
   align-items: center;
   gap: 3rem;
   color: #ffffff;
 }
-nav div ul {
+nav > div ul {
   display: flex;
   gap: 2rem;
 }
-nav div ul a {
+nav > div ul a {
   transition: 0.3s ease-in-out;
 }
-nav div ul a:hover {
+nav > div ul a:hover {
   color: rgb(237, 82, 89);
 }
-nav div > a {
+nav > div ul .service {
+  position: relative;
+}
+nav > div ul .service > a {
+  pointer-events: none;
+}
+nav > div ul .service .dropdown {
+  position: absolute;
+  background-color: #292464;
+  display: none;
+  border-radius: 5px;
+}
+nav > div ul .service .dropdown a {
+  display: block;
+  color: #ffffff;
+  padding: 5px 10px;
+  gap: 24px;
+  font-size: 16px;
+  transition: all 0.4s linear;
+}
+nav > div ul .service .dropdown a:hover {
+  background-color: rgba(94, 87, 174, 0.9333333333);
+}
+nav > div ul .service:hover .dropdown {
+  display: block;
+}
+nav > div .listlinks {
+  display: none;
+}
+nav > div > a {
   border: 1px solid #ffffff;
   border-radius: 12px;
   display: inline-block;
   padding: 12px 25px;
   transition: 0.3s ease-in-out;
 }
-nav div > a:hover {
+nav > div > a:hover {
   background-color: #ffffff;
   color: rgb(237, 82, 89);
 }
@@ -117,7 +146,7 @@ nav div > a:hover {
 
 .hero-container {
   width: 100%;
-  background-image: url("../../img/home-img/hero-background.jpg");
+  background-image: url("/static/img/home-img/hero-background2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px 15%;
@@ -134,13 +163,58 @@ nav div > a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(41, 36, 100, 0.5);
+  background-color: rgba(41, 36, 100, 0.7);
+  z-index: -1;
+}
+
+.hero-container1 {
+  width: 100%;
+  background-image: url("/static/img/about-img/hero-image-about.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 15%;
+  position: relative;
+  z-index: 2;
+  padding-top: 100px;
+}
+.hero-container1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(41, 36, 100, 0.7);
   z-index: -1;
 }
 
 .border-padding-left {
   border-left: 4px solid #292464;
   padding-left: 2rem;
+}
+
+.border-padding-top {
+  border-top: 8px solid #292464;
+  border-radius: 10px;
+}
+
+.border-padding-bottom {
+  border-bottom: 8px solid #292464;
+  border-radius: 10px;
+}
+
+.team-title {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.team-title h2 {
+  font-family: "Playfair Display", serif;
+  color: #292464;
+  font-size: 32px;
 }
 
 .container {
@@ -158,6 +232,7 @@ nav div > a:hover {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  color: #292464;
 }
 .our-services .service-title h2 {
   font-family: "Playfair Display", serif;
@@ -176,7 +251,7 @@ nav div > a:hover {
   width: 100%;
   max-width: 500px;
   height: 250px;
-  background-image: url("../../img/home-img/services-1.jpg");
+  background-image: url("/static/img/home-img/services-1.jpg");
   border-radius: 12px;
   background-repeat: no-repeat;
   z-index: 2;
@@ -221,6 +296,57 @@ nav div > a:hover {
 .our-services .services .service:hover p {
   visibility: visible;
   opacity: 1;
+}
+
+.strong-mind {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.strong-mind h4 {
+  color: #292464;
+}
+.strong-mind .strong-mind-up {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.strong-mind .strong-mind-up .strong-mind-title {
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #292464;
+}
+.strong-mind .strong-mind-up .strong-mind-title h2 {
+  font-family: "Playfair Display", serif;
+  color: #292464;
+  font-size: 32px;
+}
+.strong-mind .strong-mind-up .strong-mind-right {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.strong-mind .strong-mind-down {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.strong-mind .strong-mind-down .strong-mind-left {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.strong-mind .strong-mind-down .strong-mind-right {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .contact {
@@ -273,7 +399,8 @@ nav div > a:hover {
   flex-direction: column;
   gap: 10px;
 }
-.contact .contact-form form input, .contact .contact-form form textarea {
+.contact .contact-form form input,
+.contact .contact-form form textarea {
   padding: 25px;
   border-radius: 6px;
   border: 1px solid #292464;
@@ -327,7 +454,7 @@ nav div > a:hover {
 .testimonials .testimonial .card {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 360px;
   background-color: rgba(147, 147, 147, 0.2);
   padding: 40px;
   border-radius: 12px;
@@ -395,16 +522,22 @@ footer .sub-container .first-section .first h2 {
   font-size: 32px;
   letter-spacing: 5px;
 }
-footer .sub-container .first-section .second ul, footer .sub-container .first-section .third ul, footer .sub-container .first-section .fourth ul {
+footer .sub-container .first-section .second ul,
+footer .sub-container .first-section .third ul,
+footer .sub-container .first-section .fourth ul {
   display: flex;
   flex-direction: column;
   gap: 18px;
   letter-spacing: 1.5px;
 }
-footer .sub-container .first-section .second ul h3, footer .sub-container .first-section .third ul h3, footer .sub-container .first-section .fourth ul h3 {
+footer .sub-container .first-section .second ul h3,
+footer .sub-container .first-section .third ul h3,
+footer .sub-container .first-section .fourth ul h3 {
   font-size: 24px;
 }
-footer .sub-container .first-section .second ul li, footer .sub-container .first-section .third ul li, footer .sub-container .first-section .fourth ul li {
+footer .sub-container .first-section .second ul li,
+footer .sub-container .first-section .third ul li,
+footer .sub-container .first-section .fourth ul li {
   font-weight: lighter;
 }
 footer .sub-container hr {
@@ -442,6 +575,9 @@ footer .sub-container .second-section span {
   .testimonials {
     padding-inline: 80px;
   }
+  .testimonials .testimonial .card {
+    max-width: 300px;
+  }
 }
 @media screen and (max-width: 1160px) {
   .testimonials {
@@ -475,6 +611,20 @@ footer .sub-container .second-section span {
     width: 100%;
   }
 }
+@media screen and (max-width: 995px) {
+  .strong-mind .strong-mind-up .strong-mind-title {
+    width: 100%;
+  }
+  .strong-mind .strong-mind-up .strong-mind-right {
+    width: 100%;
+  }
+  .strong-mind .strong-mind-down .strong-mind-left {
+    width: 100%;
+  }
+  .strong-mind .strong-mind-down .strong-mind-right {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 925px) {
   nav div {
     background-color: #292464;
@@ -493,6 +643,7 @@ footer .sub-container .second-section span {
     padding-top: 6rem;
   }
   nav div ul {
+    display: none;
     z-index: 998;
     width: 100%;
     flex-direction: column;
@@ -505,6 +656,49 @@ footer .sub-container .second-section span {
     transition: 0.3s ease;
   }
   nav div ul a:hover {
+    color: rgb(237, 82, 89);
+  }
+  nav div ul .service {
+    z-index: 2000;
+    position: absolute;
+  }
+  nav div ul .service > a {
+    pointer-events: none;
+  }
+  nav div ul .service .dropdown {
+    position: absolute;
+    background-color: #292464;
+    display: none;
+    border-radius: 5px;
+  }
+  nav div ul .service .dropdown a {
+    display: block;
+    color: #ffffff;
+    padding: 5px 10px;
+    gap: 24px;
+    font-size: 16px;
+    transition: all 0.4s linear;
+  }
+  nav div ul .service .dropdown a:hover {
+    background-color: rgba(94, 87, 174, 0.9333333333);
+  }
+  nav div ul .service:hover .dropdown {
+    display: block;
+  }
+  nav div .listlinks {
+    display: flex;
+    z-index: 998;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  nav div .listlinks a {
+    width: 100%;
+    transition: 0.3s ease;
+    font-size: 18px;
+  }
+  nav div .listlinks a:hover {
     color: rgb(237, 82, 89);
   }
   nav div a {
@@ -574,5 +768,16 @@ footer .sub-container .second-section span {
   }
   nav .hamburger {
     right: -6rem;
+  }
+  .hero-container1 {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .hero-container1 > div h1 {
+    font-size: 44px;
+  }
+  .hero-container1 .buttons {
+    display: flex;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=main.css.map */

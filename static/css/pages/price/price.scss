@@ -1,10 +1,11 @@
 @import "../../main/variables";
-.hero-container{
-    height: 65vh;
+.hero-container1{
+    height: 85vh;
     color: $white-color;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 50px;
 
     &>div{
         max-width: 600px;
@@ -100,8 +101,10 @@
 }
 
 @media screen and (max-width: 550px){
-    .hero-container{
-        &>div{    
+    .hero-container1{
+        height:100vh;
+        
+        &>div{   
             h1{
                 font-size: 44px;
             }                        
@@ -119,5 +122,23 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero-container1 {
+        height: fit-content;
+
+        &>div {
+            h1 {
+                font-size: 44px;
+            }
+        }
+
+        .buttons{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
     }
 }
