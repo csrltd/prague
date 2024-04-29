@@ -75,30 +75,59 @@ nav .close span:nth-child(3) {
   transform: rotate(-45deg);
   position: absolute;
 }
-nav div {
+nav > div {
   display: flex;
   align-items: center;
   gap: 3rem;
   color: #ffffff;
 }
-nav div ul {
+nav > div ul {
   display: flex;
   gap: 2rem;
 }
-nav div ul a {
+nav > div ul a {
   transition: 0.3s ease-in-out;
 }
-nav div ul a:hover {
+nav > div ul a:hover {
   color: rgb(237, 82, 89);
 }
-nav div > a {
+nav > div ul .service {
+  position: relative;
+}
+nav > div ul .service > a {
+  pointer-events: none;
+}
+nav > div ul .service .dropdown {
+  position: absolute;
+  background-color: #292464;
+  display: none;
+  border-radius: 5px;
+}
+nav > div ul .service .dropdown a {
+  display: block;
+  color: #ffffff;
+  padding: 5px 10px;
+  gap: 24px;
+  font-size: 16px;
+  transition: all 0.4s linear;
+}
+nav > div ul .service .dropdown a:hover {
+  background-color: rgba(94, 87, 174, 0.9333333333);
+}
+nav > div ul .service:hover .dropdown {
+  display: block;
+}
+nav > div .listlinks {
+  display: none;
+}
+nav > div > a {
   border: 1px solid #ffffff;
   border-radius: 12px;
   display: inline-block;
   padding: 12px 25px;
   transition: 0.3s ease-in-out;
 }
-nav div > a:hover {
+nav > div > a:hover {
   background-color: #ffffff;
   color: rgb(237, 82, 89);
 }
@@ -425,7 +454,7 @@ nav div > a:hover {
 .testimonials .testimonial .card {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 360px;
   background-color: rgba(147, 147, 147, 0.2);
   padding: 40px;
   border-radius: 12px;
@@ -546,6 +575,9 @@ footer .sub-container .second-section span {
   .testimonials {
     padding-inline: 80px;
   }
+  .testimonials .testimonial .card {
+    max-width: 300px;
+  }
 }
 @media screen and (max-width: 1160px) {
   .testimonials {
@@ -611,6 +643,7 @@ footer .sub-container .second-section span {
     padding-top: 6rem;
   }
   nav div ul {
+    display: none;
     z-index: 998;
     width: 100%;
     flex-direction: column;
@@ -623,6 +656,49 @@ footer .sub-container .second-section span {
     transition: 0.3s ease;
   }
   nav div ul a:hover {
+    color: rgb(237, 82, 89);
+  }
+  nav div ul .service {
+    z-index: 2000;
+    position: absolute;
+  }
+  nav div ul .service > a {
+    pointer-events: none;
+  }
+  nav div ul .service .dropdown {
+    position: absolute;
+    background-color: #292464;
+    display: none;
+    border-radius: 5px;
+  }
+  nav div ul .service .dropdown a {
+    display: block;
+    color: #ffffff;
+    padding: 5px 10px;
+    gap: 24px;
+    font-size: 16px;
+    transition: all 0.4s linear;
+  }
+  nav div ul .service .dropdown a:hover {
+    background-color: rgba(94, 87, 174, 0.9333333333);
+  }
+  nav div ul .service:hover .dropdown {
+    display: block;
+  }
+  nav div .listlinks {
+    display: flex;
+    z-index: 998;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  nav div .listlinks a {
+    width: 100%;
+    transition: 0.3s ease;
+    font-size: 18px;
+  }
+  nav div .listlinks a:hover {
     color: rgb(237, 82, 89);
   }
   nav div a {

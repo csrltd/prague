@@ -85,7 +85,7 @@ nav {
         }
     }
 
-    div {
+    >div {
         display: flex;
         align-items: center;
         gap: 3rem;
@@ -102,6 +102,46 @@ nav {
                     color: rgb(237, 82, 89);
                 }
             }
+
+            .service{
+                position: relative;
+
+                >a{
+                    pointer-events: none;
+                }
+
+                .dropdown{
+                    position: absolute;
+                    background-color: $primary-color;
+                    display: none;
+                    border-radius: 5px;
+                    a{
+                        display: block;
+                        color: $white-color;
+                        padding: 5px 10px;
+                        gap: 24px;
+                        font-size: 16px;
+                        transition: all .4s linear;
+
+                        &:hover{
+                            background-color: #5e57aeee;
+                        }
+                        
+                    }
+
+                   
+                }
+
+                &:hover{
+                    .dropdown{
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .listlinks{
+            display: none;
         }
 
         &>a {
@@ -497,7 +537,7 @@ nav {
         .card {
             position: relative;
             width: 100%;
-            max-width: 400px;
+            max-width: 360px;
             background-color: rgba($color: $grey-color, $alpha: 0.2);
             padding: 40px;
             border-radius: 12px;
@@ -639,6 +679,13 @@ footer {
 
     .testimonials {
         padding-inline: 80px;
+
+        .testimonial{
+            .card{
+                max-width: 300px;
+            }
+        }
+        
     }
 }
 
@@ -730,6 +777,8 @@ footer {
             padding-top: 6rem;
 
             ul {
+                display: none;
+               
                 z-index: 998;
                 width: 100%;
                 flex-direction: column;
@@ -740,6 +789,64 @@ footer {
                     padding: 1rem;
                     width: 100%;
                     transition: .3s ease;
+
+                    &:hover {
+                        color: rgb(237, 82, 89);
+                    }
+                }
+
+                .service{
+                    // display: block;
+                    z-index: 2000;
+                    position: absolute;
+    
+                    >a{
+                        pointer-events: none;
+                    }
+    
+                    .dropdown{
+                        position: absolute;
+                        background-color: $primary-color;
+                        display: none;
+                        border-radius: 5px;
+                        a{
+                            display: block;
+                            color: $white-color;
+                            padding: 5px 10px;
+                            gap: 24px;
+                            font-size: 16px;
+                            transition: all .4s linear;
+    
+                            &:hover{
+                                background-color: #5e57aeee;
+                            }
+                            
+                        }
+    
+                       
+                    }
+    
+                    &:hover{
+                        .dropdown{
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .listlinks {
+               display: flex;
+                z-index: 998;
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+
+                a {
+                    // padding: 1rem;
+                    width: 100%;
+                    transition: .3s ease;
+                    font-size: 18px;
 
                     &:hover {
                         color: rgb(237, 82, 89);
