@@ -1,179 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/css/main/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="shortcut icon"
-      type="image/jpg"
-      sizes="16x16 32x32"
-      href="/static/img/home-img/Prague-Logo-Light.svg"
-    />
-    <link
-      rel="stylesheet"
-      href="/static/css/pages/case-management/case_management.css"
-    />
-    <title>Case Management</title>
-  </head>
 
-  <body>
-    <!--Navigation-->
-    <nav id="nav">
-      <img src="/static/img/home-img/Prague-Logo-Light.svg" alt="Prague Logo">
-      <div id="links-container">
-          <ul>
-              <a href="#"><li>Home</li></a>
-              <a href="#"><li>About Us</li></a>
-              <a href="#services"><li>Services</li></a>
-              <a href="#"><li>Career</li></a>
-              <a href="#"><li>Patient Info</li></a>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/static/css/main/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" type="image/jpg" sizes="16x16 32x32" href="/static/img/home-img/Prague-Logo-Light.svg" />
+  <link rel="stylesheet" href="/static/css/pages/case-management/case_management.css" />
+  <title>Case Management</title>
+</head>
 
-          <a href="#">Prague Family Clinic</a>
-      </div>
-      <section class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-      </section>
+<body>
+  <!--Navigation-->
+  <nav id="nav">
+    <img src="/static/img/home-img/Prague-Logo-Light.svg" alt="Prague Logo">
+    <div id="links-container">
+      <ul>
+        <a href="/src/pages/home/home.html">
+          <li>Home</li>
+        </a>
+        <a href="/src/pages/about/about.html">
+          <li>About Us</li>
+        </a>
+        <div class="service">
+          <a href="">
+            <li>Services</li>
+          </a>
+
+          <div class="dropdown">
+            <a href="/src/pages/financial/financial.html">Financial</a>
+            <a href="/src/pages/swingbed/swingbed.html">Swing-bed</a>
+            <a href="/src/pages/rehabilitation/rehabilitation.html">Rehabilation</a>
+            <a href="#">Case Management</a>
+            <a href="/src/pages/wondcare-service/wondcare.html">Woundcare</a>
+          </div>
+        </div>
+
+        <a href="/src/pages/employment/employment.html">
+          <li>Career</li>
+        </a>
+        <a href="#">
+          <li>Patient Info</li>
+        </a>
+      </ul>
+
+      <ul class="listlinks">
+        <a href="/src/pages/home/home.html">
+            <li>Home</li>
+        </a>
+        <a href="/src/pages/about/about.html">
+            <li>About Us</li>
+        </a>
+
+        <a href="/src/pages/financial/financial.html">
+            <li>Finance</li>
+        </a>
+
+        <a href="/src/pages/swingbed/swingbed.html">
+            <li>Swing-bed</li>
+        </a>
+
+        <a href="/src/pages/rehabilitation/rehabilitation.html">
+            <li>Rehabilation</li>
+        </a>
+        <a href="#">
+            <li>Case Management</li>
+        </a>
+        <a href="/src/pages/wondcare-service/wondcare.html">
+            <li>Woundcare</li>
+        </a>
+        
+        <a href="/src/pages/employment/employment.html">
+            <li>Career</li>
+        </a>
+        <a href="#">
+            <li>Patient Info</li>
+        </a>
+    </ul>
+
+      <a href="#">Prague Family Clinic</a>
+    </div>
+    <section class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </section>
 
   </nav>
-    <!--End of Navigation-->
+  <!--End of Navigation-->
 
-    <!-- Hero Section -->
-    <section class="hero-container1">
-      <div class="container">
-        <h1>Case Management</h1>
-      </div>
-    </section>
-    <!-- End of Hero Section-->
+  <!-- Hero Section -->
+  <section class="hero-container1">
+    <div class="container">
+      <h1>Case Management</h1>
+    </div>
+  </section>
+  <!-- End of Hero Section-->
 
-    <!-- Second Container-->
-    <section class="second-container">
-     <div class="first-section container">
+  <!-- Second Container-->
+  <section class="second-container">
+    <div class="first-section container">
 
       <div class="image-hands">
         <img src="/static/img/case-management-img/holding-hands.jpg" alt="People holding hands">
       </div>
-        
-        <div>
-            <h1>Case Management and Social Services</h1>
-            <p>Dealing with an illness or injury can be difficult for patients and their loved ones. At Prague Regional Memorial Hospital, our Case Management and Social Services department is available to assist patients and their families as they cope with the many psychological and social problems that may arise during hospitalization and medical treatment.</p>
-        </div>
-        <svg width="724" height="724" viewBox="0 0 724 724" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle opacity="0.13" cx="362" cy="362" r="362" fill="#292464"/>
-            </svg>
+
+      <div>
+        <h1>Case Management and Social Services</h1>
+        <p>Dealing with an illness or injury can be difficult for patients and their loved ones. At Prague Regional
+          Memorial Hospital, our Case Management and Social Services department is available to assist patients and
+          their families as they cope with the many psychological and social problems that may arise during
+          hospitalization and medical treatment.</p>
+      </div>
+      <svg width="724" height="724" viewBox="0 0 724 724" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle opacity="0.13" cx="362" cy="362" r="362" fill="#292464" />
+      </svg>
 
 
-     </div>
+    </div>
 
-     <div class="second-section">
-        <div class="first">
-            <h1>Social Services</h1>
-            <p>If your doctor or nurse sees that you might need extra emotional support during your hospital stay they may place a referral to our social worker. At Prague Regional Memorial Hospital, our social workers provide support services that may include:</p>
-            <div class="list">
-                <div><i class="fa-solid fa-check"></i><p>crisis intervention</p></div>
-                <div><i class="fa-solid fa-check"></i><p>supportive and adjustment counseling, including coping with the loss of a loved one</p></div>
-                <div><i class="fa-solid fa-check"></i><p>psychosocial evaluations and treatment planning</p></div>
-                <div><i class="fa-solid fa-check"></i><p>support group referrals</p></div>
-            </div>
-            <div class="paragraphs">
-                <p>The social worker begins by assessing the patient and determining what psychological or social problems they are having due to their medical condition.</p>
-                <p>After assessing the patient’s needs, the social worker will intervene as needed. Assistance will vary depending on the patient’s needs. For example, some patients may need help connecting with services in their community, such as a homeless shelter or drug treatment support. Other patients may need help understanding their medical condition and navigating everything involved with their hospital stay.</p>
-                <p>Any concerns related to the psychological, practical or social well being of each patient or their loved ones may be discussed openly with our social workers.</p>
-            </div>
-        </div>
-       <div class="img-container"></div>
-     </div>
-     <div class="third-section">
-        <div class="img-container"></div>
-        <div class="second">
-            <h1>Case Management</h1>
-            <p>Our case managers ensure our patients receive the highest quality care during and after their stay at Prague Hospital. By helping patients cope with complicated health or medical situations in the most effective way possible, case managers assist patients in achieving a better quality of life. Our case manager begins by identifying the patient’s goals, needs, and resources. From that assessment, the case manager and the patient together formulate a plan to meet those goals.</p>
-            <h3>Our social workers and case managers offer a wide range of services, including:</h3>
-            <div class="list">
-                <div><i class="fa-solid fa-check"></i><p>answering questions related to health insurance, Medicaid, Medicare, Social Security and state disability</p></div>
-                <div><i class="fa-solid fa-check"></i><p>case coordination to help you to decide on the best arrangements for you when you leave the hospital</p></div>
-                <div><i class="fa-solid fa-check"></i><p>financial assessment and referral services</p></div>
-                <div><i class="fa-solid fa-check"></i><p>education and consultative services</p></div>
-                <div><i class="fa-solid fa-check"></i><p>advance directive assistance</p></div>
-                <div><i class="fa-solid fa-check"></i><p>community resources</p></div>
-                <div><i class="fa-solid fa-check"></i><p>home health care arrangements</p></div>
-                <div><i class="fa-solid fa-check"></i><p>hospice care arrangement</p></div>
-            </div>
-            <div class="paragraph">
-                <p>The case management and social services department at Prague Regional Memorial Hospital ensures you experience the highest quality care both during and after your stay.</p>
-            </div>
-        </div>
-     </div>
-    </section>
-    <!-- End of second container-->
-
-    <footer>
-      <div class="sub-container">
-        <div class="first-section">
-          <div class="first">
-            <img
-              src="/static/img/home-img/Prague-Logo-Light.svg"
-              alt="Prague Logo"
-            />
-            <div class="social-icons">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-            <h2>Open 24/7 Hours</h2>
+    <div class="second-section">
+      <div class="first">
+        <h1>Social Services</h1>
+        <p>If your doctor or nurse sees that you might need extra emotional support during your hospital stay they may
+          place a referral to our social worker. At Prague Regional Memorial Hospital, our social workers provide
+          support services that may include:</p>
+        <div class="list">
+          <div><i class="fa-solid fa-check"></i>
+            <p>crisis intervention</p>
           </div>
-          <div class="second">
-            <ul>
-              <h3>Our Services</h3>
-              <li>Swing Bed</li>
-              <li>Wound Care</li>
-              <li>Respiratory Therapy</li>
-              <li>Rehabilitation</li>
-              <li>Case Management</li>
-              <li>Nursing</li>
-            </ul>
+          <div><i class="fa-solid fa-check"></i>
+            <p>supportive and adjustment counseling, including coping with the loss of a loved one</p>
           </div>
-          <div class="third">
-            <ul>
-              <h3>About</h3>
-              <li>Company</li>
-              <li>Financial Services</li>
-              <li>Price Transparency</li>
-              <li>Employment</li>
-              <li>Family Clinic</li>
-            </ul>
+          <div><i class="fa-solid fa-check"></i>
+            <p>psychosocial evaluations and treatment planning</p>
           </div>
-          <div class="fourth">
-            <ul>
-              <h3>Support</h3>
-              <li>
-                We're here to help with always on <br />
-                24 x 7 x 365 support
-              </li>
-              <li>(405) 567-4922</li>
-              <li>info@prague.hospital</li>
-            </ul>
+          <div><i class="fa-solid fa-check"></i>
+            <p>support group referrals</p>
           </div>
         </div>
-        <hr />
-        <div class="second-section">
-          <span>&copy;</span>
-          <p>Copyright 2021 Prague Regional Memorial Hospital. (U.S.A.)</p>
+        <div class="paragraphs">
+          <p>The social worker begins by assessing the patient and determining what psychological or social problems
+            they are having due to their medical condition.</p>
+          <p>After assessing the patient’s needs, the social worker will intervene as needed. Assistance will vary
+            depending on the patient’s needs. For example, some patients may need help connecting with services in their
+            community, such as a homeless shelter or drug treatment support. Other patients may need help understanding
+            their medical condition and navigating everything involved with their hospital stay.</p>
+          <p>Any concerns related to the psychological, practical or social well being of each patient or their loved
+            ones may be discussed openly with our social workers.</p>
         </div>
       </div>
-    </footer>
-    <script src="/static/js/main/main.js"></script>
-    <script src="/static/js/pages/home/home.js"></script>
-  </body>
+      <div class="img-container"></div>
+    </div>
+    <div class="third-section">
+      <div class="img-container"></div>
+      <div class="second">
+        <h1>Case Management</h1>
+        <p>Our case managers ensure our patients receive the highest quality care during and after their stay at Prague
+          Hospital. By helping patients cope with complicated health or medical situations in the most effective way
+          possible, case managers assist patients in achieving a better quality of life. Our case manager begins by
+          identifying the patient’s goals, needs, and resources. From that assessment, the case manager and the patient
+          together formulate a plan to meet those goals.</p>
+        <h3>Our social workers and case managers offer a wide range of services, including:</h3>
+        <div class="list">
+          <div><i class="fa-solid fa-check"></i>
+            <p>answering questions related to health insurance, Medicaid, Medicare, Social Security and state disability
+            </p>
+          </div>
+          <div><i class="fa-solid fa-check"></i>
+            <p>case coordination to help you to decide on the best arrangements for you when you leave the hospital</p>
+          </div>
+          <div><i class="fa-solid fa-check"></i>
+            <p>financial assessment and referral services</p>
+          </div>
+          <div><i class="fa-solid fa-check"></i>
+            <p>education and consultative services</p>
+          </div>
+          <div><i class="fa-solid fa-check"></i>
+            <p>advance directive assistance</p>
+          </div>
+          <div><i class="fa-solid fa-check"></i>
+            <p>community resources</p>
+          </div>
+          <div><i class="fa-solid fa-check"></i>
+            <p>home health care arrangements</p>
+          </div>
+          <div><i class="fa-solid fa-check"></i>
+            <p>hospice care arrangement</p>
+          </div>
+        </div>
+        <div class="paragraph">
+          <p>The case management and social services department at Prague Regional Memorial Hospital ensures you
+            experience the highest quality care both during and after your stay.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of second container-->
+
+  <footer>
+    <div class="sub-container">
+      <div class="first-section">
+        <div class="first">
+          <img src="/static/img/home-img/Prague-Logo-Light.svg" alt="Prague Logo" />
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <h2>Open 24/7 Hours</h2>
+        </div>
+        <div class="second">
+          <ul>
+            <h3>Our Services</h3>
+            <a href="/src/pages/swingbed/swingbed.html">
+              <li>Swing Bed</li>
+            </a>
+            <a href="/src/pages/wondcare-service/wondcare.html">
+              <li>Wound Care</li>
+            </a>
+            <a href="#">
+              <li>Respiratory Therapy</li>
+            </a>
+            <a href="/src/pages/rehabilitation/rehabilitation.html">
+              <li>Rehabilitation</li>
+            </a>
+            <a href="/src/pages/wondcare-service/wondcare.html">
+              <li>Case Management</li>
+            </a>
+            <a href="#">
+              <li>Nursing</li>
+            </a>
+
+          </ul>
+        </div>
+        <div class="third">
+          <ul>
+            <h3>About</h3>
+            <a href="#">
+              <li>Company</li>
+            </a>
+            <a href="/src/pages/financial/financial.html">
+              <li>Financial Services</li>
+            </a>
+            <a href="/src/pages/price/price.html">
+              <li>Price Transparency</li>
+            </a>
+            <a href="/src/pages/employment/employment.html">
+              <li>Employment</li>
+            </a>
+            <a href="#">
+              <li>Family Clinic</li>
+            </a>
+
+          </ul>
+        </div>
+        <div class="fourth">
+          <ul>
+            <h3>Support</h3>
+            <li>
+              We're here to help with always on <br />
+              24 x 7 x 365 support
+            </li>
+            <li>(405) 567-4922</li>
+            <li>info@prague.hospital</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="second-section">
+        <span>&copy;</span>
+        <p>Copyright 2021 Prague Regional Memorial Hospital. (U.S.A.)</p>
+      </div>
+    </div>
+  </footer>
+  <script src="/static/js/main/main.js"></script>
+  <script src="/static/js/pages/home/home.js"></script>
+</body>
+
 </html>

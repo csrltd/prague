@@ -18,33 +18,78 @@
   <nav id="nav">
     <img src="/static/img/home-img/Prague-Logo-Light.svg" alt="Prague Logo">
     <div id="links-container">
-      <ul>
-        <a href="#">
-          <li>Home</li>
-        </a>
-        <a href="#">
-          <li>About Us</li>
-        </a>
-        <a href="#services">
-          <li>Services</li>
-        </a>
-        <a href="#">
-          <li>Career</li>
-        </a>
-        <a href="#">
-          <li>Patient Info</li>
-        </a>
+        <ul>
+            <a href="/src/pages/home/home.html">
+                <li>Home</li>
+            </a>
+            <a href="/src/pages/about/about.html">
+                <li>About Us</li>
+            </a>
+            <div class="service">
+                <a href="">
+                    <li>Services</li>
+                </a>
+
+                <div class="dropdown">
+                    <a href="#">Financial</a>
+                    <a href="/src/pages/swingbed/swingbed.html">Swing-bed</a>
+                    <a href="/src/pages/rehabilitation/rehabilitation.html">Rehabilation</a>
+                    <a href="/src/pages/case-management/case_management.html">Case Management</a>
+                    <a href="/src/pages/wondcare-service/wondcare.html">Woundcare</a>
+                </div>
+            </div>
+            
+            <a href="/src/pages/employment/employment.html">
+                <li>Career</li>
+            </a>
+            <a href="#">
+                <li>Patient Info</li>
+            </a>
+        </ul>
+
+        <ul class="listlinks">
+          <a href="/src/pages/home/home.html">
+              <li>Home</li>
+          </a>
+          <a href="/src/pages/about/about.html">
+              <li>About Us</li>
+          </a>
+
+          <a href="#">
+              <li>Finance</li>
+          </a>
+
+          <a href="/src/pages/swingbed/swingbed.html">
+              <li>Swing-bed</li>
+          </a>
+
+          <a href="/src/pages/rehabilitation/rehabilitation.html">
+              <li>Rehabilation</li>
+          </a>
+          <a href="/src/pages/case-management/case_management.html">
+              <li>Case Management</li>
+          </a>
+          <a href="/src/pages/wondcare-service/wondcare.html">
+              <li>Woundcare</li>
+          </a>
+          
+          <a href="/src/pages/employment/employment.html">
+              <li>Career</li>
+          </a>
+          <a href="#">
+              <li>Patient Info</li>
+          </a>
       </ul>
 
-      <a href="#">Prague Family Clinic</a>
+        <a href="#">Prague Family Clinic</a>
     </div>
     <section class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </section>
 
-  </nav>
+</nav>
   <!--End of Navigation-->
 
   <!-- Hero Section -->
@@ -124,22 +169,24 @@
         <div class="second">
           <ul>
             <h3>Our Services</h3>
-            <li>Swing Bed</li>
-            <li>Wound Care</li>
-            <li>Respiratory Therapy</li>
-            <li>Rehabilitation</li>
-            <li>Case Management</li>
-            <li>Nursing</li>
+            <a href="/src/pages/swingbed/swingbed.html"><li>Swing Bed</li></a>
+            <a href="/src/pages/wondcare-service/wondcare.html"><li>Wound Care</li></a>
+            <a href="#"><li>Respiratory Therapy</li></a>
+            <a href="/src/pages/rehabilitation/rehabilitation.html"><li>Rehabilitation</li></a>
+            <a href="/src/pages/wondcare-service/wondcare.html"><li>Case Management</li></a>
+            <a href="#"><li>Nursing</li></a>
+            
           </ul>
         </div>
         <div class="third">
           <ul>
             <h3>About</h3>
-            <li>Company</li>
-            <li>Financial Services</li>
-            <li>Price Transparency</li>
-            <li>Employment</li>
-            <li>Family Clinic</li>
+            <a href="#"><li>Company</li></a>
+            <a href="#"><li>Financial Services</li></a>
+            <a href="/src/pages/price/price.html"><li>Price Transparency</li></a>
+            <a href="/src/pages/employment/employment.html"><li>Employment</li></a>
+            <a href="#"><li>Family Clinic</li></a>
+            
           </ul>
         </div>
         <div class="fourth">
