@@ -10,6 +10,7 @@ def contact(request):
         if form.is_valid():
             form.save()
             first_name = form.cleaned_data['first_name']
+
             last_name = form.cleaned_data['last_name']
             phone = form.cleaned_data['phone']
             email= form.cleaned_data['email']
@@ -19,7 +20,7 @@ def contact(request):
             from_email = email
             recipient_list = ['csr.chmc@gmail.com']
             success_message = 'Message saved but not sent'
-            send_mail(subject=subject, message=message, from_email=from_email, recipient_list=recipient_list, fail_silently=False)
+            # send_mail(subject=subject, message=message, from_email=from_email, recipient_list=recipient_list, fail_silently=False)
             return render(request, 'contact/contact.html', {'form': ContactForm(), 'success_massage': success_message})
         else:
             success_message = None

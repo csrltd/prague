@@ -6,7 +6,8 @@ from .views.contact import contact
 from .views.services import swingbed, rehabService, caseManagement
 from .views.financial import financial
 from .views.price import price
-
+from .views.wound_care import wound_care
+from.views.employment import employment
 
 urlpatterns = [
     path('', index, name='home'),
@@ -21,6 +22,8 @@ urlpatterns = [
     path('job/<int:id>/', getJobDetail, name="job"),
     path('filter-jobs/', filter_jobTypes, name='filter_jobs'),
     path('filter-jobs-by-title/', filter_jobs_by_title, name='search-jobs'),
-    path('filter-recent-and-saved-jobs/', filter_recent_and_past_jobs, name='filter_recent')
+    path('filter-recent-and-saved-jobs/', filter_recent_and_past_jobs, name='filter_recent'),
+    path('wound_care/', wound_care, name='wound_care'),
+    path('employment/', employment, name='employment'),
 ]
 

@@ -18,69 +18,72 @@
         <img src="/static/img/home-img/Prague-Logo-Light.svg" alt="Prague Logo">
         <div id="links-container">
             <ul>
-                <a href="/src/pages/home/home.html">
+                <a href="{% url "home" %}">
                     <li>Home</li>
                 </a>
-                <a href="/src/pages/about/about.html">
+                <a href="{% url "about" %}">
                     <li>About Us</li>
                 </a>
+
                 <div class="service">
-                    <a href="">
+                    <a href="{% url "home" %}">
                         <li>Services</li>
                     </a>
 
                     <div class="dropdown">
-                        <a href="/src/pages/financial/financial.html">Financial</a>
-                        <a href="/src/pages/swingbed/swingbed.html">Swing-bed</a>
-                        <a href="/src/pages/rehabilitation/rehabilitation.html">Rehabilation</a>
-                        <a href="/src/pages/case-management/case_management.html">Case Management</a>
-                        <a href="/src/pages/wondcare-service/wondcare.html">Woundcare</a>
+                        <a href="{% url "financial" %}">Financial</a>
+                        <a href="{% url "swing-bed" %}">Swing-bed</a>
+                        <a href="{% url "rehab-servive" %}">Rehabilation</a>
+                        <a href="{% url "case-management" %}">Case Management</a>
+                        <a href="{% url "wound_care" %}">Woundcare</a>
                     </div>
                 </div>
                 
-                <a href="/src/pages/employment/employment.html">
+                <a href="{% url "employment" %}">
                     <li>Career</li>
                 </a>
-                <a href="#">
+                <a href="{% url "home" %}">
                     <li>Patient Info</li>
                 </a>
             </ul>
 
             <ul class="listlinks">
-                <a href="/src/pages/home/home.html">
+                <a href="{% url "home" %}">
                     <li>Home</li>
                 </a>
-                <a href="/src/pages/about/about.html">
+                <a href="{% url "about" %}">
                     <li>About Us</li>
                 </a>
 
-                <a href="/src/pages/financial/financial.html">
+                <a href="{% url "financial" %}">
                     <li>Finance</li>
                 </a>
 
-                <a href="/src/pages/swingbed/swingbed.html">
+                <a href="{% url "swing-bed" %}">
                     <li>Swing-bed</li>
                 </a>
 
-                <a href="/src/pages/rehabilitation/rehabilitation.html">
+                <a href="{% url "rehab-servive" %}">
                     <li>Rehabilation</li>
                 </a>
-                <a href="/src/pages/case-management/case_management.html">
+                <a href="{% url "case-management" %}">
                     <li>Case Management</li>
                 </a>
-                <a href="/src/pages/wondcare-service/wondcare.html">
+                <a href="{% url "wound_care" %}">
                     <li>Woundcare</li>
                 </a>
                 
-                <a href="/src/pages/employment/employment.html">
+                <a href="{% url "employment" %}">
                     <li>Career</li>
                 </a>
-                <a href="#">
+                <a href="{% url "home" %}">
                     <li>Patient Info</li>
                 </a>
             </ul>
 
-            <a href="#">Prague Family Clinic</a>
+
+
+            <a href="{% url "home" %}">Prague Family Clinic</a>
         </div>
         <section class="hamburger" id="hamburger">
             <span></span>
@@ -121,14 +124,17 @@
                     </div>   
                 </div>
                 <div class="contact-form">
-                    <form action="#" method="get">
+                    
+                    <form action="#" method="POST">
+                        {% csrf_token %}
                         <div class="names">
-                            <input type="text" id="fname" name="fname" placeholder="First Name">
-                            <input type="text" id="lname" name="lname" placeholder="Last Name">
+                            {{form.first_name}}
+                            {{form.last_name}}
+                            
                         </div>
-                        <input type="email" id="email" name="email" placeholder="Email">
-                        <input type="tel" id="phone" name="phone" placeholder="Phone">
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        {{form.email}}
+                        {{form.phone}}
+                        {{form.message}}
                         <input type="submit" value="Send Message">
                     </form>
                 </div>
