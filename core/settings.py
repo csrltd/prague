@@ -3,18 +3,11 @@ import os
 from datetime import timedelta
 from dotenv import load_dotenv
 
-#Environment path
-development_path = "core/.env"
-deployment_path = "/home/prague/prague/core/.env"
-
-#Check if it is development or deployment environment
-if os.path.isfile(development_path):
-    load_dotenv(development_path)
-else:
-    load_dotenv(deployment_path)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+load_dotenv(f"{BASE_DIR}/core/.env")
 
 
 # Quick-start development settings - unsuitable for production
@@ -26,7 +19,7 @@ SECRET_KEY =os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = eval(os.getenv('DEBUG'))
 
-ALLOWED_HOSTS = ["prague.csrtesting.com",'127.0.0.1']
+ALLOWED_HOSTS = ["prague.csrtesting.com",'127.0.0.1','prague.onrender.com']
 
 
 # Application definition
@@ -45,6 +38,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -111,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Africa/Kigali'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -125,6 +119,10 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR/'static'
 ]
+
+if not DEBUG:
+    STATIC_ROOT = BASE_DIR/'staticfiles'
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
