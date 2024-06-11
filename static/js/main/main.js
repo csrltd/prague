@@ -18,3 +18,8 @@ hamburger.addEventListener("click", () => {
         linksContainer.style.top = 0;
     }
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+    var currentYear = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = currentYear;
+});

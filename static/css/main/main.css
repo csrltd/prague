@@ -91,19 +91,19 @@ nav > div ul a {
 nav > div ul a:hover {
   color: rgb(237, 82, 89);
 }
-nav > div ul .service {
+nav > div ul .service, nav > div ul .patient {
   position: relative;
 }
-nav > div ul .service > a {
+nav > div ul .service > a, nav > div ul .patient > a {
   pointer-events: none;
 }
-nav > div ul .service .dropdown {
+nav > div ul .service .dropdown, nav > div ul .patient .dropdown {
   position: absolute;
   background-color: #292464;
   display: none;
   border-radius: 5px;
 }
-nav > div ul .service .dropdown a {
+nav > div ul .service .dropdown a, nav > div ul .patient .dropdown a {
   display: block;
   color: #ffffff;
   padding: 5px 10px;
@@ -111,10 +111,10 @@ nav > div ul .service .dropdown a {
   font-size: 16px;
   transition: all 0.4s linear;
 }
-nav > div ul .service .dropdown a:hover {
+nav > div ul .service .dropdown a:hover, nav > div ul .patient .dropdown a:hover {
   background-color: rgba(94, 87, 174, 0.9333333333);
 }
-nav > div ul .service:hover .dropdown {
+nav > div ul .service:hover .dropdown, nav > div ul .patient:hover .dropdown {
   display: block;
 }
 nav > div .listlinks {

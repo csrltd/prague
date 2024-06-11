@@ -23,7 +23,7 @@ def email_template(first_name,last_name,email,phone,message):
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
             border-bottom: solid 1px #dee2e6;
-        }}
+        }}   CV Z
         .content {{
             padding: 20px;
         }}

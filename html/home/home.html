@@ -30,25 +30,38 @@
                 </a>
 
                 <div class="service">
-                    <a href="{% url "home" %}">
+                    
                         <li>Services</li>
-                    </a>
+                    
 
                     <div class="dropdown">
-                        <a href="{% url "financial" %}">Financial</a>
+
                         <a href="{% url "swing-bed" %}">Swing-bed</a>
                         <a href="{% url "rehab-servive" %}">Rehabilation</a>
                         <a href="{% url "case-management" %}">Case Management</a>
                         <a href="{% url "wound_care" %}">Woundcare</a>
+                        <a href="{% url "respiratory_therapy" %}">Respiratory Therapy</a>
+                        <a href="{% url "nursing" %}">Nursing</a>
+                        <a href="{% url "emergency" %}">Emergency</a>
+                        
                     </div>
                 </div>
                 
                 <a href="{% url "employment" %}">
                     <li>Career</li>
                 </a>
-                <a href="{% url "home" %}">
-                    <li>Patient Info</li>
-                </a>
+                
+                <div class="patient">
+                    
+                        <li>Patient Info</li>
+                    
+
+                    <div class="dropdown">
+                        <a href="{% url "financial" %}">Financial Services</a>
+                        <a href="{% url "price" %}">Price Transparency</a>
+                        
+                    </div>
+                </div>
             </ul>
 
             <ul class="listlinks">
@@ -216,8 +229,7 @@
                             <div>
                                 <img src="/static/img/home-img/hospital-bed.svg" alt="Swing Bed"> <span>Swing Bed</span>
                             </div>
-                            <p>Our case managers ensure our patients receive the highest quality care during and after
-                                their stay at Carnegie Hospital. lorem</p>
+                            <p>After surgery or hospitalization, some patients require additional care and transfer into a nursing home or rehabilitation facility to help improve their physical functioning. </p>
                         </div>
                     </div>
                 </a>
@@ -228,8 +240,7 @@
                             <div>
                                 <img src="/static/img/home-img/wounded.svg" alt="Wound Care"> <span>Wound Care</span>
                             </div>
-                            <p>Our case managers ensure our patients receive the highest quality care during and after
-                                their stay at Carnegie Hospital.</p>
+                            <p>Prague Regional Memorial Hospital offers high quality care for slow healing and chronic wounds. We provide full assessment, tailored treatment, patient education and support.</p>
                         </div>
 
                     </div>
@@ -242,8 +253,7 @@
                                 <img src="/static/img/home-img/lung.svg" alt="Respiratory"> <span>Respiratory
                                     Therapy</span>
                             </div>
-                            <p>Our case managers ensure our patients receive the highest quality care during and after
-                                their stay at Carnegie Hospital.</p>
+                            <p>Our respiratory therapists are essential members of the multidisciplinary healthcare team, collaborating with the physicians and nurses to provide compassionate, high-quality care to all areas of the hospital.</p>
                         </div>
 
                     </div>
@@ -255,8 +265,7 @@
                                 <img src="/static/img/home-img/physical-therapy.svg" alt="Rehabilitation">
                                 <span>Rehabilitation</span>
                             </div>
-                            <p>Our case managers ensure our patients receive the highest quality care during and after
-                                their stay at Carnegie Hospital.</p>
+                            <p>Prague Regional Memorial Hospital provides comprehensive Physical Therapy, Occupational Therapy and Sports Medicine services to help our patients return to an independent lifestyle. </p>
                         </div>
                     </div>
 
@@ -268,8 +277,7 @@
                                 <img src="/static/img/home-img/case-file.svg" alt="Case File"> <span>Case
                                     Management</span>
                             </div>
-                            <p>Our case managers ensure our patients receive the highest quality care during and after
-                                their stay at Carnegie Hospital.</p>
+                            <p>Dealing with an illness or injury can be difficult for patients and their loved ones. </p>
                         </div>
 
                     </div>
@@ -283,8 +291,7 @@
                                 <img src="/static/img/home-img/medical-team.svg" alt="Medical Team">
                                 <span>Nursing</span>
                             </div>
-                            <p>Our case managers ensure our patients receive the highest quality care during and after
-                                their stay at Carnegie Hospital.</p>
+                            <p>At Prague Regional Memorial Hospital our nursing staff prides itself on compassionate care-giving and nursing excellence. </p>
                         </div>
 
                     </div>
@@ -293,7 +300,7 @@
             </div>
             </a>
         </section>
-        <section class="strong-mind container" id="strongMind">
+        <!-- <section class="strong-mind container" id="strongMind">
             <div class="strong-mind-up">
                 <div class="border-padding-left strong-mind-title">
                     <h2>Strong Mind Program</h2>
@@ -351,7 +358,7 @@
 
 
 
-        </section>
+        </section> -->
         <section class="we-believe container">
             <img src="/static/img/home-img/what-we-believe-1.jpg" alt="Woman Smiling">
             <div class="believe-section-two">
@@ -416,7 +423,7 @@
             </div>
         </section>
 
-        <section class="testimonials">
+        <!-- <section class="testimonials">
             <div class="border-padding-left">
                 <h4>WE LOVE THEM</h4>
                 <h2>What our clients have to say</h2>
@@ -441,7 +448,7 @@
                     <span>Name and another name</span>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="trusted-partner container">
             <div class="first-section">
@@ -538,8 +545,7 @@
               <img src="/static/img/home-img/Prague-Logo-Light.svg" alt="Prague Logo" />
               <div class="social-icons">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
               </div>
               <h2>Open 24/7 Hours</h2>
@@ -582,7 +588,7 @@
           <hr />
           <div class="second-section">
             <span>&copy;</span>
-            <p>Copyright 2021 Prague Regional Memorial Hospital. (U.S.A.)</p>
+            <p>Copyright  <span id="currentYear"></span> Prague Regional Memorial Hospital. (U.S.A.)</p>
           </div>
         </div>
       </footer>

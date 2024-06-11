@@ -43,9 +43,9 @@
   width: 100%;
   position: relative;
   margin-top: 0;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
 }
 .second-container h1 {
   color: #292464;
@@ -346,4 +346,4 @@
   .hero-container1 {
     height: auto;
   }
-}/*# sourceMappingURL=wondcare.css.map */
+}/*# sourceMappingURL=respiratory_therapy.css.map */

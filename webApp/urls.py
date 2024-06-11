@@ -3,7 +3,7 @@ from .views.index import index
 from .views.career import jobList, getJobDetail, filter_jobTypes, filter_recent_and_past_jobs, filter_jobs_by_title
 from .views.about import about
 from .views.contact import contact
-from .views.services import swingbed, rehabService, caseManagement
+from .views.services import *
 from .views.financial import financial
 from .views.price import price
 from .views.wound_care import wound_care
@@ -24,6 +24,9 @@ urlpatterns = [
     path('filter-jobs-by-title/', filter_jobs_by_title, name='search-jobs'),
     path('filter-recent-and-saved-jobs/', filter_recent_and_past_jobs, name='filter_recent'),
     path('wound_care/', wound_care, name='wound_care'),
+    path('nursing/', nursing, name='nursing'),
+    path('respiratory_therapy/', respiratory_therapy, name='respiratory_therapy'),
+    path('emergency/', emergency, name='emergency'),
     path('employment/', employment, name='employment'),
 ]
 

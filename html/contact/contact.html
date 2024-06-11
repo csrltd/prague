@@ -26,25 +26,38 @@
                 </a>
 
                 <div class="service">
-                    <a href="{% url "home" %}">
+                    
                         <li>Services</li>
-                    </a>
+                    
 
                     <div class="dropdown">
-                        <a href="{% url "financial" %}">Financial</a>
+
                         <a href="{% url "swing-bed" %}">Swing-bed</a>
                         <a href="{% url "rehab-servive" %}">Rehabilation</a>
                         <a href="{% url "case-management" %}">Case Management</a>
                         <a href="{% url "wound_care" %}">Woundcare</a>
+                        <a href="{% url "respiratory_therapy" %}">Respiratory Therapy</a>
+                        <a href="{% url "nursing" %}">Nursing</a>
+                        <a href="{% url "emergency" %}">Emergency</a>
+                        
                     </div>
                 </div>
                 
                 <a href="{% url "employment" %}">
                     <li>Career</li>
                 </a>
-                <a href="{% url "home" %}">
-                    <li>Patient Info</li>
-                </a>
+                
+                <div class="patient">
+                    
+                        <li>Patient Info</li>
+                    
+
+                    <div class="dropdown">
+                        <a href="{% url "financial" %}">Financial Services</a>
+                        <a href="{% url "price" %}">Price Transparency</a>
+                        
+                    </div>
+                </div>
             </ul>
 
             <ul class="listlinks">
@@ -154,8 +167,7 @@
               <img src="/static/img/home-img/Prague-Logo-Light.svg" alt="Prague Logo" />
               <div class="social-icons">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
               </div>
               <h2>Open 24/7 Hours</h2>
@@ -198,7 +210,7 @@
           <hr />
           <div class="second-section">
             <span>&copy;</span>
-            <p>Copyright 2021 Prague Regional Memorial Hospital. (U.S.A.)</p>
+            <p>Copyright <span id="currentYear"></span> Prague Regional Memorial Hospital. (U.S.A.)</p>
           </div>
         </div>
       </footer>

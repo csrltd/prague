@@ -18,74 +18,87 @@
   <nav id="nav">
     <img src="/static/img/home-img/Prague-Logo-Light.svg" alt="Prague Logo">
     <div id="links-container">
-        <ul>
-            <a href="{% url "home" %}">
-                <li>Home</li>
-            </a>
-            <a href="{% url "about" %}">
-                <li>About Us</li>
-            </a>
+      <ul>
+          <a href="{% url "home" %}">
+              <li>Home</li>
+          </a>
+          <a href="{% url "about" %}">
+              <li>About Us</li>
+          </a>
 
-            <div class="service">
-                <a href="{% url "home" %}">
-                    <li>Services</li>
-                </a>
+          <div class="service">
+              
+                  <li>Services</li>
+              
 
-                <div class="dropdown">
-                    <a href="{% url "financial" %}">Financial</a>
-                    <a href="{% url "swing-bed" %}">Swing-bed</a>
-                    <a href="{% url "rehab-servive" %}">Rehabilation</a>
-                    <a href="{% url "case-management" %}">Case Management</a>
-                    <a href="{% url "wound_care" %}">Woundcare</a>
-                </div>
-            </div>
-            
-            <a href="{% url "employment" %}">
-                <li>Career</li>
-            </a>
-            <a href="{% url "home" %}">
-                <li>Patient Info</li>
-            </a>
-        </ul>
+              <div class="dropdown">
 
-        <ul class="listlinks">
-            <a href="{% url "home" %}">
-                <li>Home</li>
-            </a>
-            <a href="{% url "about" %}">
-                <li>About Us</li>
-            </a>
+                  <a href="{% url "swing-bed" %}">Swing-bed</a>
+                  <a href="{% url "rehab-servive" %}">Rehabilation</a>
+                  <a href="{% url "case-management" %}">Case Management</a>
+                  <a href="{% url "wound_care" %}">Woundcare</a>
+                  <a href="{% url "respiratory_therapy" %}">Respiratory Therapy</a>
+                  <a href="{% url "nursing" %}">Nursing</a>
+                  <a href="{% url "emergency" %}">Emergency</a>
+                  
+              </div>
+          </div>
+          
+          <a href="{% url "employment" %}">
+              <li>Career</li>
+          </a>
+          
+          <div class="patient">
+              
+                  <li>Patient Info</li>
+              
 
-            <a href="{% url "financial" %}">
-                <li>Finance</li>
-            </a>
+              <div class="dropdown">
+                  <a href="{% url "financial" %}">Financial Services</a>
+                  <a href="{% url "price" %}">Price Transparency</a>
+                  
+              </div>
+          </div>
+      </ul>
 
-            <a href="{% url "swing-bed" %}">
-                <li>Swing-bed</li>
-            </a>
+      <ul class="listlinks">
+          <a href="{% url "home" %}">
+              <li>Home</li>
+          </a>
+          <a href="{% url "about" %}">
+              <li>About Us</li>
+          </a>
 
-            <a href="{% url "rehab-servive" %}">
-                <li>Rehabilation</li>
-            </a>
-            <a href="{% url "case-management" %}">
-                <li>Case Management</li>
-            </a>
-            <a href="{% url "wound_care" %}">
-                <li>Woundcare</li>
-            </a>
-            
-            <a href="{% url "employment" %}">
-                <li>Career</li>
-            </a>
-            <a href="{% url "home" %}">
-                <li>Patient Info</li>
-            </a>
-        </ul>
+          <a href="{% url "financial" %}">
+              <li>Finance</li>
+          </a>
+
+          <a href="{% url "swing-bed" %}">
+              <li>Swing-bed</li>
+          </a>
+
+          <a href="{% url "rehab-servive" %}">
+              <li>Rehabilation</li>
+          </a>
+          <a href="{% url "case-management" %}">
+              <li>Case Management</li>
+          </a>
+          <a href="{% url "wound_care" %}">
+              <li>Woundcare</li>
+          </a>
+          
+          <a href="{% url "employment" %}">
+              <li>Career</li>
+          </a>
+          <a href="{% url "home" %}">
+              <li>Patient Info</li>
+          </a>
+      </ul>
 
 
 
-        <a href="{% url "home" %}">Prague Family Clinic</a>
-    </div>
+      <a href="{% url "home" %}">Prague Family Clinic</a>
+  </div>
     <section class="hamburger" id="hamburger">
         <span></span>
         <span></span>
@@ -211,8 +224,7 @@
           <img src="/static/img/home-img/Prague-Logo-Light.svg" alt="Prague Logo" />
           <div class="social-icons">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           </div>
           <h2>Open 24/7 Hours</h2>
@@ -277,7 +289,7 @@
       <hr />
       <div class="second-section">
         <span>&copy;</span>
-        <p>Copyright 2021 Prague Regional Memorial Hospital. (U.S.A.)</p>
+        <p>Copyright  <span id="currentYear"></span> Prague Regional Memorial Hospital. (U.S.A.)</p>
       </div>
     </div>
   </footer>
