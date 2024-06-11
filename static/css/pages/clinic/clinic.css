@@ -228,7 +228,7 @@
 .second-container .diagnostics .first-diagnostic .img-container {
   width: 50%;
   height: 512px;
-  background-image: url("/static/img/woundcare-img/woundcaore-img1.png");
+  background-image: url("/static/img/clinic/clinic_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -346,4 +346,4 @@
   .hero-container1 {
     height: auto;
   }
-}/*# sourceMappingURL=wondcare.css.map */
+}/*# sourceMappingURL=clinic.css.map */

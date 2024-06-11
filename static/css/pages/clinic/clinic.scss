@@ -1,0 +1,506 @@
+@import "../../main/variables";
+
+.hero-container1 {
+    height: 85vh;
+    color: $white-color;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+
+    &>div {
+        max-width: 600px;
+        color: $white-color;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        z-index: 4;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            font-family: $font-family-Playfair;
+            letter-spacing: 3px;
+        }
+
+        p {
+            font-weight: 500;
+        }
+
+        div {
+            display: flex;
+            gap: 28px;
+
+            a {
+                padding: 12px 30px;
+                border: 1px solid $white-color;
+                width: fit-content;
+                border-radius: 12px;
+            }
+
+            a:nth-child(1) {
+                background-color: $white-color;
+                color: $black-color;
+            }
+        }
+    }
+}
+
+.second-container {
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+
+    h1 {
+        color: $primary-color;
+    }
+
+    i {
+        color: $primary-color;
+    }
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    .first-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+
+        p {
+            font-size: $font-size;
+        }
+
+        &>div {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .woundcare-img {
+            width: 100%;
+            height: 275px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+
+    }
+
+    .treatments {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        h1 {
+            max-width: 600px;
+            font-size: 20px;
+        }
+
+        .lists-traitments {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 24px;
+
+            .list {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+            }
+        }
+    }
+
+    .consultancy-section {
+        display: flex;
+        margin-top: 0;
+        // height: fit-content;
+
+        svg {
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+            left: -11rem;
+            top: 53rem;
+            width: 510px;
+            height: 510px;
+            opacity: .5;
+        }
+
+        .consultancy {
+            width: 100%;
+            display: flex;
+            // display: grid;
+            // grid-template-columns: auto auto auto;
+            // flex-wrap: wrap;
+            // justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+
+            .woundcare-images {
+                // min-width:330px;
+                height: 30vh;
+                display: flex;
+                // flex-wrap: wrap;
+                gap: 24px;
+
+                img {
+                    // min-width:269px;
+                    // width: 100%;
+                    // height: 100%;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+            }
+
+            .consultancy-text {
+                // min-width: 10%;
+                flex-grow: 1;
+                flex-basis: content;
+                font-size: 16px;
+
+
+            }
+        }
+    }
+
+
+
+
+
+    .Lab-section {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .text-lab {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+
+            p {
+                width: 50%;
+            }
+        }
+
+        .our-labotary-services {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .Lab-services {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 24px;
+
+                .list {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+
+    .second-section {
+        margin-top: 0;
+        // display: flex;
+        // flex-direction: column;
+        // gap: 100px;
+
+        // .first {
+        //     display: flex;
+        //     flex-direction: column;
+        //     gap: 15px;
+
+
+        //     &>p {
+        //         max-width: 421px;
+        //         font-weight: bold;
+        //     }
+
+        //     &>div {
+        //         h3 {
+        //             font-family: $font-family-Playfair;
+        //             font-weight: bold;
+
+        //         }
+
+        //         p {
+        //             a {
+        //                 color: #292464;
+        //                 font-weight: 700;
+        //                 text-decoration: underline;
+        //             }
+        //         }
+        //     }
+        // }
+
+        .second {
+            background-color: $primary-color;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 100px;
+
+            h1 {
+                color: $white-color;
+                font-family: $font-family-Playfair;
+                font-size: 48px;
+            }
+
+            p {
+                color: $white-color;
+            }
+
+            a {
+                padding: 15px 48px;
+                border: 1px solid $white-color;
+                width: fit-content;
+                border-radius: 12px;
+                background: rgba(185, 31, 39, 0.50);
+
+            }
+
+        }
+
+    }
+
+    .title {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 0;
+
+        h1 {
+            font-size: 32px;
+            font-family: $font-family-Playfair;
+        }
+
+        p {
+            font-weight: 500;
+        }
+    }
+
+
+    .diagnostics {
+        p {
+            font-size: 16px;
+        }
+
+        .first-diagnostic {
+            display: flex;
+            width: 100%;
+
+            .first {
+                width: 50%;
+                color: $white-color;
+                padding: 46px 44px 53px 100px;
+                background-color: $primary-color;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 24px;
+
+                .paragraphs {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+                }
+            }
+
+            .img-container {
+                width: 50%;
+                height: 512px;
+                background-image: url("/static/img/clinic/clinic_background.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .second-diagnostic {
+            display: flex;
+            width: 100%;
+
+            .second {
+                width: 50%;
+                // height: 540px;
+                color: $white-color;
+                padding: 46px 100px 53px 44px;
+                background-color: $primary-color;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                &>h3 {
+                    font-size: 24px;
+                }
+
+                .paragraphs {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+
+                    p{
+                        font-size: 100%;
+                    }
+
+                }
+            }
+
+            .img-container {
+                width: 50%;
+                // height: 590px;
+                background-image: url("/static/img/woundcare-img/woundcare-img2.png");
+                object-fit: cover;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+
+
+    svg {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        right: -5rem;
+        top: -6rem;
+        width: 500px;
+        height: 700px;
+        opacity: .5;
+    }
+}
+
+@media screen and (max-width:1400px){
+    .consultancy-section {
+
+        .consultancy {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width:1109px) {
+
+
+}
+
+@media screen and (max-width:1050px) {
+    .consultancy-section {
+
+        .consultancy {
+            width: 100%;
+            flex-direction: column;
+        }
+
+       
+    }
+
+}
+
+@media screen and (max-width:805px) {
+    .second-container{
+        .diagnostics{
+            width: 100%;
+            .first-diagnostic{
+                flex-direction: column;
+                .first{
+                    width: 100%;
+                    padding: 50px;
+                }
+
+                .img-container{
+                    width: 100%;
+                    
+                }
+            } 
+    
+            .second-diagnostic{
+                flex-direction: column-reverse;
+
+                .second{
+                    width: 100%;
+                }
+
+                .img-container{
+                    width: 100%;
+                    height: 540px;
+                }
+            }
+        } 
+    }
+  
+}
+
+@media screen and (max-width:750px) {
+    .first-section{
+        flex-direction: column;
+    }
+.second-container{
+    .treatments{
+        .lists-traitments {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .consultancy-section {
+
+        .consultancy {
+            .woundcare-images{
+                flex-direction: column;
+                width: 100%;
+                height: 400px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+       
+    }
+
+    .Lab-section{
+        .text-lab{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            p{
+                width: 100%;
+            }
+        } 
+
+        .our-labotary-services{
+            .Lab-services{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+    
+
+   
+    
+}
+
+@media screen and (max-width:560px) {
+    .hero-container1{
+        height: auto;
+    } 
+}

@@ -8,6 +8,7 @@ from .views.financial import financial
 from .views.price import price
 from .views.wound_care import wound_care
 from.views.employment import employment
+from.views.clinic import clinic
 
 urlpatterns = [
     path('', index, name='home'),
@@ -28,5 +29,7 @@ urlpatterns = [
     path('respiratory_therapy/', respiratory_therapy, name='respiratory_therapy'),
     path('emergency/', emergency, name='emergency'),
     path('employment/', employment, name='employment'),
+    path('clinic/', clinic, name='clinic'),
+    
 ]
 
