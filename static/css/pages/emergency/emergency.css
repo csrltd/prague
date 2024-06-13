@@ -3,7 +3,7 @@
   color: #ffffff;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(41, 36, 100, 0.6), rgba(41, 36, 100, 0.1)), url("/static/img/nursing/background.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(41, 36, 100, 0.6), rgba(41, 36, 100, 0.1)), url("/static/img/emergency/background.jpg") no-repeat center center/cover;
 }
 .hero-container1 > div {
   max-width: 600px;
@@ -133,4 +133,4 @@
   .container {
     margin-inline: 30px;
   }
-}/*# sourceMappingURL=nursing.css.map */
+}/*# sourceMappingURL=emergency.css.map */
