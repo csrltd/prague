@@ -477,6 +477,19 @@
 
 
 
-@media screen {
+@media screen and (max-width:1024px) {
+  
+  .wrapper{
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  .Highlighted_service{
+    padding-inline: 53px!important;
+  }
   
 }
+
+
