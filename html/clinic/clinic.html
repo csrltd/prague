@@ -2,20 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/css/main/main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/main/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" type="image/jpg" sizes="16x16 32x32" href="/static/img/home-img/Prague-Logo-Light.svg" />
-    <link rel="stylesheet" href="/static/css/pages/clinic/clinic.css" />
+        <link rel="shortcut icon" type="image/jpg" sizes="16x16 32x32"
+        href="/static/img/home-img/Prague-Logo-Light.svg" />
+    <link rel="stylesheet" href="/static/css/pages/clinic/clinic.css">
+    <link rel="stylesheet" href="/static/css/pages/home/home_responsive.css">
     <title>Clinic</title>
 </head>
 
 <body>
+    <!-- Hero Section -->
 
-    <!--Navigation-->
     <nav id="nav">
         <img src="/static/img/home-img/Prague-Logo-Light.svg" alt="Prague Logo">
         <div id="links-container">
@@ -107,285 +109,198 @@
         </section>
 
     </nav>
-    <!--End of Navigation-->
+    <section class="hero-container">
+        <div>
+            <div>
+                <h1>Prague Family Clinic</h1>
+                <p>Prague Family Clinic is a Certified Rural Health Clinic</p>
+                <a href="{% url "contact" %}">Contact Us</a>
+            </div>
 
-    <!-- Hero Section -->
-    <section class="hero-container1">
-        <div class="container">
-            <h1>Prague Family Clinic</h1>
-            <p>
-                Prague Family Clinic is a Certified Rural Health Clinic
-            </p>
-            
+           
         </div>
+
     </section>
     <!-- End of Hero Section-->
-
-    <!-- Second Container-->
+    <!-- Second Container Section-->
     <section class="second-container">
-        <div class="first-section container">
-            <div>
-                <p>Prague Hospital offers high quality care for slow healing and chronic wounds. We provide full
-                    assessment, tailored treatment, patient education and support. Our goal is to heal the wound as
-                    quickly and efficiently as possible and eliminate wound-related symptoms and complications.</p>
-            </div>
-            <div class="woundcare-img">
-                <img src="/static/img/woundcare-img/patient_data_1.jpg" alt="Man on a computer">
-            </div>
-
-        </div>
-
-        <div class="treatments container">
-            <h1>
-                We treat a variety of conditions that lead to skin breakdown and injury, including:
-            </h1>
-
-            <div class="lists-traitments">
-                <div class="list"><i class="fa-solid fa-square-check"></i>
-                    <p>Leg and foot ulcers caused by diabetes or medical conditions that impair blood circulation
-                        through the arteries or veins</p>
-                </div>
-                <div class="list"><i class="fa-solid fa-square-check"></i>
-                    <p>Tissue injury caused by radiation therapy for cancer, such as injury to the bladder,
-                        intestines, rectum, or skin</p>
-                </div>
-                <div class="list"><i class="fa-solid fa-square-check"></i>
-                    <p>Pressure ulcers caused by sitting or lying in one position for too long</p>
-                </div>
-                <div class="list"><i class="fa-solid fa-square-check"></i>
-                    <p>Wounds associated with lymphedema</p>
-                </div>
-                <div class="list"><i class="fa-solid fa-square-check"></i>
-                    <p>Burns</p>
-                </div>
-                <div class="list"><i class="fa-solid fa-square-check"></i>
-                    <p>Cellulitis</p>
-                </div>
-                <div class="list"><i class="fa-solid fa-square-check"></i>
-                    <p>Amputations</p>
-                </div>
-                <div class="list"><i class="fa-solid fa-square-check"></i>
-                    <p>Non-healing surgical wounds</p>
-                </div>
-                <div class="list"><i class="fa-solid fa-square-check"></i>
-                    <p>Fistulas</p>
-                </div>
-                <div class="list"><i class="fa-solid fa-square-check"></i>
-                    <p>Other non-healing wounds</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="consultancy-section container">
-            <svg width="724" height="724" viewBox="0 0 724 724" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle opacity="0.13" cx="362" cy="362" r="362" fill="#292464" />
-            </svg>
-          
-            <div class="consultancy">
-              
-                <div class="woundcare-images">
-                    <img src="/static/img/financial-img/man-on-computer.jpg" alt="Man on a computer">
-                    <img src="/static/img/woundcare-img/file_2.jpg" alt="Man on a computer">
-                </div>
-
-                <div class="consultancy-text">
-                    <p>
-                        Our nurses, physicians, and clinical staff begin with a review of each patient’s medical history.
-                        The patient’s individualized care plan is determined by an examination and assessment considering
-                        all relevant factors. This thorough consideration prior to treatment, along with a thoughtful and
-                        continually monitored treatment plan, sets our patients up for successful healing.
-                    </p>
-                </div>
-               
-            </div>
-
-        </div>
-
-        <div class="title container">
-            <h1>X-Ray and CT</h1>
-            <p>At Pawhuska Hospital, we are committed to providing premier quality imaging with compassion and care.
-                Whether it’s a CT scan or a traditional X-ray, you can expect quality care and quick results
-                performed by skilled, registered radiology technicians and read by an experienced, board-certified
-                radiologist. We offer both inpatient and outpatient radiology services 24 hours a day, 7 days a
-                week.</p>
-        </div>
-
-        <div class="diagnostics">
-            <div class="first-diagnostic">
-                <div class="first">
-                    <h3>Diagnostic X-Ray</h3>
-                    <div class="paragraphs">
-                        <p>Diagnostic radiology procedures use radiation to help identify disease or injury. X-rays
-                            penetrate body tissues and produce an image that provides vital information about normal
-                            structures as well as diseases in the body. Diagnostic X-rays are used to examine all parts
-                            of the body. For example, diagnostic X-rays can be used to identify problems in the
-                            digestive system and kidneys, and find evidence of bone fractures and dislocations.</p>
-                    </div>
-                </div>
-                <div class="img-container"></div>
-            </div>
-            <div class="second-diagnostic">
-                <div class="img-container"></div>
-                <div class="second">
-                    <h3>CT Scan (computerized tomography)</h3>
-                    <div class="paragraphs">
-                        <p>A CT (or computerized tomography) scan combines computerized technology with a focused X- ray
-                            beam that passes through the body at various angles, producing clear, cross-sectional
-                            images. It
-                            is safe, fast and painless, and produces precise and accurate images of the body. A CT scan
-                            is
-                            one of a physician’s most important tools for examining the bones and internal organs. CT
-                            scans are able to detect many conditions that conventional X-rays cannot.
-                        </p>
-                        <p>CT scans can often take the place of other more invasive diagnostic techniques, such as
-                            exploratory surgery, saving the patient discomfort, cost, and inconvenience. The scans are
-                            also
-                            useful for monitoring a patient’s progress during or after treatment. CT scanning is
-                            considered
-                            a critical component of any evaluation of brain injuries or function. CT scans of the head
-                            may
-                            also be used to detect or rule out tumors, blood clots, and other disorders. These scans can
-                            also be especially important in diagnosing enlarged lymph nodes, pancreatic disease, back
-                            problems, or lung cancer.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="Lab-section container">
-            <h1>Lab</h1>
-            <div class="text-lab">
-                <p>
-                    Prague Hospital Laboratory Services provides accurate and timely results while contributing to
-                    our patient and family-centered care. Laboratory testing is performed 24 hours a day, seven days
-                    a week by certified laboratory personnel using the latest instrumentation
-                </p>
-
-                <p>
-                    The laboratory’s rapid turnaround time allows caregivers to treat their patients in a timely
-                    fashion. We provide laboratory testing not just for the hospital, but also local physician’s
-                    offices, nursing homes and area clinics, accurately and efficiently processing approximately
-                    57,000 tests per year.
-                </p>
-            </div>
-
-            <div class="our-labotary-services">
-                <h1>
-                    Our laboratory services include 
-                </h1>
-
-                <div class="Lab-services">
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>General/Routine Chemistry</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Special Chemistry</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Toxicology Screens (Medical Purposes Only)</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>General/Routine Hematology</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Hemostasis and Thrombosis</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Flow Cytometry</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Microbiology</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Microbiology</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Special/Routine/Comprehensive Coagulation</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Virology</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Immunology/Serology</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Anatomic Pathology</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Cytology</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Immunohematology</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Immunohematology</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Blood bank</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Microbiology</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Histology</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Urinalysis</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Serology</p>
-                    </div>
-                    <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Drug screening for employment</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="second-section container">
-            <!-- <div class="first">
-                    <p>The following documents are our policies on assisting patients financially. You can download and
-                        print
-                        these documents.</p>
-                    <div>
-                        <h3>FA/Charity Policy</h3>
-                        <p>Learn more about our financial assistance/charity policy. <a href="#">Click here to download
-                                this
-                                policy</a></p>
-                    </div>
-                    <div>
-                        <h3>Plain Language Summary</h3>
-                        <p>Learn how to apply for financial assistance. <a href="#">Click here to download this
-                                policy</a></p>
-                    </div>
-                </div> -->
-            <div class="second">
-                <h1>Apply for Financial Assistance.</h1>
-                <p>Download and print the following application to apply for financial assistance.</p>
-                <a href="#">Download</a>
-            </div>
-        </div>
-
-        
-
-        <svg width="568" height="758" viewBox="0 0 568 758" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path opacity="0.3"
-                d="M183.702 313.932C189.9 337.596 189.643 363.124 175.693 383.218C107.078 482.048 -62.2456 592.026 23.8878 718.532C50.5958 757.758 103.892 765.117 148.564 749.103C518.642 616.436 576.364 429.182 567.11 258.431C567.11 105.359 476.255 0 330.344 0C193.608 0 137.036 135.78 183.702 313.932Z"
-                fill="#292464" />
+        <!-- <svg width="724" height="724" viewBox="0 0 724 724" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.13" cx="362" cy="362" r="362" fill="#292464" />
         </svg>
 
        
 
+        <svg width="724" height="724" viewBox="0 0 724 724" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.13" cx="362" cy="362" r="362" fill="#292464" />
+        </svg> -->
 
+    
+        <section class="our-services container" id="services">
+            <div class="border-padding-left service-title">
+                <h2>Your Complete Health Partner</h2>
+                
+            </div>
+            <div class="services">
+                <a href="#">
+                    <div class="service" id="s1" style="background-image: url('/static/img/clinic/family.jpg');">
+                        <div>
+                            <div>
+                                <span class="services_span">Family Care</span>
+                            </div>
+                            <p>Annual checkups, chronic illnesses, medication management, and sudden illnesses or ailments—we are your primary care provider for the whole family. </p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="service" id="s2" style="background-image: url('/static/img/clinic/wellness.jpg'); background-color: #292464;">
+                        <div>
+                            <div>
+                                <span class="services_span">Health  & Wellness</span>
+                            </div>
+                            <p>Are you plagued by unexplained fatigue, pain, or other symptoms? You may have an imbalance that can be easily corrected with vitamin or medication therapy.</p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="service" id="s3" style="background-image: url('/static/img/clinic/telehealth.jpg');">
+                        <div>
+                            <div>
+                                <span class="services_span">Telehealth</span>
+                            </div>
+                            <p>Are you feeling under the weather, but are unable or don’t want to come into the office? Our telehealth evaluations connect you with a doctor where you are.</p>
+                        </div>
+
+                    </div>
+                </a>
+               
+        </section>
+
+        
+        <section class="we-believe container">
+            <img src="/static/img/clinic/Lee-Carter-AnnDee.jpg" alt="Woman Smiling">
+            <div class="believe-section-two">
+                <div class="border-padding-left">
+                    
+                    <h2>What we believe</h2>
+                    <h4>AnnDee Lee-Carter, PA-C</h4>
+                    <p>AnnDee grew up in Prague and is a graduate of Prague High School. She received her Master of Health Science degree in PA Studies from the University of Oklahoma, Tulsa, in December of 2016. She has been employed in Prague 3-1/2 years at Prague Clinic in Family Medicine as a PA-C in September of 2017. Prior to coming to Prague, she was employed at Stroud One Cura Family clinic for 8 months, under Dr. Markert.</p>
+                </div>
+               
+            </div>
+        </section>
+
+        <section class="Highlighted_service">
+            <h2>Highlighted Services</h2>
+            <div class="wrapper">
+                <div class="card">
+                    <div class="card_header card_header1">
+                        <h3>Physicals</h3>
+                    </div>
+                    <div class="card_footer">
+                        <p>Our physicals are a complete workup of each patient, ensuring they are fit for everyday activities and/or athletic exertion.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_header card_header2">
+                        <h3>Women's Health</h3>
+                    </div>
+                    <div class="card_footer">
+                        <p>We offer a myriad of women’s health services, including annual checkups, pap smears, breast exams, and prescribing birth control.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_header card_header3">
+                        <h3>Well-Child Check</h3>
+                    </div>
+                    <div class="card_footer">
+                        <p>We offer well-child checks to evaluate our littlest patients and ensure they’re on the right track to grow into healthy adults.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="policies container">
+            <div class="left">
+                <h2>
+                    A Cohesive Healthcare Hospital
+                </h2>
+                <div class="logo-img">
+                    <img src="/static/img/home-img/cohesive-logo.png" alt="">
+                </div>
+                
+            </div>
+            <div class="policy">
+                <h3>Non-Discrimination Policy</h3>
+                <p>We accept all patients regardless of race, color, national origin, age, disability, sex, sexual
+                    orientation, gender identity, religion, or ability to pay.</p>
+
+                <p>
+                    To learn more you can view our full non-discrimination policy.
+                </p>
+
+                <a href="#">Non-discriminatory Policy</a>
+            </div>
+            <div class="policy">
+                <h3>Financial Assistance Policy</h3>
+                <p>No one will be denied access to services due to inability to pay. We utilize a discounted/sliding
+                    fee scale based on family size and income.</p>
+
+                <p>
+                    To learn more about financial assistance or to print a financial assistance application you can
+                    click below.
+                </p>
+
+                <div class="buttons">
+                    <a href="#">FA Policy</a>
+
+                    <a href="#"> Application</a>
+                </div>
+
+
+            </div>
+        </section>
+
+        
+
+       
+        <section class="contact container">
+            <div class="first-section">
+                <div class="top">
+                    <h2>GET IN TOUCH</h2>
+                    <h1>Contact Information</h1>
+                    <p>We are committed to ensuring you receive the help and information needed to better manage your
+                        health. Listed below are phone numbers to get in touch with us with any questions and/or
+                        concerns you may have.</p>
+                </div>
+                <div class="bottom">
+                    <div><i class="fa-solid fa-phone"></i><span>(405) 567-4922</span></div>
+                    <div><i class="fa-solid fa-envelope"></i><span>info@prague.hospital</span></div>
+                    <div><i class="fa-solid fa-location-dot"></i><span>1322 Klabzuba, Prague, Oklahoma 74864</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="#" method="get">
+                    <div class="names">
+                        <input type="text" id="fname" name="fname" placeholder="First Name">
+                        <input type="text" id="lname" name="lname" placeholder="Last Name">
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone">
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </section>
+        <section class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.201502826868!2d-96.68695698500073!3d35.49050217484657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b3e93ff655ac4b%3A0xa9ea68b7d9005b00!2sPrague%20Community%20Hospital!5e0!3m2!1sen!2srw!4v1695300440666!5m2!1sen!2srw"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </section>
-
-    <!-- End of second container-->
-
     <footer>
         <div class="sub-container">
           <div class="first-section">
@@ -402,10 +317,10 @@
               <ul>
                 <h3>Our Services</h3>
                 <a href="/src/pages/swingbed/swingbed.html"><li>Swing Bed</li></a>
-                <a href="#"><li>Wound Care</li></a>
+                <a href="/src/pages/wondcare-service/wondcare.html"><li>Wound Care</li></a>
                 <a href="#"><li>Respiratory Therapy</li></a>
                 <a href="/src/pages/rehabilitation/rehabilitation.html"><li>Rehabilitation</li></a>
-                <a href="/src/pages/case-management/case_management.html"><li>Case Management</li></a>
+                <a href="/src/pages/wondcare-service/wondcare.html"><li>Case Management</li></a>
                 <a href="#"><li>Nursing</li></a>
                 
               </ul>
@@ -442,7 +357,6 @@
       </footer>
     <script src="/static/js/main/main.js"></script>
     <script src="/static/js/pages/home/home.js"></script>
-
 </body>
 
 </html>
