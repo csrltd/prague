@@ -152,6 +152,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 20%;
 }
 .job-container > div .job-listing-section .sidebar > h1 {
   font-size: 32px;
@@ -195,6 +196,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  width: 80%;
 }
 .job-container > div .job-listing-section .right-section .search-container {
   width: 100%;
@@ -250,6 +252,7 @@
   border-radius: 10px;
   display: flex;
   position: relative;
+  cursor: pointer;
 }
 .job-container > div .job-listing-section .right-section .job-listing .jobs > .jobs-overlay {
   position: absolute;
@@ -264,6 +267,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  cursor: pointer;
 }
 .job-container > div .job-listing-section .right-section .job-listing .jobs .first h1 {
   font-family: "Playfair Display", serif;

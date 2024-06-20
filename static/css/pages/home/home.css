@@ -1,5 +1,5 @@
 .hero-container {
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -229,8 +229,8 @@
   font-size: 26px;
 }
 .second-container .policies .left .logo-img {
-  width: 161px;
-  height: 161px;
+  width: 200px;
+  height: 200px;
 }
 .second-container .policies .left .logo-img img {
   width: 100%;

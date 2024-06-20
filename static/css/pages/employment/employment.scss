@@ -69,17 +69,17 @@
         }
       
         .modal-content {
-          position: relative;
-          display: flex;
-        flex-direction: column;
-        // justify-content: center;
-        padding: 10px 24px 70px 24px;
-        gap: 1rem;
-        width: 100%;
-        color: $white-color;
-        overflow-y: scroll;
-        height: 350px;
-        top: 4rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            padding: 10px 24px 70px 24px;
+            gap: 1rem;
+            width: 100%;
+            color: $white-color;
+            overflow-y: scroll;
+            height: 350px;
+            top: 4rem;
 
         &::-webkit-scrollbar {
             width: 12px;
@@ -170,6 +170,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
+                width: 20%;
                 &>h1{
                     font-size: 32px;
                     font-family: $font-family-Playfair;
@@ -221,6 +222,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 25px;
+                width: 80%;
 
                 .search-container{ 
                     width: 100%;                
@@ -278,6 +280,7 @@
                             border-radius: 10px;
                             display: flex;
                             position: relative;
+                            cursor: pointer;
 
                             >.jobs-overlay{
                                 position: absolute;
@@ -293,6 +296,7 @@
                                 display: flex;
                                 flex-direction: column;
                                 gap: 12px;
+                                cursor: pointer;
                                 h1{
                                     font-family: $font-family-Playfair;
                                     color: $primary-color;

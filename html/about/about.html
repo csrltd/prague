@@ -1,0 +1,286 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+{% block page_links %}
+
+    <link rel="stylesheet" href="{% static '/css/pages/about/about.css' %}">
+
+{% endblock page_links %}
+
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero-container1">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Located in Prague, Oklahoma, we proudly serve Lincoln, Pottawatomie, Okfuskee,Seminole, and other
+                surrounding communities</p>
+        </div>
+    </section>
+    <!-- End of Hero Section-->
+
+    <!-- Second Container-->
+    <section class="second-container">
+        <section class="about-us container">
+            <div class="first">
+                <h1>About us</h1>
+                <p>Prague Regional Memorial Hospital is a proud partner of Cohesive Healthcare Management and Consulting. Through our relationship with Cohesive Healthcare, we are able to provide a level of care we’ve never been able to before. Prague Regional Memorial Hospital is a 25-bed critical access hospital located in Prague, Oklahoma established in 1952. With more than 70 years of tradition and excellence, we provide quality care to patients every day for the communities of Lincoln, Pottawatomie, Okfuskee, and Seminole counties. We offer a wide range of state-of-the-art, high-quality medical services that allow us to improve the health of the community we serve.  We have outpatient and inpatient radiology, CT, lab, and physical therapy. We have Strong Mind – an outpatient Geri psych program. We have inpatient dialysis. Our patients and community benefit from high nurse-to-patient ratios, 24-hour emergency services, connections to higher levels of care when needed, and close-to-home care 365 days of the year.</p>
+                <a href="#">Contact us</a>
+            </div>
+            <img src="/static/img/about-img/swing-bed.jpg" alt="Swing Bed">
+        </section>
+
+        <section class="hospital-values container">
+            <div class="border-padding-left value-title">
+                <h2>Our hospital values</h2>
+                <p>Our Work will be guided And informed by Our beliefs <br> and commitment to: </p>
+            </div>
+            <div class="values-list">
+                <div class="value">
+                    <i class="fa-solid fa-people-roof"></i>
+                    <!-- <h3>Care</h3> -->
+                    <p>Safe ,High quality care and Exceptional service for Every patient , every time.</p>
+                </div>
+                <div class="value">
+                    <i class="fa-solid fa-database"></i>
+                    <!-- <h3>Improve</h3> -->
+                    <p>Reporting and analyzing data to help optimize outcomes of care and make improvements as needed.
+                    </p>
+                </div>
+                <div class="value">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <!-- <h3>Expand</h3> -->
+                    <p>Setting clearly defined goals to achieve optimal outcomes.</p>
+                </div>
+                <div class="value">
+                    <i class="fa-solid fa-users"></i>
+                    <!-- <h3>Recruit</h3> -->
+                    <p>Valuing everyone and treating people with dignity and professionalism.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="missions-visions container">
+            <div class="mission-images">
+                <div class="misvis-img">
+                    <div class="vismis-img ">
+                        
+                        <img src="/static/img/about-img/mission-about.png" alt="">
+                        <div class="border-padding-bottom"></div>
+                    </div>
+                </div>
+
+                <div class="misvis-img">
+                    <div class="vismis-img ">
+                        <div class="border-padding-top"></div>
+                        <img src="/static/img/about-img/vision-about.png" alt="">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-vision-text">
+                <div class="text service-title">
+                    <h2>Our Vision</h2>
+                    <p>
+                        Through the hard work and dedication of those we employe, we will continue to persevere as an
+                        exemplary healthcare provider for our community.<br>
+                        Remain transparent, and to be a place where community members are proud to work, providers want
+                        to practice, and most importantly, a patient’s first choice to seek compassion and healing.
+                    </p>
+                </div>
+
+                <div class="text service-title">
+                    <h2>Our Mission</h2>
+                    <p>
+                        Our mission is to provide patient-centered healthcare to our rural communities with commitment
+                        to excellence.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="Our-teams container">
+            <div class="border-padding-left team-title">
+                <h2>
+                    Our Team
+                </h2>
+                <p>
+                    Our Work will be guided And informed by Our beliefs and commitment to:
+                </p>
+            </div>
+
+            <div class="team-profile">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="/static/img/about-img/Profile1.png" alt="">
+                    </div>
+                    <h4>
+                        Connie Ross, RRT
+                    </h4>
+                    <h6>
+                        Respiratory Manager
+                    </h6>
+                </div>
+
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="/static/img/about-img/profile2.jpg" alt="">
+                    </div>
+                    <h4>
+                        Liz Livingston, LPN
+                    </h4>
+                    <h6>
+                        Case Manager
+                    </h6>
+                </div>
+
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="/static/img/about-img/profile3.png" alt="">
+                    </div>
+                    <h4>
+                        Michelle Wyre
+                    </h4>
+                    <h6>
+                        Rehabilitation Manager
+                    </h6>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="our-services container">
+            <div class="border-padding-left service-title">
+                <h2>Our Services</h2>
+                <p>We, the physicians, staff, and board members of Prague Regional Memorial Hospital are committed to
+                    providing the highest level of healthcare possible at our facility.</p>
+            </div>
+            <div class="services">
+                <div class="service" id="s1">
+                    <div>
+                        <div>
+                            <img src="/static/img/home-img/hospital-bed.svg" alt="Swing Bed"> <span>Swing Bed</span>
+                        </div>
+                        <p>Our case managers ensure our patients receive the highest quality care during and after their
+                            stay at Carnegie Hospital. lorem</p>
+                    </div>
+
+                </div>
+
+                <div class="service" id="s2">
+                    <div>
+                        <div>
+                            <img src="/static/img/home-img/wounded.svg" alt="Wound Care"> <span>Wound Care</span>
+                        </div>
+                        <p>Our case managers ensure our patients receive the highest quality care during and after their
+                            stay at Carnegie Hospital.</p>
+                    </div>
+
+                </div>
+
+                <div class="service" id="s3">
+                    <div>
+                        <div>
+                            <img src="/static/img/home-img/lung.svg" alt="Respiratory"> <span>Respiratory Therapy</span>
+                        </div>
+                        <p>Our case managers ensure our patients receive the highest quality care during and after their
+                            stay at Carnegie Hospital.</p>
+                    </div>
+
+                </div>
+
+                <div class="service" id="s4">
+                    <div>
+                        <div>
+                            <img src="/static/img/home-img/physical-therapy.svg" alt="Rehabilitation">
+                            <span>Rehabilitation</span>
+                        </div>
+                        <p>Our case managers ensure our patients receive the highest quality care during and after their
+                            stay at Carnegie Hospital.</p>
+                    </div>
+                </div>
+
+                <div class="service" id="s5">
+                    <div>
+                        <div>
+                            <img src="/static/img/home-img/case-file.svg" alt="Case File"> <span>Case Management</span>
+                        </div>
+                        <p>Our case managers ensure our patients receive the highest quality care during and after their
+                            stay at Carnegie Hospital.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="service" id="s6">
+                    <div>
+                        <div>
+                            <img src="/static/img/home-img/medical-team.svg" alt="Medical Team"> <span>Nursing</span>
+                        </div>
+                        <p>Our case managers ensure our patients receive the highest quality care during and after their
+                            stay at Carnegie Hospital.</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="border-padding-left">
+                <h4>WE LOVE THEM</h4>
+                <h2>What our clients have to say</h2>
+            </div>
+            <div class="testimonial">
+                <div class="card">
+                    <img src="/static/img/home-img/testimonial-1.jpg" alt="Woman Smiling">
+                    <p>We pledge to recognize the health care needs of our community and surrounding area and provide
+                        cost-effective services necessary to enhance the quality of life</p>
+                    <span>Name and another name</span>
+                </div>
+                <div class="card">
+                    <img src="/static/img/home-img/testimonial-2.jpg" alt="Woman Smiling">
+                    <p>We pledge to recognize the health care needs of our community and surrounding area and provide
+                        cost-effective services necessary to enhance the quality of life</p>
+                    <span>Name and another name</span>
+                </div>
+                <div class="card">
+                    <img src="/static/img/home-img/testimonial-3.jpg" alt="Woman Profile">
+                    <p>We pledge to recognize the health care needs of our community and surrounding area and provide
+                        cost-effective services necessary to enhance the quality of life</p>
+                    <span>Name and another name</span>
+                </div>
+            </div>
+        </section> -->
+        <section class="approach">
+            <div class="first">
+                <h1>OUR APPROACH</h1>
+                <div>
+                    <h2>Our Staff</h2>
+                    <p>We provide patient-centered healthcare to our rural communities through compassionate care. We
+                        are available 24 hours a day/7 days a week.</p>
+                </div>
+                <div>
+                    <h2>Our Story</h2>
+                    <p>Prague Regional Memorial Hospital is a 25-bed, critical access hospital located in Prague,
+                        Oklahoma, proudly serving Lincoln, Pottawatomie, Okfuskee, and Seminole counties.</p>
+                </div>
+            </div>
+            <div class="second">
+                <img src="/static/img/about-img/approach.jpg" alt="Woman Face">
+            </div>
+        </section>
+    </section>
+
+    <section class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.201502826868!2d-96.68695698500073!3d35.49050217484657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b3e93ff655ac4b%3A0xa9ea68b7d9005b00!2sPrague%20Community%20Hospital!5e0!3m2!1sen!2srw!4v1695300440666!5m2!1sen!2srw"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!-- End of second container-->
+
+    {% endblock content %}
+
+   

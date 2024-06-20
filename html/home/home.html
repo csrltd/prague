@@ -1,0 +1,415 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block page_links %}
+
+    <link rel="stylesheet" href="{% static '/css/pages/home/home.css' %}">
+    <link rel="stylesheet" href="{% static '/css/pages/home/home_responsive.css' %}">
+
+{% endblock page_links %}
+
+
+{% block content %}
+    <section class="hero-container">
+        <div>
+            <div>
+                <h1>A Critical-Access Hospital</h1>
+                <p>Located in Prague, Oklahoma, we proudly serve <br> Lincoln, Pottawatomie, Okfuskee, Seminole, and
+                    other <br> surrounding communities.</p>
+                <!-- <a href="{% url "contact" %}">Contact Us</a> -->
+            </div>
+
+            <!-- <div>
+                <div>
+                    <h3>23</h3>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div>
+                    <h3>23</h3>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div>
+                    <h3>23</h3>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div>
+                    <h3>23</h3>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+            </div> -->
+        </div>
+
+    </section>
+    <!-- End of Hero Section-->
+    <!-- Second Container Section-->
+    <section class="second-container">
+        <svg width="724" height="724" viewBox="0 0 724 724" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.13" cx="362" cy="362" r="362" fill="#292464" />
+        </svg>
+
+        <svg width="568" height="758" viewBox="0 0 568 758" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.3"
+                d="M183.702 313.932C189.9 337.596 189.643 363.124 175.693 383.218C107.078 482.048 -62.2456 592.026 23.8878 718.532C50.5958 757.758 103.892 765.117 148.564 749.103C518.642 616.436 576.364 429.182 567.11 258.431C567.11 105.359 476.255 0 330.344 0C193.608 0 137.036 135.78 183.702 313.932Z"
+                fill="#B91F27" />
+        </svg>
+
+        <svg width="724" height="724" viewBox="0 0 724 724" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.13" cx="362" cy="362" r="362" fill="#292464" />
+        </svg>
+
+         {% comment %} <svg width="568" height="758" viewBox="0 0 568 758" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.3"
+                d="M183.702 313.932C189.9 337.596 189.643 363.124 175.693 383.218C107.078 482.048 -62.2456 592.026 23.8878 718.532C50.5958 757.758 103.892 765.117 148.564 749.103C518.642 616.436 576.364 429.182 567.11 258.431C567.11 105.359 476.255 0 330.344 0C193.608 0 137.036 135.78 183.702 313.932Z"
+                fill="#B91F27" />
+        </svg>  {% endcomment %}
+
+        <section class="choose-us container">
+            <img src="/static/img/home-img/why-choose-us.jpg" alt="Doctors looking down">
+
+            <div>
+                <h2>Why Choose Us?</h2>
+                <div><i class="fa-solid fa-square-check"></i>
+                    <p>Low patient-to-nurse ratio</p>
+                </div>
+                <div><i class="fa-solid fa-square-check"></i>
+                    <p>Readily available physicians</p>
+                </div>
+                <div><i class="fa-solid fa-square-check"></i>
+                    <p>Physical, occupational, speech and respiratory therapists</p>
+                </div>
+                <div><i class="fa-solid fa-square-check"></i>
+                    <p>In-house 24-hour emergency care</p>
+                </div>
+                <div><i class="fa-solid fa-square-check"></i>
+                    <p>In-house laboratory and imaging</p>
+                </div>
+                <div><i class="fa-solid fa-square-check"></i>
+                    <p>Close to your home, family and friends</p>
+                </div>
+                <p>Recover from your illness or injury close to home in the comfortable, healing environment of Prague
+                    Regional Memorial Hospital.</p>
+            </div>
+        </section>
+        <section class="fight-corona container">
+            <div>
+                <div class="border-padding-left">
+                    <h4>LET'S FIGHT TOGETHER</h4>
+                    <h2>Help Us Fight Coronavirus</h2>
+                    <p>COVID-19 affects different people in different ways. Infected people have had a wide range of
+                        symptoms reported – from mild symptoms to severe illness. Help stop the spread now!</p>
+                </div>
+                <div>
+
+                    <div><i class="fa-solid fa-head-side-mask"></i>
+                        <p>Wear a Mask</p>
+                    </div>
+                    <div><i class="fa-solid fa-users"></i>
+                        <p>Avoid Crowds</p>
+                    </div>
+                    <div><i class="fa-solid fa-hands-bubbles"></i>
+                        <p>Wash Your Hands</p>
+                    </div>
+                    <div><i class="fa-solid fa-people-arrows"></i>
+                        <p>Contactless</p>
+                    </div>
+
+                </div>
+            </div>
+            <img src="/static/img/home-img/fight-corona.jpg" alt="Women showing love sign">
+        </section>
+        <section class="our-services container" id="services">
+            <div class="border-padding-left service-title">
+                <h2>Our Services</h2>
+                <p>We, the physicians, staff, and board members of Prague Regional Memorial Hospital are committed to
+                    providing the highest level of healthcare possible at our facility.</p>
+            </div>
+            <div class="services">
+                <a href="swing-bed">
+                    <div class="service" id="s1">
+                        <div>
+                            <div>
+                                <img src="{% static "img/home-img/hospital-bed.svg" %}" alt="Swing Bed"> <span>Swing Bed</span>
+                            </div>
+                            <p>After surgery or hospitalization, some patients require additional care and transfer into a nursing home or rehabilitation facility to help improve their physical functioning. </p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="wound_care">
+                    <div class="service" id="s2">
+                        <div>
+                            <div>
+                                <img src="{% static "img/home-img/wounded.svg" %}" alt="Wound Care"> <span>Wound Care</span>
+                            </div>
+                            <p>Prague Regional Memorial Hospital offers high-quality care for slow healing and chronic wounds. We provide full assessment, tailored treatment, patient education and support.</p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="respiratory_therapy">
+                    <div class="service" id="s3">
+                        <div>
+                            <div>
+                                <img src="{% static "img/home-img/lung.svg" %}" alt="Respiratory"> <span>Respiratory
+                                    Therapy</span>
+                            </div>
+                            <p>Our respiratory therapists are essential members of the multidisciplinary healthcare team, collaborating with the physicians and nurses to provide compassionate, high-quality care to all areas of the hospital.</p>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="{% url "rehab-servive" %}">
+                    <div class="service" id="s4">
+                        <div>
+                            <div>
+                                <img src="{% static "img/home-img/physical-therapy.svg" %}" alt="Rehabilitation">
+                                <span>Rehabilitation</span>
+                            </div>
+                            <p>Prague Regional Memorial Hospital provides comprehensive Physical Therapy, Occupational Therapy and Sports Medicine services to help our patients return to an independent lifestyle. </p>
+                        </div>
+                    </div>
+
+                </a>
+                <a href="{% url "case-management" %}">
+                    <div class="service" id="s5">
+                        <div>
+                            <div>
+                                <img src="{% static "img/home-img/case-file.svg" %}" alt="Case File"> <span>Case Management & Social Services</span>
+                            </div>
+                            <p>Case Management and Social Services 
+                                department is available to assist patients and 
+                                their families as they cope with the many 
+                                psychological and social problems that may arise 
+                                during hospitalization and medical treatment.
+                                 </p>
+                        </div>
+
+                    </div>
+                </a>
+
+
+                <a href="{% url "nursing" %}">
+                    <div class="service" id="s6">
+                        <div>
+                            <div>
+                                <img src="{% static "img/home-img/medical-team.svg" %}" alt="Medical Team">
+                                <span>Nursing</span>
+                            </div>
+                            <p>At Prague Regional Memorial Hospital our nursing staff prides itself on compassionate caregiving and nursing excellence. </p>
+                        </div>
+
+                    </div>
+
+
+            </div>
+            </a>
+        </section>
+        <!-- <section class="strong-mind container" id="strongMind">
+            <div class="strong-mind-up">
+                <div class="border-padding-left strong-mind-title">
+                    <h2>Strong Mind Program</h2>
+                    <p>The Strong Mind Program is an outpatient mental health treatment program for persons ages 55 and
+                        older.</p>
+                </div>
+                <div class="strong-mind-right">
+                    <h4>
+                        We treat all mental health diagnoses. 
+                    </h4>
+                    <p>
+                        Our approach combines group psychotherapy with regular psychiatric visits. Patients see
+                        the psychiatrist at least monthly but can be seen weekly if needed. We provide transportation
+                        to the
+                        host hospital within a 50 miles radius.
+                    </p>
+                </div>
+            </div>
+
+            <div class="strong-mind-down">
+
+                <div class="strong-mind-left">
+                    <h4>
+                        We treat all mental health diagnoses. 
+                    </h4>
+                    <p>
+                        Our approach combines group psychotherapy with regular psychiatric visits. Patients see
+                        the psychiatrist at least monthly but can be seen weekly if needed. We provide transportation
+                        to the
+                        host hospital within a 50 miles radius.
+                    </p>
+
+                    <p>
+                        We can accept referrals from skilled nursing homes, assisted living facilities, home health
+                        agencies, senior nutrition sites, etc. We do not need a doctor’s order for admission. Individual
+                        and
+                        family therapy is available for group members.
+                    </p>
+                </div>
+
+
+                <div class="strong-mind-right">
+                    <h4>
+                        Our program is covered by Medicare. 
+                    </h4>
+
+                    <p>
+                        Most people who have a Medicare supplement will not have a co-pay. We can accept private
+                        insurance
+                        and will verify through the hospital prior to admission to report any potential costs to the
+                        patient.
+                    </p>
+                </div>
+            </div>
+
+
+
+        </section> -->
+        <section class="we-believe container">
+            <img src="{% static "img/home-img/what-we-believe-1.jpg" %}" alt="Woman Smiling">
+            <div class="believe-section-two">
+                <div class="border-padding-left">
+                    <h4>Our work inspires smiles</h4>
+                    <h2>What We Believe</h2>
+                    <p>We pledge to recognize the healthcare needs of our community and surrounding area and provide
+                        cost-effective services necessary to enhance the quality of life.</p>
+                </div>
+                <div class="image-gallery">
+                    <p>
+                        Our focus is to improve your functional, nutritional and medical health so you can return home.
+                        Our team of doctors, nurses,and rehabilitation therapists (physical, occupational, and speech),
+                        along with a social worker, dietitian and case manager will work with you, your family and your
+                        physician to create a customized treatment plan designed to help achieve your treatment goals.
+                    </p>
+                    {% comment %} <img src="/static/img/home-img/what-we-believe-2.jpg" alt="Woman Smiling">
+                        <img src="/static/img/home-img/what-we-believe-3.jpg" alt="Child Smiling">
+                        <img src="/static/img/home-img/what-we-believe-4.jpg" alt="Women in Grass"> {% endcomment %}
+                </div>
+            </div>
+        </section>
+
+        <section class="policies container">
+            <div class="left">
+                
+                <div class="logo-img">
+                    <img src="{% static "img/home-img/cohesive-logo.png" %}" alt="">
+                </div>
+                <h2>
+                    Managed Hospital
+                </h2>
+            </div>
+            <div class="policy">
+                <h3>Non-Discrimination Policy</h3>
+                <p>We accept all patients regardless of race, color, national origin, age, disability, sex, sexual
+                    orientation, gender identity, religion, or ability to pay.</p>
+
+                <p>
+                    To learn more, you can view our full non-discrimination policy.
+                </p>
+
+                <a target="_blank" href="{% static "pdf/Nondiscrimination-Policy_PRAGUE.tdc_.pdf" %}">Non-Discriminatory Policy</a>
+            </div>
+            <div class="policy">
+                <h3>Financial Assistance Policy</h3>
+                <p>No one will be denied access to services due to inability to pay. We utilize a discounted/sliding
+                    fee scale based on family size and income.</p>
+
+                <p>
+                    To learn more about financial assistance or to print a financial assistance application,
+                    click below.
+                </p>
+
+                <div class="buttons">
+                    <a  target="_blank"  href="{% static "pdf/Financial-Assistance-Policy.PRAGUE.July2020_tdc.pdf" %}">FA Policy</a>
+
+                    <a  target="_blank"  href="{% static "pdf/Nondiscrimination-Policy_PRAGUE.tdc_.pdf" %}"> Application</a>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- <section class="testimonials">
+            <div class="border-padding-left">
+                <h4>WE LOVE THEM</h4>
+                <h2>What our clients have to say</h2>
+            </div>
+            <div class="testimonial">
+                <div class="card">
+                    <img src="/static/img/home-img/testimonial-1.jpg" alt="Woman Smiling">
+                    <p>We pledge to recognize the health care needs of our community and surrounding area and provide
+                        cost-effective services necessary to enhance the quality of life</p>
+                    <span>Name and another name</span>
+                </div>
+                <div class="card">
+                    <img src="/static/img/home-img/testimonial-2.jpg" alt="Woman Smiling">
+                    <p>We pledge to recognize the health care needs of our community and surrounding area and provide
+                        cost-effective services necessary to enhance the quality of life</p>
+                    <span>Name and another name</span>
+                </div>
+                <div class="card">
+                    <img src="/static/img/home-img/testimonial-3.jpg" alt="Woman Profile">
+                    <p>We pledge to recognize the health care needs of our community and surrounding area and provide
+                        cost-effective services necessary to enhance the quality of life</p>
+                    <span>Name and another name</span>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="trusted-partner container">
+            <div class="first-section">
+                <h2>Our Trusted Partners</h2>
+                <div class="partners">
+
+                    <h4>
+                        CPL Lab
+                    </h4>
+                    <h4>
+                        Cintas
+                    </h4>
+                    <h4>
+                        DP Medical
+                    </h4>
+                    <h4>
+                        Custom Medical 
+                        Solutions
+                    </h4>
+                    <h4>
+                        Bracco
+                    </h4>
+                    <h4>
+                        Alliant Purchasing
+                    </h4>
+                    <h4>
+                        Medline
+                    </h4>
+                    <h4>
+                        Premier GPO
+                    </h4>
+                    <h4>
+                        CPSI/Trubridge
+                    </h4>
+                    <h4>
+                        HD Supply
+                    </h4>
+                   
+                    <!-- <img src="/static/img/home-img/partner-1.jpg" alt="Trusted Partner">
+                    <img src="/static/img/home-img/partner-2.jpg" alt="Trusted Partner">
+                    <img src="/static/img/home-img/partner-3.jpg" alt="Trusted Partner">
+                    <img src="/static/img/home-img/partner-4.jpg" alt="Trusted Partner">
+                    <img src="/static/img/home-img/partner-5.jpg" alt="Trusted Partner">
+                    <img src="/static/img/home-img/partner-6.jpg" alt="Trusted Partner"> -->
+                </div>
+            </div>
+            <div class="second-section">
+                <h2>Our Guarantee To You</h2>
+                <p>Prague Regional Memorial Hospital is committed to being <br> the healthcare provider of choice for
+                    Prague and <br> surrounding communities.</p>
+                <a href="{% url "contact" %}">Contact Us</a>
+            </div>
+        </section>
+       
+        
+    </section>
+
+{% endblock content %}
+

@@ -4,6 +4,7 @@
     color: $white-color;
     display: flex;
     align-items: center;
+    background: linear-gradient(rgb(41, 36, 100,.6),rgb(41, 36, 100,.1)),url("/static/img/rehabilitation/background.jpg") no-repeat center center/cover;
 
     &>div{
         max-width: 600px;
@@ -189,7 +190,7 @@
         }
         .img-container{
             width: 40%;
-            background-image: url("/static/img/rehabilitation/massage-2.jpg");
+            background-image: url("/static/img/rehabilitation/physical_therapy.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -237,7 +238,7 @@
             }
             .img-container{
                 width: 40%;
-                background-image: url("/static/img/rehabilitation/massage-3.jpg");
+                background-image: url("/static/img/rehabilitation/physical_therapy2.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;

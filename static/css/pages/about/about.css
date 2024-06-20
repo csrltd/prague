@@ -147,7 +147,7 @@
 .second-container .Our-teams .team-profile {
   display: flex;
   flex-wrap: wrap;
-  gap: 8rem;
+  justify-content: space-between;
 }
 .second-container .Our-teams .team-profile h6 {
   color: #939393;

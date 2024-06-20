@@ -168,7 +168,9 @@
         .team-profile{
             display: flex;
             flex-wrap: wrap;
-            gap: 8rem;
+            // gap: 8rem;
+            // gap: 20px;
+            justify-content: space-between;
             h6{
                 color: $grey-color;
             }

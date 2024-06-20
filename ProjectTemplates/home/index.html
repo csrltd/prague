@@ -1,0 +1,432 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block pagelinks %}
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/pages/home/home.css' %}"
+    />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/pages/home/home_responsive.css' %}">
+{% endblock %}
+
+{% block heroDescription %}
+  <div>
+        <div>
+          <h1>A Critical-Access Hospital</h1>
+          <p>
+            Located in Prague, Oklahoma, we proudly serve <br />
+            Lincoln, Pottawatomie, Okfuskee, Seminole, and other <br />
+            surrounding communities
+          </p>
+          <a href="{% url 'contact' %}">Contact Us</a>
+        </div>
+
+        <div>
+          <div>
+            <h3>23</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
+          <div>
+            <h3>23</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
+          <div>
+            <h3>23</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
+          <div>
+            <h3>23</h3>
+            <p>Lorem ipsum dolor</p>
+          </div>
+        </div>
+  </div>
+{% endblock heroDescription %}
+
+    {% block content %}
+    <section class="second-container">
+     <svg width="724" height="724" viewBox="0 0 724 724" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.13" cx="362" cy="362" r="362" fill="#292464"/>
+            </svg>
+                
+            <svg width="568" height="758" viewBox="0 0 568 758" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M183.702 313.932C189.9 337.596 189.643 363.124 175.693 383.218C107.078 482.048 -62.2456 592.026 23.8878 718.532C50.5958 757.758 103.892 765.117 148.564 749.103C518.642 616.436 576.364 429.182 567.11 258.431C567.11 105.359 476.255 0 330.344 0C193.608 0 137.036 135.78 183.702 313.932Z" fill="#B91F27"/>
+            </svg>
+                
+            <svg width="724" height="724" viewBox="0 0 724 724" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.13" cx="362" cy="362" r="362" fill="#292464"/>
+            </svg>
+                
+            <svg width="568" height="758" viewBox="0 0 568 758" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M183.702 313.932C189.9 337.596 189.643 363.124 175.693 383.218C107.078 482.048 -62.2456 592.026 23.8878 718.532C50.5958 757.758 103.892 765.117 148.564 749.103C518.642 616.436 576.364 429.182 567.11 258.431C567.11 105.359 476.255 0 330.344 0C193.608 0 137.036 135.78 183.702 313.932Z" fill="#B91F27"/>
+            </svg>
+      <section class="choose-us container">
+        <img
+          src="../static/img/home-img/why-choose-us.jpg"
+          alt="Doctors looking down"
+        />
+
+        <div>
+          <h2>Why Choose Us?</h2>
+          <div>
+            <i class="fa-solid fa-square-check"></i>
+            <p>Low patient to nurse ratio</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-square-check"></i>
+            <p>Readily available physicians</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-square-check"></i>
+            <p>Physical, occupational, speech and respiratory therapists</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-square-check"></i>
+            <p>In-house 24-hour emergency care</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-square-check"></i>
+            <p>In-house laboratory and imaging</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-square-check"></i>
+            <p>Close to your home, family and friends</p>
+          </div>
+          <p>
+            Recover from your illness or injury close to home in the
+            comfortable, healing environment of Prague Regional Memorial
+            Hospital.
+          </p>
+        </div>
+      </section>
+
+      <section class="fight-corona container">
+        <div>
+          <div class="border-padding-left">
+            <h4>LET'S FIGHT TOGETHER</h4>
+            <h2>Help Us Fight Coronavarus</h2>
+            <p>
+              COVID-19 affects different people in different ways. Infected
+              people have had a wide range of symptoms reported – from mild
+              symptoms to severe illness. Help stop the spread now!
+            </p>
+          </div>
+          <div>
+            <div>
+              <i class="fa-solid fa-head-side-mask"></i>
+              <p>Wear a Mask</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-users"></i>
+              <p>Avoid Crowds</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-hands-bubbles"></i>
+              <p>Wash Your Hands</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-people-arrows"></i>
+              <p>Contactless</p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="../static/img/home-img/fight-corona.jpg"
+          alt="Women showing love sign"
+        />
+      </section>
+      <section class="our-services container" id="services">
+        <div class="border-padding-left service-title">
+            <h2>Our Services</h2>
+            <p>We, the physicians, staff, and board members of Prague Regional Memorial Hospital are committed to providing the highest level of healthcare possible at our facility.</p>
+        </div>
+        <div class="services">
+            <a href="{% url 'swing-bed' %}">
+                <div class="service" id="s1">
+                    <div>
+                        <div>
+                            <img src="../../static/img/home-img/hospital-bed.svg" alt="Swing Bed"> <span>Swing Bed</span>
+                        </div>
+                        <p>Our case managers ensure our patients receive the highest quality care during and after their stay at Carnegie Hospital. lorem</p>
+                </div>
+            </div>
+            </a>
+            
+            <a href="#">
+                <div class="service" id="s2">
+                    <div>
+                        <div>
+                            <img src="../../static/img/home-img/wounded.svg" alt="Wound Care"> <span>Wound Care</span>
+                        </div>
+                            <p>Our case managers ensure our patients receive the highest quality care during and after their stay at Carnegie Hospital.</p>
+                    </div>
+                    
+                </div>
+            </a>
+                
+            <a href="#">
+                <div class="service" id="s3">
+                    <div>
+                        <div>
+                            <img src="../../static/img/home-img/lung.svg" alt="Respiratory"> <span>Respiratory Therapy</span>
+                        </div>
+                        <p>Our case managers ensure our patients receive the highest quality care during and after their stay at Carnegie Hospital.</p>
+                    </div>
+                    
+                </div>
+            </a>
+          
+            <a href="{% url 'rehab-servive' %}">
+                <div class="service" id="s4">
+                    <div>
+                        <div>
+                            <img src="../../static/img/home-img/physical-therapy.svg" alt="Rehabilitation"> <span>Rehabilitation</span>
+                        </div>
+                        <p>Our case managers ensure our patients receive the highest quality care during and after their stay at Carnegie Hospital.</p>
+                    </div>
+                </div>  
+                
+            </a>
+
+            <a href="{% url 'case-management' %}">
+                <div class="service" id="s5">
+                    <div>
+                        <div>
+                            <img src="../../static/img/home-img/case-file.svg" alt="Case File"> <span>Case Management</span>
+                        </div>
+                        <p>Our case managers ensure our patients receive the highest quality care during and after their stay at Carnegie Hospital.</p>
+                    </div>
+                    
+                </div>
+            </a>
+             
+            <a href="#">
+                <div class="service" id="s6">
+                    <div>
+                        <div>
+                            <img src="../../static/img/home-img/medical-team.svg" alt="Medical Team"> <span>Nursing</span>
+                        </div>
+                        <p>Our case managers ensure our patients receive the highest quality care during and after their stay at Carnegie Hospital.</p>
+                    </div>
+                    
+                </div>
+                
+            </a>    
+        </div>
+                        
+      </section>
+      <section class="we-believe container">
+        <img
+          src="../static/img/home-img/what-we-believe-1.jpg"
+          alt="Woman Smiling"
+        />
+        <div class="believe-section-two">
+          <div class="border-padding-left">
+            <h4>Our work inspires smiles</h4>
+            <h2>What we believe</h2>
+            <p>
+              We pledge to recognize the health care needs of our community and
+              surrounding area and provide cost-effective services necessary to
+              enhance the quality of life
+            </p>
+          </div>
+          <div class="image-gallery">
+            <img
+              src="../static/img/home-img/what-we-believe-2.jpg"
+              alt="Woman Smiling"
+            />
+            <img
+              src="../static/img/home-img/what-we-believe-3.jpg"
+              alt="Child Smiling"
+            />
+            <img
+              src="../static/img/home-img/what-we-believe-4.jpg"
+              alt="Women in Grass"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="border-padding-left">
+          <h4>Our work inspires smiles</h4>
+          <h2>What we believe</h2>
+        </div>
+        <div class="testimonial">
+          <div class="card">
+            <img
+              src="../static/img/home-img/testimonial-1.jpg"
+              alt="Woman Smiling"
+            />
+            <p>
+              We pledge to recognize the health care needs of our community and
+              surrounding area and provide cost-effective services necessary to
+              enhance the quality of life
+            </p>
+            <span>Name and another name</span>
+          </div>
+          <div class="card">
+            <img
+              src="../static/img/home-img/testimonial-2.jpg"
+              alt="Woman Smiling"
+            />
+            <p>
+              We pledge to recognize the health care needs of our community and
+              surrounding area and provide cost-effective services necessary to
+              enhance the quality of life
+            </p>
+            <span>Name and another name</span>
+          </div>
+          <div class="card">
+            <img
+              src="../static/img/home-img/testimonial-3.jpg"
+              alt="Woman Profile"
+            />
+            <p>
+              We pledge to recognize the health care needs of our community and
+              surrounding area and provide cost-effective services necessary to
+              enhance the quality of life
+            </p>
+            <span>Name and another name</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="trusted-partner container">
+        <div class="first-section">
+          <h2>Our Trusted Partners</h2>
+          <div class="partners">
+            <img
+              src="../static/img/home-img/partner-1.jpg"
+              alt="Trusted Partner"
+            />
+            <img
+              src="../static/img/home-img/partner-2.jpg"
+              alt="Trusted Partner"
+            />
+            <img
+              src="../static/img/home-img/partner-3.jpg"
+              alt="Trusted Partner"
+            />
+            <img
+              src="../static/img/home-img/partner-4.jpg"
+              alt="Trusted Partner"
+            />
+            <img
+              src="../static/img/home-img/partner-5.jpg"
+              alt="Trusted Partner"
+            />
+            <img
+              src="../static/img/home-img/partner-6.jpg"
+              alt="Trusted Partner"
+            />
+          </div>
+        </div>
+        <div class="second-section">
+          <h2>Our Guarantee To You</h2>
+          <p>
+            Prague Regional Memorial Hospital is committed to be <br />
+            the healthcare provider of choice for Prague and <br />
+            surrounding communities.
+          </p>
+          <a href="{% url 'contact' %}">Contact Us</a>
+        </div>
+      </section>
+
+      <section class="policies container">
+        <div class="first-section">
+          <div class="top">
+            <h2>Our Policies</h2>
+            <h3>Non-Discrimination Policy</h3>
+            <p>
+              We accept all patients regardless of race, color, national origin,
+              age, disability, sex, sexual orientation, gender identity,
+              religion, or ability to pay.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="bottom">
+            <h3>Financial Assistance Policy</h3>
+            <p>
+              No one will be denied access to services due to inability to pay.
+              We utilize a discounted/sliding fee scale based on family size and
+              income.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <img
+          src="../static/img/home-img/what-we-believe-1.jpg"
+          alt="Woman Smiling"
+        />
+      </section>
+      <section class="contact container">
+        <div class="first-section">
+          <div class="top">
+            <h2>GET IN TOUCH</h2>
+            <h1>Contact Information</h1>
+            <p>
+              We are committed to ensuring you receive the help and information
+              needed to better manage your health. Listed below are phone
+              numbers to get in touch with us with any questions and/or concerns
+              you may have.
+            </p>
+          </div>
+          <div class="bottom">
+            <div>
+              <i class="fa-solid fa-phone"></i><span>(405) 567-4922</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i
+              ><span>info@prague.hospital</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-location-dot"></i
+              ><span>1322 Klabzuba, Prague, Oklahoma 74864</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="#" method="get">
+            <div class="names">
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="First Name"
+              />
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Last Name"
+              />
+            </div>
+            <input type="email" id="email" name="email" placeholder="Email" />
+            <input type="tel" id="phone" name="phone" placeholder="Phone" />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input type="submit" value="Send Message" />
+          </form>
+        </div>
+      </section>
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.201502826868!2d-96.68695698500073!3d35.49050217484657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b3e93ff655ac4b%3A0xa9ea68b7d9005b00!2sPrague%20Community%20Hospital!5e0!3m2!1sen!2srw!4v1695300440666!5m2!1sen!2srw"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section> 
+      
+    </section>
+    
+    {% endblock content %}
+

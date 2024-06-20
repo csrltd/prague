@@ -1,0 +1,44 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block page_links %}
+
+    <link rel="stylesheet" href="{% static '/css/pages/nursing/nursing.css' %}">
+
+{% endblock page_links %}
+
+
+{% block content %}
+
+
+  <!-- Hero Section -->
+  <section class="hero-container1">
+    <div class="container">
+      <h1>Nursing</h1>
+    </div>
+  </section>
+  <!-- End of Hero Section-->
+
+  <!-- Second Container-->
+  <section class="second-container">
+    <div class="first-section container">
+      <img src="/static/img/nursing/nurse.jpg" alt="swingbed">
+      <div>
+        <h1>
+          Nursing Services</h1>
+        <p>At Prague Regional Memorial Hospital our nursing staff prides itself on compassionate care-giving and nursing excellence. Our nurses provide safe, high-quality patient care based on a strong commitment to clinical expertise, education, evidence-based practice, and collaboration with multidisciplinary team members. Our nursing team engages in patient-centered care, which means putting the patient’s needs and priorities ahead of their own. Our low nurse-to-patient ratios ensure that each patient at Prague Regional Memorial Hospital receives the quality care and personalized attention they deserve.</p>
+          <p>
+            Our staff of licensed nurses are experienced in emergency, acute and skilled nursing care. Our nurses are BLS (Basic Life Support), ACLS (Advanced Cardiovascular Life Support) and PALS (Pediatric Advanced Life Support) certified and participate in ongoing continuing education to stay abreast of technological advances, patient care trends, new and revised protocols, medical breakthroughs and research findings
+          </p>
+          <p>
+            As a patient at Prague Regional Memorial Hospital you can be assured of the highest quality nursing care.
+          </p>
+      </div>
+    </div>
+   
+  </section>
+  <!-- End of second container-->
+
+ 
+
+{% endblock content %}

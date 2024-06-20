@@ -12,12 +12,12 @@ html {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     height: 100%;
-    overflow-x: hidden;
 }
 
 body {
-    overflow-x: hidden;
     position: relative;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 
@@ -33,7 +33,7 @@ a {
 nav {
     display: flex;
     padding-inline: $padding-1;
-    padding-block: 20px;
+    // padding-block: 20px;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -41,6 +41,10 @@ nav {
     left: 0;
     right: 0;
     z-index: 999;
+
+    img{
+        width: 150px;
+    }
 
     .hamburger {
         cursor: pointer;
@@ -103,7 +107,7 @@ nav {
                 }
             }
 
-            .service{
+            .service,.patient{
                 position: relative;
 
                 >a{

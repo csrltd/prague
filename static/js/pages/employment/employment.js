@@ -1,21 +1,21 @@
 const cardWrapper = document.querySelector('.job-listing');
- const closeModalBtn = document.querySelector('#close-modal');
- const modal = document.querySelector('.modal');
- const modalOverlay = document.querySelector('.modal-overlay');
- const modalJobTitle = modal.querySelector("#job_title");
- const modalJobCode = modal.querySelector('#job_code');
- const modalCompName = modal.querySelector('#company_name');
- const modalLocation = modal.querySelector('#location');
- const modalDescription = modal.querySelector('#job_description');
- const modalJobType = modal.querySelector('#job_type');
- const modalJobRequirement = modal.querySelector('#job_requirements');
- const closeModal = ()=>{
-  modal.style.display = 'none';
-  modalOverlay.style.display = 'none';
- }
- cardWrapper.addEventListener('click', (e)=>{
+const closeModalBtn = document.querySelector('#close-modal');
+const modal = document.querySelector('.modal');
+const modalOverlay = document.querySelector('.modal-overlay');
+const modalJobTitle = modal.querySelector("#job_title");
+const modalJobCode = modal.querySelector('#job_code');
+const modalCompName = modal.querySelector('#company_name');
+const modalLocation = modal.querySelector('#location');
+const modalDescription = modal.querySelector('#job_description');
+const modalJobType = modal.querySelector('#job_type');
+const modalJobRequirement = modal.querySelector('#job_requirements');
+const closeModal = () => {
+    modal.style.display = 'none';
+    modalOverlay.style.display = 'none';
+}
+cardWrapper.addEventListener('click', (e) => {
     e.preventDefault();
-    if(e.target.classList.contains('jobs-overlay')){
+    if (e.target.classList.contains('jobs-overlay')) {
         modal.style.display = 'block';
         modalOverlay.style.display = 'block';
 
