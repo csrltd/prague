@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-load_dotenv(f"{BASE_DIR}/core/.env")
+load_dotenv()
 
 
 # Quick-start development settings - unsuitable for production
@@ -17,7 +17,7 @@ load_dotenv(f"{BASE_DIR}/core/.env")
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = eval(os.getenv("DEBUG"))
+DEBUG = True
 
 ALLOWED_HOSTS = ["prague.csrtesting.com", "127.0.0.1", "prague.onrender.com"]
 
