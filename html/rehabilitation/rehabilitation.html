@@ -1,112 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/static/css/main/main.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" type="image/jpg" sizes="16x16 32x32" href="/static/img/home-img/Prague-Logo-Light.svg" />
-  <link rel="stylesheet" href="/static/css/pages/rehabilitation/rehabilitation.css" />
-  <title>Rehabilitation</title>
-</head>
+{% extends "base.html" %}
+{% load static %}
+{% block page_links %}
 
-<body>
-  <!--Navigation-->
-  <nav id="nav">
-    <img src="/static/img/home-img/Prague-Logo-Light.svg" alt="Prague Logo">
-    <div id="links-container">
-      <ul>
-          <a href="{% url "home" %}">
-              <li>Home</li>
-          </a>
-          <a href="{% url "about" %}">
-              <li>About Us</li>
-          </a>
+    <link rel="stylesheet" href="{% static '/css/pages/rehabilitation/rehabilitation.css' %}">
 
-          <div class="service">
-              
-                  <li>Services</li>
-              
-
-              <div class="dropdown">
-
-                  <a href="{% url "swing-bed" %}">Swing-bed</a>
-                  <a href="{% url "rehab-servive" %}">Rehabilitation</a>
-                  <a href="{% url "case-management" %}">Case Management</a>
-                  <a href="{% url "wound_care" %}">Woundcare</a>
-                  <a href="{% url "respiratory_therapy" %}">Respiratory Therapy</a>
-                  <a href="{% url "nursing" %}">Nursing</a>
-                  <a href="{% url "emergency" %}">Emergency</a>
-                  
-              </div>
-          </div>
-          
-          <a href="{% url "employment" %}">
-              <li>Career</li>
-          </a>
-          
-          <div class="patient">
-              
-                  <li>Patient Info</li>
-              
-
-              <div class="dropdown">
-                  <a href="{% url "financial" %}">Financial Services</a>
-                  <a href="{% url "price" %}">Price Transparency</a>
-                  
-              </div>
-          </div>
-      </ul>
-
-      <ul class="listlinks">
-          <a href="{% url "home" %}">
-              <li>Home</li>
-          </a>
-          <a href="{% url "about" %}">
-              <li>About Us</li>
-          </a>
-
-          <a href="{% url "financial" %}">
-              <li>Finance</li>
-          </a>
-
-          <a href="{% url "swing-bed" %}">
-              <li>Swing-bed</li>
-          </a>
-
-          <a href="{% url "rehab-servive" %}">
-              <li>Rehabilitation</li>
-          </a>
-          <a href="{% url "case-management" %}">
-              <li>Case Management</li>
-          </a>
-          <a href="{% url "wound_care" %}">
-              <li>Woundcare</li>
-          </a>
-          
-          <a href="{% url "employment" %}">
-              <li>Career</li>
-          </a>
-          <a href="{% url "home" %}">
-              <li>Patient Info</li>
-          </a>
-      </ul>
+{% endblock page_links %}
 
 
+{% block content %}
 
-      <a href="{% url "clinic" %}">Prague Family Clinic</a>
-  </div>
-    <section class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </section>
-
-</nav>
-  <!--End of Navigation-->
 
   <!-- Hero Section -->
   <section class="hero-container1">
@@ -123,7 +26,7 @@
         <div class="first">
           <h1>Rehabilitation Services</h1>
           <div>
-            <p>Prague Hospital provides comprehensive Physical Therapy, Occupational Therapy and Speech-Language
+            <p>Prague Regional Memorial Hospital provides comprehensive Physical Therapy, Occupational Therapy and Speech-Language
               Pathology services to help our patients return to an independent lifestyle. We approach every patient
               understanding that every diagnosis, every illness, and every injury are different. Our trained and
               compassionate team members value the quality of life of every patient and their caregivers.</p>
@@ -171,7 +74,7 @@
               </div>
               <div><i class="fa-solid fa-check"></i>
                 <p>Neuromuscular disorders and degenerative neurological disorders, including Guillain-Barre Syndrome,
-                  Multiple sclerosis and Amyotrophic lateral sclerosis.</p>
+                  Multiple Sclerosis and Amyotrophic Lateral Sclerosis</p>
               </div>
               <div><i class="fa-solid fa-check"></i>
                 <p>Heart attack, congestive heart failure and coronary artery bypass graft</p>
@@ -188,7 +91,7 @@
       </div>
       <div class="second-wrapper">
         <!-- <div class="text"> -->
-          <p>We are pleased to offer a low patient to nurse ratio to ensure you receive the care and attention you
+          <p>We are pleased to offer a low patient-to-nurse ratio to ensure you receive the care and attention you
             deserve
             during your rehabilitation. Additionally, we have 24-hour in-house emergency care, laboratory services and
             diagnostic imaging.</p>
@@ -197,8 +100,8 @@
             social workers. Rounding out the team are our readily available physicians and compassionate, qualified
             nursing staff.</p>
 
-          <p> Regional Memorial Hospital’s recently remodeled rehabilitation center features new, state of the art
-            physical therapy equipment in a comfortable, healing environment.orts Lan</p>
+          <p> Regional Memorial Hospital’s recently remodeled rehabilitation center features new, state-of-the-art
+            physical therapy equipment in a comfortable, healing environment.</p>
         <!-- </div> -->
 
       </div>
@@ -211,8 +114,8 @@
           tailors treatment specific to every patient. From sports physical therapy for the weekend warrior to
           rehabilitation for the serious athlete, our sports injury program strives to heal complex sports injuries and
           limit the likelihood of re-injury.
-          Our rehabilitation team looks at the whole body so as not to just stop the pain but address the underlying
-          source of injury. We specialize treatment around each athlete, utilizing therapies and training exercises that
+          Our rehabilitation team looks at the whole body so as not to just stop the pain but to address the underlying
+          source of injury. We specialize in treatment around each athlete, utilizing therapies and training exercises that
           not only mimic the demands of their sport but also address the unique conditions of the specific position
           within their sport.</p>
       </div>
@@ -221,13 +124,13 @@
         <h2>Sports therapy exercises may include:</h2>
         <div class="list">
           <div><i class="fa-solid fa-check"></i>
-            <p>high level balance exercises</p>
+            <p>high-level balance exercises</p>
           </div>
           <div><i class="fa-solid fa-check"></i>
             <p>plyometric training</p>
           </div>
           <div><i class="fa-solid fa-check"></i>
-            <p>high intensity interval training</p>
+            <p>high-intensity interval training</p>
           </div>
           <div><i class="fa-solid fa-check"></i>
             <p>power, agility, flexibility and speed activities</p>
@@ -249,9 +152,9 @@
         <p>Prague Regional Memorial Hospital’s physical therapy team understands the physical and mental challenges a
           patient may face during the healing process. We offer inpatient and outpatient services to the community. The
           treatment team works diligently with patients to achieve their optimal developmental and functional levels
-          through one on one therapy and family/caregiver education.</p>
+          through one-on-one therapy and family/caregiver education.</p>
 
-        <h2>Prague Regional Memorial Hospital provides treatment for a variety of diagnosis, including:</h2>
+        <h2>Prague Regional Memorial Hospital provides treatment for a variety of diagnoses, including:</h2>
         <div class="list">
           <div><i class="fa-solid fa-check"></i>
             <p>Orthopedic Disorders</p>
@@ -263,7 +166,7 @@
             <p>Spinal Dysfunction</p>
           </div>
           <div><i class="fa-solid fa-check"></i>
-            <p>Work Related Injuries</p>
+            <p>Work-Related Injuries</p>
           </div>
           <div><i class="fa-solid fa-check"></i>
             <p>Balance/Vestibular Disorders</p>
@@ -287,7 +190,7 @@
     </div>
     <div class="fourth-section">
         <div class="first">
-          <h2>Our goal is to achieve maximum results using a variety of physical therapy services, treatment may include:
+          <h2>Our goal is to achieve maximum results using a variety of physical therapy services. Treatment may include:
           </h2>
           <div class="list">
             <div><i class="fa-solid fa-check"></i>
@@ -315,7 +218,7 @@
               <p>Instrumental Augmented Soft Tissue Mobilization (IASTM)</p>
             </div>
             <div><i class="fa-solid fa-check"></i>
-              <p>Spinal Rehabilitations</p>
+              <p>Spinal Rehabilitation</p>
             </div>
             <div><i class="fa-solid fa-check"></i>
               <p>Total Joint Rehabilitation</p>
@@ -346,7 +249,7 @@
         </div>
         <div class="overlay-container">
           <h1>Occupational Therapy</h1>
-          <p>Occupational therapy at Prague Regional Memorial Hospital strives to help patients resume activities of
+          <p>Occupational Therapy at Prague Regional Memorial Hospital strives to help patients resume activities of
             daily living after experiencing a debilitating injury or illness. Occupational Therapy is an important
             service that will assist patients achieve and maintain an independent lifestyle.</p>
           <p>After a comprehensive evaluation with our compassionate and experienced Occupational Therapist, patients,
@@ -399,62 +302,6 @@
   </section>
   <!-- End of second container-->
 
-  <footer>
-    <div class="sub-container">
-      <div class="first-section">
-        <div class="first">
-          <img src="/static/img/home-img/Prague-Logo-Light.svg" alt="Prague Logo" />
-          <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          </div>
-          <h2>Open 24/7 Hours</h2>
-        </div>
-        <div class="second">
-          <ul>
-            <h3>Our Services</h3>
-            <a href="/src/pages/swingbed/swingbed.html"><li>Swing Bed</li></a>
-            <a href="/src/pages/wondcare-service/wondcare.html"><li>Wound Care</li></a>
-            <a href="#"><li>Respiratory Therapy</li></a>
-            <a href="#"><li>Rehabilitation</li></a>
-            <a href="/src/pages/wondcare-service/wondcare.html"><li>Case Management</li></a>
-            <a href="#"><li>Nursing</li></a>
-            
-          </ul>
-        </div>
-        <div class="third">
-          <ul>
-            <h3>About</h3>
-            <a href="#"><li>Company</li></a>
-            <a href="/src/pages/financial/financial.html"><li>Financial Services</li></a>
-            <a href="/src/pages/price/price.html"><li>Price Transparency</li></a>
-            <a href="/src/pages/employment/employment.html"><li>Employment</li></a>
-            <a href="#"><li>Family Clinic</li></a>
-            
-          </ul>
-        </div>
-        <div class="fourth">
-          <ul>
-            <h3>Support</h3>
-            <li>
-              We're here to help with always on <br />
-              24 x 7 x 365 support
-            </li>
-            <li>(405) 567-4922</li>
-            <li>info@prague.hospital</li>
-          </ul>
-        </div>
-      </div>
-      <hr />
-      <div class="second-section">
-        <span>&copy;</span>
-        <p>Copyright  <span id="currentYear"></span> Prague Regional Memorial Hospital. (U.S.A.)</p>
-      </div>
-    </div>
-  </footer>
-  <script src="/static/js/main/main.js"></script>
-  <script src="/static/js/pages/home/home.js"></script>
-</body>
+ 
 
-</html>
+  {% endblock content %}

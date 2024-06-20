@@ -1,126 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/css/main/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" type="image/jpg" sizes="16x16 32x32" href="/static/img/home-img/Prague-Logo-Light.svg" />
-    <link rel="stylesheet" href="/static/css/pages/wondcare-service/wondcare.css" />
-    <title>Woundcare Services</title>
-</head>
+{% extends "base.html" %}
+{% load static %}
+{% block page_links %}
 
-<body>
+    <link rel="stylesheet" href="{% static '/css/pages/wondcare-service/wondcare.css' %}">
 
-    <!--Navigation-->
-    <nav id="nav">
-        <img src="/static/img/home-img/Prague-Logo-Light.svg" alt="Prague Logo">
-        <div id="links-container">
-            <ul>
-                <a href="{% url "home" %}">
-                    <li>Home</li>
-                </a>
-                <a href="{% url "about" %}">
-                    <li>About Us</li>
-                </a>
-
-                <div class="service">
-                    
-                        <li>Services</li>
-                    
-
-                    <div class="dropdown">
-
-                        <a href="{% url "swing-bed" %}">Swing-bed</a>
-                        <a href="{% url "rehab-servive" %}">Rehabilitation</a>
-                        <a href="{% url "case-management" %}">Case Management</a>
-                        <a href="{% url "wound_care" %}">Woundcare</a>
-                        <a href="{% url "respiratory_therapy" %}">Respiratory Therapy</a>
-                        <a href="{% url "nursing" %}">Nursing</a>
-                        <a href="{% url "emergency" %}">Emergency</a>
-                        
-                    </div>
-                </div>
-                
-                <a href="{% url "employment" %}">
-                    <li>Career</li>
-                </a>
-                
-                <div class="patient">
-                    
-                        <li>Patient Info</li>
-                    
-
-                    <div class="dropdown">
-                        <a href="{% url "financial" %}">Financial Services</a>
-                        <a href="{% url "price" %}">Price Transparency</a>
-                        
-                    </div>
-                </div>
-            </ul>
-
-            <ul class="listlinks">
-                <a href="{% url "home" %}">
-                    <li>Home</li>
-                </a>
-                <a href="{% url "about" %}">
-                    <li>About Us</li>
-                </a>
-
-                <a href="{% url "financial" %}">
-                    <li>Finance</li>
-                </a>
-
-                <a href="{% url "swing-bed" %}">
-                    <li>Swing-bed</li>
-                </a>
-
-                <a href="{% url "rehab-servive" %}">
-                    <li>Rehabilitation</li>
-                </a>
-                <a href="{% url "case-management" %}">
-                    <li>Case Management</li>
-                </a>
-                <a href="{% url "wound_care" %}">
-                    <li>Woundcare</li>
-                </a>
-                
-                <a href="{% url "employment" %}">
-                    <li>Career</li>
-                </a>
-                <a href="{% url "home" %}">
-                    <li>Patient Info</li>
-                </a>
-            </ul>
+{% endblock page_links %}
 
 
+{% block content %}
 
-            <a href="{% url "clinic" %}">Prague Family Clinic</a>
-        </div>
-        <section class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </section>
-
-    </nav>
-    <!--End of Navigation-->
 
     <!-- Hero Section -->
     <section class="hero-container1">
         <div class="container">
-            <h1>Woundcare Services</h1>
-            <p>
-                Located in Prague, Oklahoma, we proudly serve Lincoln, Pottawatomie, Okfuskee,Seminole, and other
-                surrounding communities
-            </p>
-            <div class="buttons">
-                <a href="{% url "home" %}">Our Services</a>
-                <a href="{% url "home" %}">Our Hospital</a>
-            </div>
+            <h1>Wound Care Services</h1>
+            
         </div>
     </section>
     <!-- End of Hero Section-->
@@ -129,12 +24,12 @@
     <section class="second-container">
         <div class="first-section container">
             <div>
-                <p>Prague Hospital offers high quality care for slow healing and chronic wounds. We provide full
+                <p>Prague Regional Memorial Hospital offers high-quality care for slow-healing and chronic wounds. We provide a full
                     assessment, tailored treatment, patient education and support. Our goal is to heal the wound as
                     quickly and efficiently as possible and eliminate wound-related symptoms and complications.</p>
             </div>
             <div class="woundcare-img">
-                <img src="/static/img/woundcare-img/patient_data_1.jpg" alt="Man on a computer">
+                <img src="/static/img/woundcare-img/wound_care2.jpg" alt="Man on a computer">
             </div>
 
         </div>
@@ -207,7 +102,7 @@
 
         <div class="title container">
             <h1>X-Ray and CT</h1>
-            <p>At Pawhuska Hospital, we are committed to providing premier quality imaging with compassion and care.
+            <p>At Prague Regional Memorial Hospital, we are committed to providing premier-quality imaging with compassion and care.
                 Whether it’s a CT scan or a traditional X-ray, you can expect quality care and quick results
                 performed by skilled, registered radiology technicians and read by an experienced, board-certified
                 radiologist. We offer both inpatient and outpatient radiology services 24 hours a day, 7 days a
@@ -233,13 +128,13 @@
                 <div class="second">
                     <h3>CT Scan (computerized tomography)</h3>
                     <div class="paragraphs">
-                        <p>A CT (or computerized tomography) scan combines computerized technology with a focused X- ray
+                        <p>A CT (or computerized tomography) scan combines computerized technology with a focused X-ray
                             beam that passes through the body at various angles, producing clear, cross-sectional
                             images. It
                             is safe, fast and painless, and produces precise and accurate images of the body. A CT scan
                             is
                             one of a physician’s most important tools for examining the bones and internal organs. CT
-                            scans are able to detect many conditions that conventional X-rays cannot.
+                            scans can detect many conditions that conventional X-rays cannot.
                         </p>
                         <p>CT scans can often take the place of other more invasive diagnostic techniques, such as
                             exploratory surgery, saving the patient discomfort, cost, and inconvenience. The scans are
@@ -263,14 +158,14 @@
             <h1>Lab</h1>
             <div class="text-lab">
                 <p>
-                    Prague Hospital Laboratory Services provides accurate and timely results while contributing to
+                    Prague Regional Memorial Hospital laboratory services provides accurate and timely results while contributing to
                     our patient and family-centered care. Laboratory testing is performed 24 hours a day, seven days
-                    a week by certified laboratory personnel using the latest instrumentation
+                    a week by certified laboratory personnel using the latest instrumentation.
                 </p>
 
                 <p>
                     The laboratory’s rapid turnaround time allows caregivers to treat their patients in a timely
-                    fashion. We provide laboratory testing not just for the hospital, but also local physician’s
+                    fashion. We provide laboratory testing not just for the hospital, but also for local physician’s
                     offices, nursing homes and area clinics, accurately and efficiently processing approximately
                     57,000 tests per year.
                 </p>
@@ -278,7 +173,7 @@
 
             <div class="our-labotary-services">
                 <h1>
-                    Our laboratory services include 
+                    Our laboratory services include :
                 </h1>
 
                 <div class="Lab-services">
@@ -328,7 +223,7 @@
                         <p>Immunohematology</p>
                     </div>
                     <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Blood bank</p>
+                        <p>Blood Bank</p>
                     </div>
                     <div class="list"><i class="fa-solid fa-square-check"></i>
                         <p>Microbiology</p>
@@ -343,7 +238,7 @@
                         <p>Serology</p>
                     </div>
                     <div class="list"><i class="fa-solid fa-square-check"></i>
-                        <p>Drug screening for employment</p>
+                        <p>Drug Screening for Employment</p>
                     </div>
                 </div>
             </div>
@@ -390,63 +285,6 @@
 
     <!-- End of second container-->
 
-    <footer>
-        <div class="sub-container">
-          <div class="first-section">
-            <div class="first">
-              <img src="/static/img/home-img/Prague-Logo-Light.svg" alt="Prague Logo" />
-              <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              </div>
-              <h2>Open 24/7 Hours</h2>
-            </div>
-            <div class="second">
-              <ul>
-                <h3>Our Services</h3>
-                <a href="/src/pages/swingbed/swingbed.html"><li>Swing Bed</li></a>
-                <a href="#"><li>Wound Care</li></a>
-                <a href="#"><li>Respiratory Therapy</li></a>
-                <a href="/src/pages/rehabilitation/rehabilitation.html"><li>Rehabilitation</li></a>
-                <a href="/src/pages/case-management/case_management.html"><li>Case Management</li></a>
-                <a href="#"><li>Nursing</li></a>
-                
-              </ul>
-            </div>
-            <div class="third">
-              <ul>
-                <h3>About</h3>
-                <a href="#"><li>Company</li></a>
-                <a href="/src/pages/financial/financial.html"><li>Financial Services</li></a>
-                <a href="/src/pages/price/price.html"><li>Price Transparency</li></a>
-                <a href="/src/pages/employment/employment.html"><li>Employment</li></a>
-                <a href="#"><li>Family Clinic</li></a>
-                
-              </ul>
-            </div>
-            <div class="fourth">
-              <ul>
-                <h3>Support</h3>
-                <li>
-                  We're here to help with always on <br />
-                  24 x 7 x 365 support
-                </li>
-                <li>(405) 567-4922</li>
-                <li>info@prague.hospital</li>
-              </ul>
-            </div>
-          </div>
-          <hr />
-          <div class="second-section">
-            <span>&copy;</span>
-            <p>Copyright  <span id="currentYear"></span> Prague Regional Memorial Hospital. (U.S.A.)</p>
-          </div>
-        </div>
-      </footer>
-    <script src="/static/js/main/main.js"></script>
-    <script src="/static/js/pages/home/home.js"></script>
+   
 
-</body>
-
-</html>
+{% endblock content %}

@@ -16,6 +16,8 @@ html {
 
 body {
     position: relative;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 
@@ -31,7 +33,7 @@ a {
 nav {
     display: flex;
     padding-inline: $padding-1;
-    padding-block: 20px;
+    // padding-block: 20px;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -39,6 +41,10 @@ nav {
     left: 0;
     right: 0;
     z-index: 999;
+
+    img{
+        width: 150px;
+    }
 
     .hamburger {
         cursor: pointer;

@@ -6,6 +6,7 @@
     justify-content: center;
     flex-direction: column;
     padding-bottom: 50px;
+    background: linear-gradient(rgb(41, 36, 100,.6),rgb(41, 36, 100,.1)),url("/static/img/financial-img/background.jpg") no-repeat center center/cover;
 
     &>div{
         max-width: 600px;

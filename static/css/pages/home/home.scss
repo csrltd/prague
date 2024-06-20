@@ -1,7 +1,7 @@
 @import "../../main/variables";
 
 .hero-container{
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -270,8 +270,8 @@
             }
 
             .logo-img{
-                width: 161px;
-                height: 161px;
+                width: 200px;
+                height: 200px;
                 img{
                     width: 100%;
                     object-fit: cover;
