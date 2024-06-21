@@ -1,6 +1,6 @@
 @import "../../main/variables";
 .hero-container1{
-    height: 85vh;
+    height: 70vh;
     color: $white-color;
     display: flex;
     justify-content: center;
@@ -221,9 +221,9 @@
                     font-family: $font-family-Playfair;
                 }
 
-                p{
-                    font-size: 24px;
-                }
+                // p{
+                //     font-size: 24px;
+                // }
             }
         }
 

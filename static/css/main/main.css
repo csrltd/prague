@@ -10,6 +10,8 @@ html {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -25,6 +27,10 @@ li {
 a {
   text-decoration: none;
   color: #ffffff;
+}
+
+p, a, #currentYear {
+  font-size: 16px !important;
 }
 
 nav {
