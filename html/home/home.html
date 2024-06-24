@@ -124,8 +124,8 @@
                     providing the highest level of healthcare possible at our facility.</p>
             </div>
             <div class="services">
-                <a href="swing-bed">
-                    <div class="service" id="s1">
+                <a href="{% url "swing-bed" %}">
+                    <div class="service swing-bed" id="s1">
                         <div>
                             <div>
                                 <img src="{% static "img/home-img/hospital-bed.svg" %}" alt="Swing Bed"> <span>Swing Bed</span>
@@ -135,8 +135,8 @@
                     </div>
                 </a>
 
-                <a href="wound_care">
-                    <div class="service" id="s2">
+                <a href="{% url "wound_care" %}">
+                    <div class="service wound_care" id="s2">
                         <div>
                             <div>
                                 <img src="{% static "img/home-img/wounded.svg" %}" alt="Wound Care"> <span>Wound Care</span>
@@ -147,8 +147,8 @@
                     </div>
                 </a>
 
-                <a href="respiratory_therapy">
-                    <div class="service" id="s3">
+                <a href="{% url "respiratory_therapy" %}">
+                    <div class="service respiratory_therapy" id="s3">
                         <div>
                             <div>
                                 <img src="{% static "img/home-img/lung.svg" %}" alt="Respiratory"> <span>Respiratory
@@ -160,7 +160,7 @@
                     </div>
                 </a>
                 <a href="{% url "rehab-servive" %}">
-                    <div class="service" id="s4">
+                    <div class="service rehab-servive" id="s4">
                         <div>
                             <div>
                                 <img src="{% static "img/home-img/physical-therapy.svg" %}" alt="Rehabilitation">
@@ -172,7 +172,7 @@
 
                 </a>
                 <a href="{% url "case-management" %}">
-                    <div class="service" id="s5">
+                    <div class="service case-management" id="s5">
                         <div>
                             <div>
                                 <img src="{% static "img/home-img/case-file.svg" %}" alt="Case File"> <span>Case Management & Social Services</span>
@@ -190,7 +190,7 @@
 
 
                 <a href="{% url "nursing" %}">
-                    <div class="service" id="s6">
+                    <div class="service nursing" id="s6">
                         <div>
                             <div>
                                 <img src="{% static "img/home-img/medical-team.svg" %}" alt="Medical Team">
