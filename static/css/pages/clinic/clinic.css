@@ -287,8 +287,8 @@
   font-size: 26px;
 }
 .second-container .policies .left .logo-img {
-  width: 161px;
-  height: 161px;
+  width: 200px;
+  height: 200px;
 }
 .second-container .policies .left .logo-img img {
   width: 100%;
@@ -323,7 +323,8 @@
 .second-container .policies .policy .buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
+  justify-content: space-between;
 }
 .second-container .trusted-partner {
   display: flex;

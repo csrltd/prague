@@ -116,6 +116,9 @@ nav {
             .service,.patient{
                 position: relative;
 
+                li{
+                    font-size: 16px;
+                }
                 >a{
                     pointer-events: none;
                 }
@@ -621,7 +624,7 @@ nav {
 }
 
 footer {
-    padding: 68px 156px 67px 156px;
+    padding: 67px 156px;
     color: $white-color;
     background-color: $primary-color;
 
