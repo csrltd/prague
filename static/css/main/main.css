@@ -102,6 +102,9 @@ nav > div ul a:hover {
 nav > div ul .service, nav > div ul .patient {
   position: relative;
 }
+nav > div ul .service li, nav > div ul .patient li {
+  font-size: 16px;
+}
 nav > div ul .service > a, nav > div ul .patient > a {
   pointer-events: none;
 }
@@ -519,7 +522,7 @@ nav > div > a:hover {
 }
 
 footer {
-  padding: 68px 156px 67px 156px;
+  padding: 67px 156px;
   color: #ffffff;
   background-color: #292464;
 }
