@@ -6,8 +6,8 @@ import logging
 
 def contact(request):
     form = ContactForm()
-    context = {'form':form}
-    
+    context = {'form':form, "page_title":"Contact us"}
+
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
@@ -21,7 +21,7 @@ def contact(request):
 
             receive_email(recipient_email,first_name,last_name, email,phone,message)
             success_message="Message sent successfully!"
-            return render(request, 'contact/contact.html', {'form': ContactForm(), 'success_massage': success_message})
+            return render(request, 'contact/contact.html', {'form': ContactForm(), 'success_massage': success_message, "page_title":"Contact us"})
         else:
             
             logging.error(form.errors)
