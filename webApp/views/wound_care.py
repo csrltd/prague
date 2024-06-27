@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
 def wound_care(request):
-    return render(request, 'woundcare-service/woundcare.html')
+    return render(request, 'woundcare-service/woundcare.html',{"page_title":"Wound Care"})
