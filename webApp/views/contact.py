@@ -7,6 +7,7 @@ import logging
 def contact(request):
     form = ContactForm()
     context = {'form':form}
+    
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
