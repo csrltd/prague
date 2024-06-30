@@ -149,12 +149,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: space-between;
 }
 .second-container .Our-teams .team-profile h6 {
   color: #939393;
 }
 .second-container .Our-teams .team-profile .profile {
+  flex: 1 1 330px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -168,6 +168,9 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
+  -o-object-position: top;
+     object-position: top;
+  border: 1px solid whitesmoke;
 }
 .second-container .approach {
   width: 100%;

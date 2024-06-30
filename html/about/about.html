@@ -1,190 +1,225 @@
-
-
 {% extends "base.html" %}
 {% load static %}
 {% block page_links %}
 
-    <link rel="stylesheet" href="{% static '/css/pages/about/about.css' %}">
+<link rel="stylesheet" href="{% static '/css/pages/about/about.css' %}">
 
 {% endblock page_links %}
 
 
 {% block content %}
-    <!-- Hero Section -->
-    <section class="hero-container1">
-        <div class="container">
-            <h1>About Us</h1>
-            <p>Located in Prague, Oklahoma, we proudly serve Lincoln, Pottawatomie, Okfuskee, Seminole, and other
-                surrounding communities.</p>
+<!-- Hero Section -->
+<section class="hero-container1">
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Located in Prague, Oklahoma, we proudly serve Lincoln, Pottawatomie, Okfuskee, Seminole, and other
+            surrounding communities.</p>
+    </div>
+</section>
+<!-- End of Hero Section-->
+
+<!-- Second Container-->
+<section class="second-container">
+    <section class="about-us container">
+        <div class="first">
+            <h1>About us</h1>
+            <p>Prague Regional Memorial Hospital is a proud partner of Cohesive Healthcare Management and Consulting.
+                Through our relationship with Cohesive Healthcare, we are able to provide a level of care we’ve never
+                been able to before.
+                Established in 1952, Prague Regional Memorial Hospital in Prague,
+                Oklahoma is a 25-bed critical access hospital.
+                With more than 70 years of tradition and excellence, we provide quality care to patients every day for
+                the communities of Lincoln, Pottawatomie, Okfuskee, and Seminole counties. We offer a wide range of
+                state-of-the-art, high-quality medical services that allow us to improve the health of the community we
+                serve.
+                We have outpatient and inpatient radiology, CT, lab, and physical therapy.
+                We offer the Strong Mind Program – an outpatient Geri psych program for those 55 and older.
+                We also have inpatient dialysis. Our patients and community benefit from high nurse-to-patient ratios,
+                24-hour emergency services, connections to higher levels of care when needed, and close-to-home care 365
+                days a year.</p>
+
+        </div>
+        <img src="/static/img/about-img/swing_bed.jpg" alt="Swing Bed">
+    </section>
+
+    <section class="hospital-values container">
+        <div class="border-padding-left value-title">
+            <h2>Our Hospital Values</h2>
+            <p>Our work will be guided and informed by our beliefs <br> and commitment to: </p>
+        </div>
+        <div class="values-list">
+            <div class="value">
+                <i class="fa-solid fa-people-roof"></i>
+                <!-- <h3>Care</h3> -->
+                <p>Safe, high-quality care and exceptional service for every patient, every time.</p>
+            </div>
+            <div class="value">
+                <i class="fa-solid fa-database"></i>
+                <!-- <h3>Improve</h3> -->
+                <p>Reporting and analyzing data to help optimize outcomes of care and make improvements as needed.
+                </p>
+            </div>
+            <div class="value">
+                <i class="fa-solid fa-bullseye"></i>
+                <!-- <h3>Expand</h3> -->
+                <p>Setting clearly defined goals to achieve optimal outcomes.</p>
+            </div>
+            <div class="value">
+                <i class="fa-solid fa-users"></i>
+                <!-- <h3>Recruit</h3> -->
+                <p>Valuing everyone and treating people with dignity and professionalism.
+                </p>
+            </div>
         </div>
     </section>
-    <!-- End of Hero Section-->
 
-    <!-- Second Container-->
-    <section class="second-container">
-        <section class="about-us container">
-            <div class="first">
-                <h1>About us</h1>
-                <p>Prague Regional Memorial Hospital is a proud partner of Cohesive Healthcare Management and Consulting. 
-                    Through our relationship with Cohesive Healthcare, we are able to provide a level of care we’ve never been able to before. 
-                    Established in 1952, Prague Regional Memorial Hospital in Prague, 
-Oklahoma is a 25-bed critical access hospital.
-                    With more than 70 years of tradition and excellence, we provide quality care to patients every day for the communities of Lincoln, Pottawatomie, Okfuskee, and Seminole counties. We offer a wide range of state-of-the-art, high-quality medical services that allow us to improve the health of the community we serve.  
-                    We have outpatient and inpatient radiology, CT, lab, and physical therapy.
-                     We offer the Strong Mind Program – an outpatient Geri psych program for those 55 and older.
-                      We also have inpatient dialysis. Our patients and community benefit from high nurse-to-patient ratios, 24-hour emergency services, connections to higher levels of care when needed, and close-to-home care 365 days a year.</p>
-                
-            </div>
-            <img src="/static/img/about-img/swing_bed.jpg" alt="Swing Bed">
-        </section>
+    <section class="missions-visions container">
+        <div class="mission-images">
+            <div class="misvis-img">
+                <div class="vismis-img">
 
-        <section class="hospital-values container">
-            <div class="border-padding-left value-title">
-                <h2>Our Hospital Values</h2>
-                <p>Our work will be guided and informed by our beliefs <br> and commitment to: </p>
-            </div>
-            <div class="values-list">
-                <div class="value">
-                    <i class="fa-solid fa-people-roof"></i>
-                    <!-- <h3>Care</h3> -->
-                    <p>Safe, high-quality care and exceptional service for every patient, every time.</p>
-                </div>
-                <div class="value">
-                    <i class="fa-solid fa-database"></i>
-                    <!-- <h3>Improve</h3> -->
-                    <p>Reporting and analyzing data to help optimize outcomes of care and make improvements as needed.
-                    </p>
-                </div>
-                <div class="value">
-                    <i class="fa-solid fa-bullseye"></i>
-                    <!-- <h3>Expand</h3> -->
-                    <p>Setting clearly defined goals to achieve optimal outcomes.</p>
-                </div>
-                <div class="value">
-                    <i class="fa-solid fa-users"></i>
-                    <!-- <h3>Recruit</h3> -->
-                    <p>Valuing everyone and treating people with dignity and professionalism.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="missions-visions container">
-            <div class="mission-images">
-                <div class="misvis-img">
-                    <div class="vismis-img">
-                        
-                        <img src="/static/img/about-img/mission-about.png" alt="">
-                        <div class="border-padding-bottom"></div>
-                    </div>
-                </div>
-
-                <div class="misvis-img">
-                    <div class="vismis-img ">
-                        <div class="border-padding-top"></div>
-                        <img src="/static/img/about-img/vision-about.jpg" alt="">
-                        
-                    </div>
+                    <img src="/static/img/about-img/mission-about.png" alt="">
+                    <div class="border-padding-bottom"></div>
                 </div>
             </div>
 
-            <div class="mission-vision-text">
-                <div class="text service-title">
-                    <h2>Our Vision</h2>
-                    <p>
-                        Through the hard work and dedication of those we employe, we will continue to persevere as an
-                        exemplary healthcare provider for our community.<br><br>
-                        Remain transparent, and to be a place where community members are proud to work, providers want
-                        to practice, and most importantly, a patient’s first choice to seek compassion and healing.
-                    </p>
-                </div>
+            <div class="misvis-img">
+                <div class="vismis-img ">
+                    <div class="border-padding-top"></div>
+                    <img src="/static/img/about-img/vision-about.jpg" alt="">
 
-                <div class="text service-title">
-                    <h2>Our Mission</h2>
-                    <p>
-                        Our mission is to provide patient-centered healthcare to our rural communities with commitment
-                        to excellence.
-                    </p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="Our-teams container">
-            <div class="border-padding-left team-title">
-                <h2>
-                    Our Team
-                </h2>
+        <div class="mission-vision-text">
+            <div class="text service-title">
+                <h2>Our Vision</h2>
+                <p>
+                    Through the hard work and dedication of those we employe, we will continue to persevere as an
+                    exemplary healthcare provider for our community.<br><br>
+                    Remain transparent, and to be a place where community members are proud to work, providers want
+                    to practice, and most importantly, a patient’s first choice to seek compassion and healing.
+                </p>
+            </div>
+
+            <div class="text service-title">
+                <h2>Our Mission</h2>
+                <p>
+                    Our mission is to provide patient-centered healthcare to our rural communities with commitment
+                    to excellence.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="Our-teams container">
+        <div class="border-padding-left team-title">
+            <h2>
+                Our Team
+            </h2>
+            <p>We provide patient-centered healthcare to our rural communities through compassionate care. We
+                are available 24 hours a day/7 days a week.</p>
+        </div>
+
+        <div class="team-profile">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="{% static '/img/about-img/CherylWattsCEO.jpg' %}" alt="">
+                </div>
+                <h4>
+                    Cheryl A. Watts
+                </h4>
+                <h6>
+                    CEO
+                </h6>
+            </div>
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="{% static '/img/about-img/nick.jpg' %}" alt="">
+                </div>
+                <h4>
+                    Nickolas Lee Sitter
+                </h4>
+                <h6>
+                    PA
+                </h6>
+            </div>
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="{% static '/img/about-img/anndee ad.jpg' %}" alt="">
+                </div>
+                <h4>
+                    AnnDee Lee-Carter
+                </h4>
+                <h6>
+                    PA-C
+                </h6>
+            </div>
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="{% static '/img/about-img/Profile1.png' %}" alt="">
+                </div>
+                <h4>
+                    Connie Ross, RRT
+                </h4>
+                <h6>
+                    Respiratory Manager
+                </h6>
+            </div>
+
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="{% static '/img/about-img/profile2.jpg' %}" alt="">
+                </div>
+                <h4>
+                    Liz Livingston, LPN
+                </h4>
+                <h6>
+                    Case Manager
+                </h6>
+            </div>
+
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="{% static '/img/about-img/Amanda Carpenter CCO.png' %}" alt="">
+                </div>
+                <h4>
+                    Amanda Carpenter BSN
+                </h4>
+                <h6>
+                    Chief Clinical Office
+                </h6>
+            </div>
+        </div>
+    </section>
+
+    {% comment %} <section class="approach">
+        <div class="first">
+            <h1>OUR APPROACH</h1>
+            <div>
+                <h2>Our Staff</h2>
                 <p>We provide patient-centered healthcare to our rural communities through compassionate care. We
                     are available 24 hours a day/7 days a week.</p>
             </div>
-
-            <div class="team-profile">
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="/static/img/about-img/Profile1.png" alt="">
-                    </div>
-                    <h4>
-                        Connie Ross, RRT
-                    </h4>
-                    <h6>
-                        Respiratory Manager
-                    </h6>
-                </div>
-
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="/static/img/about-img/profile2.jpg" alt="">
-                    </div>
-                    <h4>
-                        Liz Livingston, LPN
-                    </h4>
-                    <h6>
-                        Case Manager
-                    </h6>
-                </div>
-
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="/static/img/about-img/Amanda Carpenter CCO.png" alt="">
-                    </div>
-                    <h4>
-                        Amanda Carpenter BSN
-                    </h4>
-                    <h6>
-                        Chief Clinical Office
-                    </h6>
-                </div> 
+            <div>
+                <h2>Our Story</h2>
+                <p>Prague Regional Memorial Hospital is a 25-bed, critical access hospital located in Prague,
+                    Oklahoma, proudly serving Lincoln, Pottawatomie, Okfuskee, and Seminole counties.</p>
             </div>
-        </section>
-    
-        {% comment %} <section class="approach">
-            <div class="first">
-                <h1>OUR APPROACH</h1>
-                <div>
-                    <h2>Our Staff</h2>
-                    <p>We provide patient-centered healthcare to our rural communities through compassionate care. We
-                        are available 24 hours a day/7 days a week.</p>
-                </div>
-                <div>
-                    <h2>Our Story</h2>
-                    <p>Prague Regional Memorial Hospital is a 25-bed, critical access hospital located in Prague,
-                        Oklahoma, proudly serving Lincoln, Pottawatomie, Okfuskee, and Seminole counties.</p>
-                </div>
-            </div>
-            <div class="second">
-                <img src="/static/img/about-img/approach.jpg" alt="Woman Face">
-            </div>
-        </section> {% endcomment %}
-    </section>
+        </div>
+        <div class="second">
+            <img src="/static/img/about-img/approach.jpg" alt="Woman Face">
+        </div>
+    </section> {% endcomment %}
+</section>
 
-    <section class="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.201502826868!2d-96.68695698500073!3d35.49050217484657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b3e93ff655ac4b%3A0xa9ea68b7d9005b00!2sPrague%20Community%20Hospital!5e0!3m2!1sen!2srw!4v1695300440666!5m2!1sen!2srw"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <!-- End of second container-->
+<section class="map">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.201502826868!2d-96.68695698500073!3d35.49050217484657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b3e93ff655ac4b%3A0xa9ea68b7d9005b00!2sPrague%20Community%20Hospital!5e0!3m2!1sen!2srw!4v1695300440666!5m2!1sen!2srw"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<!-- End of second container-->
 
-    {% endblock content %}
-
-   
+{% endblock content %}

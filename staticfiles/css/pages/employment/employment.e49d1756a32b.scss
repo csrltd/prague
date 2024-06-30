@@ -1,0 +1,364 @@
+@import "../../main/variables";
+.hero-container1{
+    padding-bottom: 2rem;
+    min-height: 85vh;
+    color: $white-color;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &>div{
+        max-width: 728px;
+        color: $white-color;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        z-index: 4;
+
+        h1{
+            font-size: 48px;
+            font-weight: 700;
+            font-family:  $font-family-Playfair;
+            letter-spacing: 3px;
+        }
+
+        p{
+            font-weight: 500;
+        }
+    }
+}
+
+.job-container{
+    width: 100%;
+    padding-bottom: 100px;
+    .modal {
+        background-color: $primary-color;
+        height: 500px;
+        width: 70vw;
+        z-index: 1100;
+        position: fixed;
+        top: 60%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        border-radius: 20px;
+        display: none;
+
+        i {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 50px;
+            cursor: pointer;
+            color: $white-color;
+            background-color: $primary-color;
+          }
+
+        #apply{
+            position: absolute;
+            border: 2px solid $white-color;
+            padding: .5rem 2rem;
+            bottom: 1rem;
+            right: 1rem;
+            transition: .3s ease;
+
+            &:hover{
+                background-color: $white-color;
+                color: $primary-color;
+                border-color: $primary-color;
+            }
+        }
+      
+        .modal-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            padding: 10px 24px 70px 24px;
+            gap: 1rem;
+            width: 100%;
+            color: $white-color;
+            overflow-y: scroll;
+            height: 350px;
+            top: 4rem;
+
+        &::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+       &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba($grey-color,1); 
+            border-radius: 10px;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba($grey-color, 1); 
+        }
+      
+          h1 {
+            font-size: 30px;
+          }
+      
+          h2 {
+            font-size: 18px;
+          }
+
+          h3{
+            font-size: 14px;
+          }
+
+          
+      
+          img {
+            width: 100px;
+            height: 90px;
+            position: absolute;
+            border-radius: 20px;
+            bottom: -3rem;
+            left: 10rem;
+            object-fit: cover;
+          }
+        }
+      }
+      
+      .modal-overlay {
+        content: '';
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        z-index: 1000;
+        height: 100vh;
+        width: 100vw;
+        cursor: pointer;
+        display: none;
+      }
+
+    &>div{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .sign-in-container{ 
+            width: 100%;
+            background-color: rgba($color: $grey-color, $alpha: 0.1);
+            padding: 30px 47px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: flex-end;
+            a{
+                background-color: $primary-color;
+                padding: 17px 49px;
+                display: inline-block;
+                border-radius: 12px;
+                width: fit-content;
+                align-self: center;
+            }
+        }
+
+        .job-listing-section{
+            display: flex;
+            gap: 40px;
+            width: 100%;
+            
+            .sidebar{
+                background-color: rgba($color: $grey-color, $alpha: 0.1);
+                padding: 27px 43px 80px 42px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                width: 20%;
+                &>h1{
+                    font-size: 32px;
+                    font-family: $font-family-Playfair;
+                }
+
+                .location{
+                    .search-location{
+                        border: 1px solid rgba($grey-color, 1);
+                        padding: 5px 5px 5px 10px;
+                        border-radius: 10px;
+                        background-color: rgba($grey-color, 0);
+                        select{
+                            border: none;
+                            font-size: 16px;
+                            color: rgba($grey-color, 1);
+                            background-color: rgba($grey-color, 0);
+                            padding: 0px 10px ;
+                        }
+                    }
+                }
+                &>div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    &>h4{
+                        font-family: $font-family-Roboto;
+                        font-size: 20px;
+                        letter-spacing: 1px;
+                    }
+
+                    &>div{
+                        display: flex;
+                        gap: 20px;
+                        color: $grey-color;
+                        
+                        div{
+                            input{
+                                width: 20px;
+                                height: 20px;
+                                cursor: pointer;
+                                accent-color: $primary-color;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .right-section{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                width: 80%;
+
+                .search-container{ 
+                    width: 100%;                
+                    form{
+                        width: 100%;
+                        display: flex;
+                        gap: 30px;
+                        input{
+                            background-color: rgba($color: $grey-color, $alpha: 0.1);
+                            padding: 17px 30px 18px 30px;
+                            border-radius: 10px;
+                            border: 0;
+                            width: 100%;
+                            font-size: 1rem;
+                        }
+                        button{
+                            background-color: $primary-color;
+                            color: $white-color;
+                            padding: 17px 49px;
+                            display: inline-block;
+                            border-radius: 12px;
+                            border: 0;
+                            width: fit-content;
+                            align-self: center;
+                            font-size: 18px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .job-listing{
+                    display: flex;
+                    flex-direction: column;
+                    overflow-y: scroll;
+                    height: 814px;
+                    gap: 24px;
+                    color: $black-color;
+
+                    &::-webkit-scrollbar {
+                        width: 12px;
+                    }
+                    
+                   &::-webkit-scrollbar-track {
+                        -webkit-box-shadow: inset 0 0 6px rgba($primary-color, 1); 
+                        border-radius: 10px;
+                    }
+                    
+                    &::-webkit-scrollbar-thumb {
+                        border-radius: 10px;
+                        -webkit-box-shadow: inset 0 0 6px rgba($primary-color, 1); 
+                    }
+
+                        .jobs{
+                            padding: 24px 19px;
+                            background-color: rgba($color: $grey-color, $alpha: 0.1);
+                            border-radius: 10px;
+                            display: flex;
+                            position: relative;
+                            cursor: pointer;
+
+                            >.jobs-overlay{
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                left: 0;
+                                bottom: 0;
+                                background-color: transparent;
+                                cursor: pointer;
+                            }
+
+                            .first{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 12px;
+                                cursor: pointer;
+                                h1{
+                                    font-family: $font-family-Playfair;
+                                    color: $primary-color;
+                                }
+        
+                                h2{
+                                    font-family: $font-family-Roboto;
+                                    font-size: 18px;
+                                    color: $primary-color;
+                                    letter-spacing: 1px;
+                                }
+                                p{
+                                    font-weight: 500;
+                                    font-size: 19px;
+                                    color: $black-color;
+                                }
+                            }
+    
+                            i{
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+
+@media screen and (max-width: 925px){
+    .job-container{
+        &>div{
+            .job-listing-section{
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        margin-inline: 30px;
+    }
+    .job-container{
+        .modal {
+            width: 90vw;
+        }
+        &>div{
+            .job-listing-section{
+                .right-section{
+                    .search-container{
+                        form{
+                            flex-direction: column;
+                            gap: 10px;
+                            button{
+                                padding: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

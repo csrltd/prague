@@ -1,0 +1,340 @@
+.hero-container1 {
+  height: 70vh;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-container1 > div {
+  max-width: 600px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 4;
+}
+.hero-container1 > div h1 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 3px;
+}
+.hero-container1 > div p {
+  font-weight: 500;
+}
+
+.second-container {
+  width: 100%;
+}
+.second-container .about-us {
+  display: flex;
+  gap: 56px;
+  align-items: center;
+}
+.second-container .about-us .first {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  background-color: #292464;
+  color: #ffffff;
+  padding: 60px 80px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+.second-container .about-us .first h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+}
+.second-container .about-us .first p {
+  letter-spacing: 1px;
+}
+.second-container .about-us .first a {
+  padding: 12px 25px;
+  border-radius: 6px;
+  border: 1px solid #FFF;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.second-container .about-us img {
+  border-radius: 20px;
+  height: 587px;
+  width: 35%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.second-container .hospital-values {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  padding-bottom: 2rem;
+}
+.second-container .hospital-values .value-title {
+  max-width: 848px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.second-container .hospital-values .value-title h2 {
+  font-size: 45px;
+  font-family: "Playfair Display", serif;
+  color: #292464;
+}
+.second-container .hospital-values .values-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.second-container .hospital-values .values-list .value {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 20%;
+}
+.second-container .hospital-values .values-list .value i {
+  font-size: 48px;
+  color: #292464;
+}
+.second-container .hospital-values .values-list .value h3 {
+  font-size: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 0.5px;
+  color: #292464;
+}
+.second-container .missions-visions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.second-container .missions-visions .mission-images {
+  width: 48%;
+  display: flex;
+  gap: 30px;
+}
+.second-container .missions-visions .mission-images .misvis-img .vismis-img {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 250px;
+  height: 450px;
+}
+.second-container .missions-visions .mission-images .misvis-img .vismis-img img {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.second-container .missions-visions .mission-vision-text {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.second-container .missions-visions .mission-vision-text .text {
+  display: block;
+  gap: 20px;
+}
+.second-container .missions-visions .mission-vision-text h2 {
+  color: #292464;
+}
+.second-container .Our-teams {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-block: 100px;
+}
+.second-container .Our-teams .team-profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.second-container .Our-teams .team-profile h6 {
+  color: #939393;
+}
+.second-container .Our-teams .team-profile .profile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.second-container .Our-teams .team-profile .profile .profile-img {
+  width: 100%;
+}
+.second-container .Our-teams .team-profile .profile .profile-img img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.second-container .approach {
+  width: 100%;
+  display: flex;
+  margin-block: 100px;
+}
+.second-container .approach .first {
+  padding: 156px 179px 156px 130px;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.second-container .approach .first > h1 {
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+  color: #292464;
+}
+.second-container .approach .first > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.second-container .approach .first > div h2 {
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+}
+.second-container .approach .second {
+  position: relative;
+  background-color: #292464;
+  width: 35%;
+}
+.second-container .approach .second img {
+  position: absolute;
+  border-radius: 50%;
+  border: 90px solid #ffffff;
+  width: 600px;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 4rem;
+  left: -10rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .second-container .missions-visions {
+    display: flex;
+  }
+  .second-container .missions-visions .mission-images {
+    width: 50%;
+    justify-content: center;
+    gap: 30px;
+  }
+  .second-container .missions-visions .mission-vision-text {
+    width: 40%;
+  }
+  .second-container .Our-teams .team-title {
+    width: 80%;
+  }
+  .second-container .Our-teams .team-profile {
+    justify-content: center;
+    gap: 1rem;
+  }
+  .second-container .approach .first {
+    padding: 130px 150px 130px 100px;
+  }
+  .second-container .approach .second {
+    position: relative;
+    background-color: #292464;
+    width: 35%;
+  }
+  .second-container .approach .second img {
+    position: absolute;
+    border-radius: 50%;
+    border: 65px solid #ffffff;
+    width: 495px;
+    height: 495px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: 10rem;
+    left: -10rem;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .second-container .about-us .first {
+    padding: 30px 50px;
+    gap: 15px;
+  }
+  .second-container .missions-visions .mission-images {
+    width: 100%;
+    justify-content: center;
+  }
+  .second-container .missions-visions .mission-vision-text {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 925px) {
+  .second-container .about-us {
+    flex-direction: column-reverse;
+  }
+  .second-container .about-us .first {
+    width: 100%;
+    padding: 30px 50px;
+  }
+  .second-container .about-us > img {
+    width: 100%;
+    height: 200px;
+  }
+  .second-container .hospital-values .value-title h2 {
+    font-size: 30px;
+  }
+  .second-container .hospital-values .values-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .second-container .hospital-values .values-list .value {
+    width: 80%;
+  }
+  .second-container .approach {
+    flex-direction: column-reverse;
+  }
+  .second-container .approach .first {
+    padding: 130px 100px 130px 100px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .second-container .approach .second {
+    width: 100%;
+    min-height: 300px;
+  }
+  .second-container .approach .second img {
+    width: 450px;
+    height: 450px;
+    top: 5rem;
+    left: calc(50% - 225px);
+  }
+}
+@media screen and (max-width: 740px) {
+  .Our-teams .team-profile .profile {
+    width: 100%;
+  }
+  .Our-teams .team-profile .profile .profile-img {
+    width: 100%;
+  }
+  .Our-teams .team-profile .profile .profile-img img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 550px) {
+  .second-container .approach {
+    flex-direction: column-reverse;
+  }
+  .second-container .approach .first {
+    padding: 130px 60px 100px 60px;
+  }
+  .second-container .missions-visions .mission-images {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .second-container .missions-visions .mission-images .misvis-img {
+    width: 100%;
+  }
+  .second-container .missions-visions .mission-images .misvis-img .vismis-img {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}/*# sourceMappingURL=about.css.map */
