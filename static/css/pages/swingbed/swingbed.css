@@ -78,7 +78,7 @@
 .second-container .third-section .first p {
   margin-bottom: 5rem;
   font-family: "Playfair Display", serif;
-  font-size: 45px;
+  font-size: 45px !important;
   font-weight: bold;
 }
 .second-container .third-section .second {

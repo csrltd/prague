@@ -653,7 +653,12 @@ footer {
                 .social-icons {
                     display: flex;
                     gap: 10px;
-                    font-size: 26px;
+                    font-size: 50px;
+                    a{
+                        i{
+                            font-size: 40px;
+                        }
+                    }
                 }
 
                 h2 {
