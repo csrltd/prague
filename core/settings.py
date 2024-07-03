@@ -20,7 +20,12 @@ SECRET_KEY = (
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["prague.csrtesting.com", "127.0.0.1", "prague.onrender.com"]
+ALLOWED_HOSTS = [
+    "prague.csrtesting.com",
+    "127.0.0.1",
+    "prague.onrender.com",
+    "prague.csrlimited.com",
+]
 
 
 # Application definition
