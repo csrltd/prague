@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const formSubmitButton = document.getElementById("formSubmitButton");
-    formSubmitButton.innerText = "Submit";
+    formSubmitButton.innerText = "Send message";
     const fullName = document.getElementById("fullName");
     const userEmail = document.getElementById("userEmail");
     const userMessage = document.getElementById("userMessage");
@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 "full_name": fullName.value,
                 "email_address": userEmail.value,
                 "message": userMessage.value,
-                "hospital_name": "Pawhuska Inc",
-                "recipient_email": "info@pawhuskahospital.com",
-                "subject": "Email from pawhuska"
+                "hospital_name": "Prague Regional Memorial Hospital",
+                "recipient_email": "salphonse@compstaffing.com",
+                "subject": "Email from Prague Regional Memorial Hospital"
             };
             console.log(formData);
 

@@ -45,17 +45,11 @@
             </div>
             <div class="contact-form">
 
-                <form method="POST">
-                    {% csrf_token %}
-                    <div class="names">
-                        {{form.first_name}}
-                        {{form.last_name}}
-
-                    </div>
-                    {{form.email}}
-                    {{form.phone}}
-                    {{form.message}}
-                    <input type="submit" value="Send Message">
+                <form>
+                    <input type="text" placeholder="Full name" id="fullName" />
+                    <input type="email" placeholder="Email address" id="userEmail" name="userEmail" />
+                    <textarea placeholder="Enter your message" id="userMessage" name="userMessage" rows="5"></textarea>
+                    <button type="button" id="formSubmitButton">Send message</button>
                 </form>
             </div>
         </div>
