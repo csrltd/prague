@@ -329,7 +329,6 @@
     background-image: url(/static/img/rehabilitation/rehabilitation-background.jpg);
     min-height: 300px;
     padding: 50px 70px 49px 50px;
-    align-items: center;
   }
 }
 @media screen and (max-width: 925px) {

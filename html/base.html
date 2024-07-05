@@ -20,7 +20,9 @@
 
     <!--Navigation-->
     <nav id="nav">
-        <img src="{% static "img/home-img/Prague-Logo-Light.svg" %}" alt="Prague Logo">
+        <a href="{% url "home" %}">
+            <img src="{% static "img/home-img/Prague-Logo-Light.svg" %}" alt="Prague Logo">
+        </a>
         <div id="links-container">
             <ul>
                 <a href="{% url "home" %}">
@@ -133,9 +135,9 @@
             <div class="first">
               <img src="{% static "img/home-img/Prague-Logo-Light.svg" %}" alt="Prague Logo" />
               <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://www.facebook.com/PragueRMHospital/"><i class="fa-brands fa-facebook"></i></a>
                
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                {% comment %} <a href="#"><i class="fa-brands fa-linkedin"></i></a> {% endcomment %}
               </div>
               <h2>Open 24/7</h2>
             </div>

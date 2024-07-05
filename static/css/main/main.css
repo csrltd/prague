@@ -550,7 +550,10 @@ footer .sub-container .first-section .first img {
 footer .sub-container .first-section .first .social-icons {
   display: flex;
   gap: 10px;
-  font-size: 26px;
+  font-size: 50px;
+}
+footer .sub-container .first-section .first .social-icons a i {
+  font-size: 40px;
 }
 footer .sub-container .first-section .first h2 {
   font-size: 32px;

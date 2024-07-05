@@ -178,19 +178,23 @@
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+            justify-content: start;
+            
 
             h6 {
                 color: $grey-color;
             }
 
             .profile {
-                flex: 1 1 330px;
+                // flex: 1 1 330px;
+                flex-basis: 350px;
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
 
                 .profile-img {
                     width: 100%;
+                    max-width: 350px;
 
                     img {
                         width: 100%;
