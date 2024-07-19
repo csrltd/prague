@@ -155,6 +155,7 @@
   color: #939393;
 }
 .second-container .Our-teams .team-profile .profile {
+  position: relative;
   flex-basis: 350px;
   display: flex;
   flex-direction: column;
@@ -173,6 +174,22 @@
   -o-object-position: top;
      object-position: top;
   border: 1px solid whitesmoke;
+}
+.second-container .Our-teams .team-profile .profile p {
+  position: absolute;
+  top: 0;
+  background-color: rgba(41, 36, 100, 0.97);
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 20px 30px;
+  width: 40vw;
+  z-index: 10;
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: all 0.2s ease-in-out;
+}
+.second-container .Our-teams .team-profile .profile:hover p {
+  transform: scaleY(1);
 }
 .second-container .approach {
   width: 100%;

@@ -187,10 +187,12 @@
 
             .profile {
                 // flex: 1 1 330px;
+                position: relative;
                 flex-basis: 350px;
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
+                // transition: all 5s ease-in-out 10s;
 
                 .profile-img {
                     width: 100%;
@@ -204,6 +206,33 @@
                         object-position: top;
                         border: 1px solid whitesmoke;
                     }
+                }
+
+                p{
+                    position: absolute;
+                    
+                    // bottom: 60px;
+                    top: 0;
+                    background-color: rgb(41, 36, 100,.97);
+                    color: whitesmoke;
+                    border-radius: 5px;
+                    padding: 20px 30px;
+                    width: 40vw;
+                    z-index: 10;
+                    // visibility: hidden;
+                    // transform: translateY(20px);
+                    // transform: translateY(100%);
+                    transform: scaleY(0);
+                    transform-origin:center;
+                    transition: all .2s ease-in-out;
+  
+                }
+
+                &:hover p{
+                    
+                    // visibility: visible;
+                    // transform: translateY(0);
+                    transform: scaleY(1);
                 }
             }
         }
