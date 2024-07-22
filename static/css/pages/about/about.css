@@ -179,6 +179,12 @@
   -o-object-position: 50% 30%;
      object-position: 50% 30%;
 }
+.second-container .Our-teams .team-profile .profile .profile-img .kami-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 26%;
+     object-position: 50% 26%;
+}
 .second-container .Our-teams .team-profile .profile p {
   position: absolute;
   top: 0;
@@ -186,7 +192,8 @@
   color: whitesmoke;
   border-radius: 5px;
   padding: 20px 30px;
-  width: 40vw;
+  width: 30vw;
+  max-width: 40vw;
   z-index: 10;
   transform: scaleY(0);
   transform-origin: center;
