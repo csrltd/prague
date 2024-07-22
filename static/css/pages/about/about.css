@@ -171,9 +171,13 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
-  -o-object-position: top;
-     object-position: top;
+  -o-object-position: 50% 10%;
+     object-position: 50% 10%;
   border: 1px solid whitesmoke;
+}
+.second-container .Our-teams .team-profile .profile .profile-img .image-position {
+  -o-object-position: 50% 30%;
+     object-position: 50% 30%;
 }
 .second-container .Our-teams .team-profile .profile p {
   position: absolute;

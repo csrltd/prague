@@ -203,8 +203,12 @@
                         height: 300px;
                         object-fit: cover;
                         border-radius: 20px;
-                        object-position: top;
+                        
+                        object-position: 50% 10%;
                         border: 1px solid whitesmoke;
+                    }
+                    .image-position{
+                        object-position: 50% 30%;
                     }
                 }
 
