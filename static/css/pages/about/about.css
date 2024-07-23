@@ -179,11 +179,19 @@
   -o-object-position: 50% 30%;
      object-position: 50% 30%;
 }
-.second-container .Our-teams .team-profile .profile .profile-img .kami-image {
-  -o-object-fit: cover;
-     object-fit: cover;
+.second-container .Our-teams .team-profile .profile .profile-img .image-position2 {
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #292464;
   -o-object-position: 50% 26%;
      object-position: 50% 26%;
+}
+.second-container .Our-teams .team-profile .profile .profile-img .kristi-image {
+  background-color: #292464;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: 50% 20%;
+     object-position: 50% 20%;
 }
 .second-container .Our-teams .team-profile .profile p {
   position: absolute;

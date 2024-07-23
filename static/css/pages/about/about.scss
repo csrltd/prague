@@ -211,9 +211,15 @@
                     .image-position{
                         object-position: 50% 30%;
                     }
-                    .kami-image{
-                        object-fit: cover;
+                    .image-position2{
+                        object-fit: contain;
+                        background-color: $primary-color;
                         object-position: 50% 26%;
+                    }
+                    .kristi-image{
+                        background-color: $primary-color;
+                        object-fit: contain;
+                        object-position: 50% 20%;
                     }
                 }
 
