@@ -57,13 +57,22 @@
             gap: 100px;
 
             .contact-form{
+            
+                width: 50%;
+                
 
-                input{
-
-                    &[type="submit"]{
+                    button[type="submit"]{
                         cursor: pointer;
+                        width: fit-content;
+                        padding: 24px 36px;
+                        border: none;
+                        background-color: $primary-color;
+                        text-align: center;
+                        color: $white-color;
+                       border-radius: 5px;
+
                     }
-                }
+             
             }
         }
     }
