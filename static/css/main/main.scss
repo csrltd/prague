@@ -128,6 +128,9 @@ nav {
                     background-color: $primary-color;
                     display: none;
                     border-radius: 5px;
+                    width: 10vw;
+                    
+
                     a{
                         display: block;
                         color: $white-color;
@@ -336,7 +339,27 @@ nav {
                 z-index: -1;
                 border-radius: 12px;
             }
+            .image-title{
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  padding-left: 30%;
+                
+                p{
+                    width: 200px;
+                    opacity: 1;
+                     
+                }
+            }
+            .image-title2{
+                align-items: end;
+            }
 
+            .dialysis-icon{
+                width: 25px;
+                height: 25px;
+
+            }
             &>div {
                 position: relative;
                 height: 100%;
@@ -347,14 +370,14 @@ nav {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
+                // align-items: center;
 
                 p {
                     margin-top: 1rem;
                     // visibility: hidden;
                     opacity: 0;
-                    text-align: justify;
-                    text-justify: inter-word;
+                    // text-align: justify;
+                    // text-justify: inter-word;
                     // display: none;
                 }
             }
@@ -375,6 +398,12 @@ nav {
             //     visibility: visible;
             //     opacity: 1;
             // }
+
+            &:hover .image-title{
+                
+                padding-left: 0%;
+              
+          }
         }
         .swing-bed{
             background: linear-gradient(rgb(41, 36, 100,.6),rgb(41, 36, 100,.1)),url("/static/img/swingbed-img/background.jpg") no-repeat center center/cover;

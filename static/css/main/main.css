@@ -113,6 +113,7 @@ nav > div ul .service .dropdown, nav > div ul .patient .dropdown {
   background-color: #292464;
   display: none;
   border-radius: 5px;
+  width: 10vw;
 }
 nav > div ul .service .dropdown a, nav > div ul .patient .dropdown a {
   display: block;
@@ -289,6 +290,23 @@ nav > div > a:hover {
   z-index: -1;
   border-radius: 12px;
 }
+.our-services .services .service .image-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 30%;
+}
+.our-services .services .service .image-title p {
+  width: 200px;
+  opacity: 1;
+}
+.our-services .services .service .image-title2 {
+  align-items: end;
+}
+.our-services .services .service .dialysis-icon {
+  width: 25px;
+  height: 25px;
+}
 .our-services .services .service > div {
   position: relative;
   height: 100%;
@@ -296,13 +314,10 @@ nav > div > a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .our-services .services .service > div p {
   margin-top: 1rem;
   opacity: 0;
-  text-align: justify;
-  text-justify: inter-word;
 }
 .our-services .services .service:hover > div {
   align-items: start;
@@ -312,6 +327,9 @@ nav > div > a:hover {
   visibility: visible;
   opacity: 1;
   transition: all 0.5s ease-in-out;
+}
+.our-services .services .service:hover .image-title {
+  padding-left: 0%;
 }
 .our-services .services .swing-bed {
   background: linear-gradient(rgba(41, 36, 100, 0.6), rgba(41, 36, 100, 0.1)), url("/static/img/swingbed-img/background.jpg") no-repeat center center/cover;
