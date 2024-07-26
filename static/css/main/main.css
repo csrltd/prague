@@ -303,6 +303,9 @@ nav > div > a:hover {
 .our-services .services .service .image-title2 {
   align-items: end;
 }
+.our-services .services .service .long-title {
+  padding-left: 20%;
+}
 .our-services .services .service .dialysis-icon {
   width: 25px;
   height: 25px;
