@@ -414,8 +414,10 @@
   transform: scaleX(-1);
 }
 .second-container .Our-teams .team-profile .profile p {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
   background-color: rgba(41, 36, 100, 0.97);
   color: whitesmoke;
   border-radius: 5px;
@@ -425,6 +427,10 @@
   transform: scaleY(0);
   transform-origin: center;
   transition: all 0.2s ease-in-out;
+}
+.second-container .Our-teams .team-profile .profile .nick-bio {
+  width: 73vw;
+  left: 10%;
 }
 .second-container .Our-teams .team-profile .profile:hover p {
   transform: scaleY(1);

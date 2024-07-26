@@ -150,13 +150,14 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: start;
+  background-color: yellow;
 }
 .second-container .Our-teams .team-profile h6 {
   color: #939393;
 }
 .second-container .Our-teams .team-profile .profile {
-  position: relative;
   flex-basis: 350px;
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -174,6 +175,7 @@
   -o-object-position: 50% 10%;
      object-position: 50% 10%;
   border: 1px solid whitesmoke;
+  cursor: pointer;
 }
 .second-container .Our-teams .team-profile .profile .profile-img .image-position {
   -o-object-position: 50% 30%;
@@ -194,18 +196,23 @@
      object-position: 50% 20%;
 }
 .second-container .Our-teams .team-profile .profile p {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
   background-color: rgba(41, 36, 100, 0.97);
   color: whitesmoke;
   border-radius: 5px;
   padding: 20px 30px;
-  width: 30vw;
-  max-width: 40vw;
+  width: 50vw;
   z-index: 10;
   transform: scaleY(0);
   transform-origin: center;
   transition: all 0.2s ease-in-out;
+}
+.second-container .Our-teams .team-profile .profile .amanda-bio {
+  width: 73vw;
+  left: 10%;
 }
 .second-container .Our-teams .team-profile .profile:hover p {
   transform: scaleY(1);
