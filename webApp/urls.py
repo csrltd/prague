@@ -7,7 +7,7 @@ from .views.services import *
 from .views.financial import financial
 from .views.price import price
 from .views.wound_care import wound_care
-from.views.employment import employment
+# from.views.employment import employment
 from.views.clinic import clinic
 from.views.dialysis import dialysis
 
@@ -29,7 +29,7 @@ urlpatterns = [
     path('nursing/', nursing, name='nursing'),
     path('respiratory_therapy/', respiratory_therapy, name='respiratory_therapy'),
     path('emergency/', emergency, name='emergency'),
-    path('employment/', employment, name='employment'),
+
     path('clinic/', clinic, name='clinic'),
     path('dialysis/', dialysis, name='dialysis'),
     
